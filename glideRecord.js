@@ -21,6 +21,6 @@ while(incidentGR.next()) {
 
 var incidentGR = new GlideRecord('incident')
 incidentGR.get('ed92e8d173d023002728660c4cf6a7bc')
-gs.print('incidentGR.number' + ' has a sys_id of ' + incidentGR.sys_id)
+gs.print.get(incidentGR.number); // 1 approach
+gs.print('incidentGR.number' + ' has a sys_id of ' + incidentGR.sys_id) // second approach 
 
-//testing git push
