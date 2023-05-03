@@ -35,3 +35,7 @@ while(incidentGR.next()) {
     gs.print(incidentGR.number)
 }
 
+
+// Create Incident with GlideRecord with newRecord() & insert()
+
+var newIncident = new GlideRecord('incident')
