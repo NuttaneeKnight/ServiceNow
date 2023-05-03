@@ -24,3 +24,14 @@ incidentGR.get('ed92e8d173d023002728660c4cf6a7bc')
 gs.print.get(incidentGR.number); // 1 approach
 gs.print('incidentGR.number' + ' has a sys_id of ' + incidentGR.sys_id) // second approach 
 
+
+// addEncodedQuery() only takes one string argument of the encoded query from the filter (click right and copy at the last filtered item)
+
+var queryString = 'category=inquiry^active=true^opened_by=6816f79cc0a8016401c5a33be04be441'
+var incidentGR = new GlideRecord('incident')
+incidentGR.addEncodedQuery(queryString)
+incidentGR.query();
+while(incidentGR.next()) {
+    gs.print(incidentGR.number)
+}
+
