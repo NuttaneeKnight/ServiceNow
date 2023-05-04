@@ -63,3 +63,14 @@ while(counter <= 5) {
 }
 
 gs.print(newIncidents); //returns 08db3c629722211036743246f053af84,40db74269722211036743246f053af7c,4cdb74269722211036743246f053af7e,48db74269722211036743246f053af81,44db74269722211036743246f053af84
+
+
+//Delete() Before we delete anything, we have to make sure that the record exists, just print it first then perform the delete
+
+var incidentGR = new GlideRecord('incident')
+incidentGR.addQuery('short_description', 'Incident #3')
+incidentGR.query()
+while(incidentGR.next()) {
+    // gs.print(incidentGR.number + ' has ' + incidentGR.short_description) //printing the record to check
+    incidentGR.deleteRecord()
+}
