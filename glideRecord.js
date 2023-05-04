@@ -104,3 +104,9 @@ problemGR.query()
 if(problemGR.canCreate() && problemGR.canRead() && problemGR.canWrite() && problemGR.canDelete()) {
     gs.print('Have the CRUD acces!')
 }
+
+//getRowCount() 
+
+var incidentGR = new GlideRecord('incident')
+incidentGR.query()
+gs.print(incidentGR.getRowCount())
