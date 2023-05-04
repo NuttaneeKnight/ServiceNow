@@ -74,3 +74,11 @@ while(incidentGR.next()) {
     // gs.print(incidentGR.number + ' has ' + incidentGR.short_description) //printing the record to check
     incidentGR.deleteRecord()
 }
+
+//orderBy() accepts only one field argument. Print out the incident by the order of the input field. 
+var incidentGR = new GlideRecord('incident')
+incidentGR.orderBy('short_description')
+incidentGR.query()
+while(incidentGR.next()) {
+    gs.print(incidentGR.number + ' : ' + incidentGR.short_description)
+}
