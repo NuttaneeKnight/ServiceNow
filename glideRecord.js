@@ -36,6 +36,16 @@ while(incidentGR.next()) {
 }
 
 
-// Create Incident with GlideRecord with newRecord() & insert()
+// Create Incident with GlideRecord with newRecord() & insert() with background script
 
-var newIncident = new GlideRecord('incident')
+var newIncident = new GlideRecord('incident') //will initialize the record with default value and also the default function
+newIncident.newRecord();
+newIncident.short_description = 'This incident was created from a background script.'
+newIncident.insert(); //without this line the new incident will never get inserted to the record
+
+var newIncident = new GlideRecord('incident') //will initialize the record with default value and also the default function
+newIncident.newRecord();
+newIncident.short_description = 'This incident was created from a background script.'
+var newIncidentSysID = newIncident.insert(); //without this line the new incident will never get inserted to the record
+gs.print(newIncidentSysID) //to see the incident sys_id since the inset() return sys_id
+// returns Script: 223a3c629722211036743246f053af7e
