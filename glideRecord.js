@@ -49,3 +49,17 @@ newIncident.short_description = 'This incident was created from a background scr
 var newIncidentSysID = newIncident.insert(); //without this line the new incident will never get inserted to the record
 gs.print(newIncidentSysID) //to see the incident sys_id since the inset() return sys_id
 // returns Script: 223a3c629722211036743246f053af7e
+
+
+// in case of creating multipple incidents in the background script. 
+var newIncidents= [];
+var counter = 1;
+var incidentGR = new GlideRecord('incident');
+while(counter <= 5) {
+    incidentGR.newRecord()
+    incidentGR.short_description = 'Incident #' + counter
+    counter++
+    newIncidents.push(incidentGR.insert())
+}
+
+gs.print(newIncidents); //returns 08db3c629722211036743246f053af84,40db74269722211036743246f053af7c,4cdb74269722211036743246f053af7e,48db74269722211036743246f053af81,44db74269722211036743246f053af84
