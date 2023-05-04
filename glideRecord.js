@@ -88,8 +88,19 @@ while(incidentGR.next()) {
 
 //will render and show 5 records
 var problemGR = new GlideRecord('problem')
+//can combine with orderBy
+problemGR.orderBy('short_description')
 problemGR.setLimit(5)
 problemGR.query();
 while(problemGR.next()) {
     gs.print(problemGR.number)
+    gs.print(problemGR.short_description)
+}
+
+//canCreate() canRead() canWrite() canDelete() => These methods will check the ACL
+
+var problemGR = new GlideRecord('problem')
+problemGR.query()
+if(problemGR.canCreate() && problemGR.canRead() && problemGR.canWrite() && problemGR.canDelete()) {
+    gs.print('Have the CRUD acces!')
 }
