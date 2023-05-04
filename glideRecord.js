@@ -110,3 +110,8 @@ if(problemGR.canCreate() && problemGR.canRead() && problemGR.canWrite() && probl
 var incidentGR = new GlideRecord('incident')
 incidentGR.query()
 gs.print(incidentGR.getRowCount())
+
+//hasNext() not the same as the next() it only returns the boolean 
+var incidentGR = new GlideRecord('incident')
+incidentGR.query()
+gs.print(incidentGR.hasNext()) // should return the boolean
