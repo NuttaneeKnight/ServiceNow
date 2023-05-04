@@ -83,3 +83,13 @@ incidentGR.query()
 while(incidentGR.next()) {
     gs.print(incidentGR.number + ' : ' + incidentGR.short_description)
 }
+
+//setLimit() similar to slice() on JS, takes only 1 argument that is an integer
+
+//will render and show 5 records
+var problemGR = new GlideRecord('problem')
+problemGR.setLimit(5)
+problemGR.query();
+while(problemGR.next()) {
+    gs.print(problemGR.number)
+}
