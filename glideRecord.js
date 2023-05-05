@@ -166,3 +166,11 @@ while(incidentGR.next()) {
     incidentGR.urgency = 3
     incidentGR.update();
 }
+
+//addNullQuery()
+var incidentGR = new GlideRecord('incident')
+incidentGR.addNullQuery('short_description') //will print out the incident's number that has no short description
+incidentGR.query()
+while(incidentGR.next()) {
+    gs.print(incidentGR.number)
+}
