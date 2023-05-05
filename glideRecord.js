@@ -129,3 +129,8 @@ var incidentGR = new GlideRecord('incident')
 incidentGR.addQuery('priority', 0); // this will print
 incidentGR.query()
 gs.print(incidentGR.hasNext()) //will return false
+
+//get()
+var incidentGR = new GlideRecord('incident')
+incidentGR.get('number', 'INC0010009') //doesn't have to be only sys_id, can be any unique field
+gs.print(incidentGR.number)
