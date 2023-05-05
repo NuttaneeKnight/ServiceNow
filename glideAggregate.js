@@ -9,10 +9,11 @@
  * 
  */
 
-var count = new GlideAggregate('incident')
+var count = new GlideAggregate('incident') // better than get row count method. 
 count.addAggregate('COUNT')
 count.query()
 var incidents = 0;
 if(count.next()) {
     incidents = count.getAggregate('COUNT')
-}
+} //not authorized ? Why? 
+
