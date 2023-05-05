@@ -112,6 +112,16 @@ incidentGR.query()
 gs.print(incidentGR.getRowCount())
 
 //hasNext() not the same as the next() it only returns the boolean 
+//next() performs the iteration whil hasNext() does only boolean
 var incidentGR = new GlideRecord('incident')
 incidentGR.query()
 gs.print(incidentGR.hasNext()) // should return the boolean
+
+//hasNext in the if condition
+
+var incidentGR = new GlideRecord('incident')
+incidentGR.query()
+if(incidentGR.hasNext()) {
+    gs.print(incidentGR.number) //nothing will print because the of the hasNext() boolean if use next() the incident number will print
+}
+
