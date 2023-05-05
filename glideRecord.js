@@ -125,3 +125,7 @@ if(incidentGR.hasNext()) {
     gs.print(incidentGR.number) //nothing will print because the of the hasNext() boolean if use next() the incident number will print
 }
 
+var incidentGR = new GlideRecord('incident')
+incidentGR.addQuery('priority', 0); // this will print
+incidentGR.query()
+gs.print(incidentGR.hasNext()) //will return false
