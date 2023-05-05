@@ -139,3 +139,15 @@ gs.print(incidentGR.number)
 var incidentGR = new GlideRecord('incident')
 incidentGR.get('number', 'INC0010009')
 gs.print(incidentGR.getLink())
+
+//deleteMultiple() together with encodedQuery - doesn't need a query to run
+var incidentGR = new GlideRecord('incident')
+incidentGR.addEncodedQuery('short_descriptionLIKEincident #')
+incidentGR.query()
+while(incidentGR.next()) {
+    gs.print(incidentGR.short_description) //good practice to log the record. 
+}
+
+var incidentGR = new GlideRecord('incident')
+incidentGR.addEncodedQuery('short_descriptionLIKEincident #')
+incidentGR.deleteMultiple();
