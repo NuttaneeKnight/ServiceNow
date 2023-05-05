@@ -167,7 +167,7 @@ while(incidentGR.next()) {
     incidentGR.update();
 }
 
-//addNullQuery()
+//addNullQuery() Vs addNotNullQuery()
 var incidentGR = new GlideRecord('incident')
 incidentGR.addNullQuery('short_description') //will print out the incident's number that has no short description
 incidentGR.query()
