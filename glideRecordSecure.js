@@ -6,6 +6,7 @@
  * Replaces canWrite(), canRead(), canUpdate(), canDelete() GlideRecord methods
  * 
  * Will be less lines of code
+ * the code won't execute if the user doesn't have the permission to perform the task
  * 
  * */ 
 
