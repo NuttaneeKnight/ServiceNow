@@ -12,7 +12,7 @@
 var count = new GlideAggregate('incident')
 count.addAggregate('COUNT')
 count.query()
-var incident = 0;
+var incidents = 0;
 if(count.next()) {
     incidents = count.getAggregate('COUNT')
 }
