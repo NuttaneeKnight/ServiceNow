@@ -157,3 +157,12 @@ var incidentGR = new GlideRecord('incident')
 incidentGR.get('number', 'INC0010005')
 incidentGR.urgency = 2
 incidentGR.update()
+
+var incidentGR = new GlideRecord('incident')
+incidentGR.addQuery('urgency', 2)
+incidentGR.query()
+while(incidentGR.next()) {
+    gs.print(incidentGR.number)
+    incidentGR.urgency = 3
+    incidentGR.update();
+}
