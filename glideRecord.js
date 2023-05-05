@@ -151,3 +151,9 @@ while(incidentGR.next()) {
 var incidentGR = new GlideRecord('incident')
 incidentGR.addEncodedQuery('short_descriptionLIKEincident #')
 incidentGR.deleteMultiple();
+
+//update() by changing the urgency aka priority
+var incidentGR = new GlideRecord('incident')
+incidentGR.get('number', 'INC0010005')
+incidentGR.urgency = 2
+incidentGR.update()
