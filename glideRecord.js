@@ -134,3 +134,8 @@ gs.print(incidentGR.hasNext()) //will return false
 var incidentGR = new GlideRecord('incident')
 incidentGR.get('number', 'INC0010009') //doesn't have to be only sys_id, can be any unique field
 gs.print(incidentGR.number)
+
+//getLink()
+var incidentGR = new GlideRecord('incident')
+incidentGR.get('number', 'INC0010009')
+gs.print(incidentGR.getLink())
