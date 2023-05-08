@@ -1,6 +1,6 @@
 Notes for the ServiceNow Developer. 
 
-GlideRecord Recap
+***GlideRecord (gr) Recap***
 
     - Use GlideRecord when dealing with database operations
     - CRUD stands for Create, Read, Update, Delete
@@ -15,7 +15,7 @@ GlideRecord Recap
     - Avoid using GlideRecord in Client Scripts
     - Use GlideRecordSecure where appriate, checking credentials. 
 
-GlideSystem (gs)
+***GlideSystem (gs)***
 
 The GlideSystem API provides a number of convenient methods to get information about the system, the current logged in user, etc.
     - Server-side
@@ -38,3 +38,12 @@ User => Session => date
     addErrorMessage()
     hasRole()
     error()
+    getSession()***
+
+Message & Log Types
+    gs.addErrorMessage()        => will show it in red
+    gs.addInfoMessage()         => will show in blue
+
+    gs.log()                    => find it at System Log => all
+    gs.warn()                   => find at System Log => warnings
+    gs.error()                  => find it at System Log => errors

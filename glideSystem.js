@@ -15,4 +15,5 @@ if(currentHour >= 3 && currentHour < 11) {
     greetingsMessage = 'Good evening ';
 }
 
-greetingsMessage += gs.getUserDisplayName(); //gs method
+greetingsMessage += gs.getUserDisplayName(); //gs method  
+
