@@ -28,7 +28,13 @@ GlideSystem API Diagram
 
 User => Session => date
 
-    getMessage()
+    getMessage()                => provides a way to translate text easily
+                                uses the sys_ui_message table
+                                First argument is the string of the message
+                                System uses current user language as another parameter
+
+                                var message = "Welcome";
+                                var translatedText = gs.getMessage(message);
     print()
     eventQueue()
     addInfoMessage()
