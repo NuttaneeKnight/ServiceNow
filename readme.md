@@ -14,3 +14,12 @@ GlideRecord Recap
     - Log records before deleting or updating
     - Avoid using GlideRecord in Client Scripts
     - Use GlideRecordSecure where appriate, checking credentials. 
+
+GlideSystem
+
+The GlideSystem API provides a number of convenient methods to get information about the system, the current logged in user, etc.
+    - Server-side
+    - System and user data
+    - Referenced by gs
+    - Doesnt need to be invoked
+    - Helper methods
