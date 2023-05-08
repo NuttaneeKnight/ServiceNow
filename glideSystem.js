@@ -1,7 +1,7 @@
 // Print a list of all incidents where the caller is the current user
 
 var incidentGR = new GlideRecord('incident')
-incidentGR.addQuery('caller', gs.getUserID())
+incidentGR.addQuery('caller', gs.getUserID()) // gs method
 incidentGR.query()
 
 // Create a user greetings
@@ -15,4 +15,4 @@ if(currentHour >= 3 && currentHour < 11) {
     greetingsMessage = 'Good evening ';
 }
 
-greetingsMessage += gs.getUserDisplayName();
+greetingsMessage += gs.getUserDisplayName(); //gs method
