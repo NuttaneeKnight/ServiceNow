@@ -15,7 +15,7 @@ GlideRecord Recap
     - Avoid using GlideRecord in Client Scripts
     - Use GlideRecordSecure where appriate, checking credentials. 
 
-GlideSystem
+GlideSystem (gs)
 
 The GlideSystem API provides a number of convenient methods to get information about the system, the current logged in user, etc.
     - Server-side
@@ -23,3 +23,18 @@ The GlideSystem API provides a number of convenient methods to get information a
     - Referenced by gs
     - Doesnt need to be invoked
     - Helper methods
+
+GlideSystem API Diagram
+
+User => Session => date
+
+    getMessage()
+    print()
+    eventQueue()
+    addInfoMessage()
+    beginningOfLastMonth()
+    getProperty()
+    getUser()
+    addErrorMessage()
+    hasRole()
+    error()
