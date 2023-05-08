@@ -39,7 +39,9 @@ User => Session => date
     eventQueue()
     addInfoMessage()
     beginningOfLastMonth()
-    getProperty()
+    getProperty()               => get a system property
+                                best practice instead of hardcoding
+                                getProperty('glide.ui.buttons_bottom') =>returns boolean
     getUser()
     addErrorMessage()
     hasRole()
