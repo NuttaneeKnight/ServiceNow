@@ -54,4 +54,8 @@ gs.print('Helllo ' + gs.getProperty('servicenow.201.hello.world')) // => should 
 gs.print(gs.getUser()) //=>> com.glide.sys.User@19784c0
 //to get a display name you can chain the method
 gs.print(gs.getUser().getDisplayName()) // ==>> returns System Administrator
+gs.print(gs.getUser().getFirstName()) // ==>> returns first name => System
+gs.print(gs.getUser().getLocation()) //returns location id app128037.ytz3.service-now.com:dev90700002
+gs.print(gs.getUser().getUserRoles()) //admin,security_admin
+
 
