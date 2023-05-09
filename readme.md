@@ -114,6 +114,7 @@ FI/FO data structure
             -param2
 
 <<GlideSystem eventQueue() Method>>
+ eventQueue('event.name', current, parm1, parm2)
     -Add events to the event queue
     -Parameters
         Event name
@@ -125,4 +126,8 @@ FI/FO data structure
                       2. Create record
                       1. Login event
 
-        
+<<Demo: Log Hello world! Using Events>>
+    1. Create event registry > Event Registration > servicenow.201.hello.world
+    2. Creat Script Action >Script Action > ServiceNow 201 - Hello World > servicenow.201.hello.world> gs.log('Hello world!', 'marks_logs');
+    3. Run Background script > Runscript (JavaScript executed on server) > gs.eventQueue('')
+    4. Check logs > Log Entry
