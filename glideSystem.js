@@ -29,3 +29,6 @@ gs.error('I am an error message')
 
 //gs.warn()
 gs.warn('I am a warning message');
+
+//gs.addErrormessage()
+gs.addErrorMessage('Stop! This is an erroe message')
