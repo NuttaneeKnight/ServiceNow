@@ -71,3 +71,12 @@ Message & Log Types
                                         gs.print(incientGR.number + ' has a nil short_description')
                                     }
                                 }
+
+***Events in ServiceNow***
+User Events   -Mouse click
+              -Mouse movement
+              -Key press
+
+System Events -Time
+              -Database operation
+              -Network activity
