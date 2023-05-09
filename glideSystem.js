@@ -31,4 +31,7 @@ gs.error('I am an error message')
 gs.warn('I am a warning message');
 
 //gs.addErrormessage()
-gs.addErrorMessage('Stop! This is an erroe message')
+gs.addErrorMessage('Stop! This is an erroe message') // >> Background message, type:error, message: Stop! This is an erroe message
+
+//gs.beginningOfLastMonth()
+gs.print(gs.beginningOfLastMonth())
