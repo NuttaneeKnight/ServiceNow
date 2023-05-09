@@ -80,3 +80,14 @@ User Events   -Mouse click
 System Events -Time
               -Database operation
               -Network activity
+
+ServiceNow Events
+    -Can be triggered by:
+        -CRUD operations on tables (Business Rules)
+        -Workflow activities
+        -Scripts (Scheduled Jobs, Web Services, etc.)
+    -Must be registered
+    -Event components
+        -Registry
+        -Event action (Script Action, Notification)
+        -Event Log
