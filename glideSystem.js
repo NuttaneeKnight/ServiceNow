@@ -44,3 +44,8 @@ gs.print(gs.getMessage('ago'))
 
 //gs.getProperty()
 gs.print('Hello ' + gs.getProperty('servicenow.201.hello.world')) // getting the value of the system property. sys_properties.list
+
+//gs.setProperty()
+gs.setProperty('servicenow.201.hello.world', 'testing');
+//set it first
+gs.print('Helllo ' + gs.getProperty('servicenow.201.hello.world')) // => should return Hello Testing instead. 
