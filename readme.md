@@ -55,3 +55,9 @@ Message & Log Types
     gs.log()                    => find it at System Log => all
     gs.warn()                   => find at System Log => warnings
     gs.error()                  => find it at System Log => errors
+    gs.nil()                    => 
+                                var field = {
+                                    value: '',
+                                    displayValue:'',
+                                }
+                                console.log(fielld == ");
