@@ -21,5 +21,8 @@ var helloText = 'Hello world!';
 gs.print('Hello world!');
 
 
-//gs.log('the log string', 'the source value')
+//gs.log('the log string', 'the source value') >script logs
 gs.log('This is a log message', 'natt_logs')
+
+//gs.error > error logs
+gs.error('I am an error message')
