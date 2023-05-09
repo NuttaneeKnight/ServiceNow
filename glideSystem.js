@@ -17,3 +17,9 @@ if(currentHour >= 3 && currentHour < 11) {
 
 greetingsMessage += gs.getUserDisplayName(); //gs method  
 
+var helloText = 'Hello world!';
+gs.print('Hello world!');
+
+
+//gs.log('the log string', 'the source value')
+gs.log('This is a log message', 'natt_logs')
