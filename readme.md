@@ -92,16 +92,16 @@ ServiceNow Events
         -Event action (Script Action, Notification)
         -Event Log
 
-==Event Component: Registry==
+<<Event Component: Registry>>
 
-==Event Component: EventAction==
+<<Event Component: EventAction>>
     -Script Acttion -server side script that runs when a specific event is triggered
     -Notification
 
-==Event Component: Event Log==
+<<Event Component: Event Log>>
     -2 parameters that are passed in
 
-==Process: Event Queue==
+<<Process: Event Queue>>
 FI/FO data structure
 
 ==Script Actions==
@@ -112,3 +112,17 @@ FI/FO data structure
         -event
             -param1
             -param2
+
+<<GlideSystem eventQueue() Method>>
+    -Add events to the event queue
+    -Parameters
+        Event name
+        GlideRecord object
+        Optional parameter
+        Optional parameter
+
+        Event Queue   3. Save record event
+                      2. Create record
+                      1. Login event
+
+        
