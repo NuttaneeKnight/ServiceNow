@@ -34,4 +34,7 @@ gs.warn('I am a warning message');
 gs.addErrorMessage('Stop! This is an erroe message') // >> Background message, type:error, message: Stop! This is an erroe message
 
 //gs.beginningOfLastMonth()
-gs.print(gs.beginningOfLastMonth())
+gs.print(gs.beginningOfLastMonth()) //Script: 2023-04-01 07:00:00
+
+//gs.generateGUID()
+gs.print(gs.generateGUID())// generate unique global unique identifier => Script: 5c455a4097f2211036743246f053afd0
