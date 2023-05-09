@@ -49,3 +49,9 @@ gs.print('Hello ' + gs.getProperty('servicenow.201.hello.world')) // getting the
 gs.setProperty('servicenow.201.hello.world', 'testing');
 //set it first
 gs.print('Helllo ' + gs.getProperty('servicenow.201.hello.world')) // => should return Hello Testing instead. 
+
+//gs.getUser()
+gs.print(gs.getUser()) //=>> com.glide.sys.User@19784c0
+//to get a display name you can chain the method
+gs.print(gs.getUser().getDisplayName()) // ==>> returns System Administrator
+
