@@ -55,9 +55,19 @@ Message & Log Types
     gs.log()                    => find it at System Log => all
     gs.warn()                   => find at System Log => warnings
     gs.error()                  => find it at System Log => errors
-    gs.nil()                    => 
+    gs.nil()                    => Every field in a GlideRecord is an object
+                                Empty string comparison doesn't always work 
+
                                 var field = {
                                     value: '',
-                                    displayValue:'',
+                                    displayValue:'',  !!! This won't work!!!
                                 }
                                 console.log(fielld == ");
+
+                                var incidentGR = new GlideRecord('incident');;
+                                incidentGR.query();
+                                while(incidentGR.next()) {
+                                    if(gs.nil(incidentGR.short_description)) {
+                                        gs.print(incientGR.number + ' has a nil short_description')
+                                    }
+                                }
