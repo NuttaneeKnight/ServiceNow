@@ -42,3 +42,5 @@ gs.print(gs.generateGUID())// generate unique global unique identifier => Script
 //gs.getMessage() has to change the language setting first to be able to display it.
 gs.print(gs.getMessage('ago'))
 
+//gs.getProperty()
+gs.print('Hello ' + gs.getProperty('servicenow.201.hello.world')) // getting the value of the system property. sys_properties.list
