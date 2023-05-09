@@ -91,3 +91,24 @@ ServiceNow Events
         -Registry
         -Event action (Script Action, Notification)
         -Event Log
+
+==Event Component: Registry==
+
+==Event Component: EventAction==
+    -Script Acttion -server side script that runs when a specific event is triggered
+    -Notification
+
+==Event Component: Event Log==
+    -2 parameters that are passed in
+
+==Process: Event Queue==
+FI/FO data structure
+
+==Script Actions==
+    -Scripts invoked via registered events
+    -Server side
+    -Scope
+        -current
+        -event
+            -param1
+            -param2
