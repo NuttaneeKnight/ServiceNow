@@ -26,3 +26,6 @@ gs.log('This is a log message', 'natt_logs')
 
 //gs.error > error logs
 gs.error('I am an error message')
+
+//gs.warn()
+gs.warn('I am a warning message');
