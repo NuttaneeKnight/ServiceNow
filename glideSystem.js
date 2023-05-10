@@ -57,5 +57,5 @@ gs.print(gs.getUser().getDisplayName()) // ==>> returns System Administrator
 gs.print(gs.getUser().getFirstName()) // ==>> returns first name => System
 gs.print(gs.getUser().getLocation()) //returns location id app128037.ytz3.service-now.com:dev90700002
 gs.print(gs.getUser().getUserRoles()) //admin,security_admin
-
+gs.print(gs.getUserID())
 
