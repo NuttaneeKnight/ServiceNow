@@ -57,5 +57,16 @@ gs.print(gs.getUser().getDisplayName()) // ==>> returns System Administrator
 gs.print(gs.getUser().getFirstName()) // ==>> returns first name => System
 gs.print(gs.getUser().getLocation()) //returns location id app128037.ytz3.service-now.com:dev90700002
 gs.print(gs.getUser().getUserRoles()) //admin,security_admin
-gs.print(gs.getUserID())
+
+//gs.getUserID()
+gs.print(gs.getUserID()) // will return 6816f79cc0a8016401c5a33be04be441
+
+
+var incidentGR = new GlideRecord('incident')
+incidentGR.query('caller', gs.getUserID())
+incidentGR.query();
+while(incidentGR.next()) {
+    gs.print('Incident: ' + incidentGR.number )
+}
+
 
