@@ -131,3 +131,6 @@ FI/FO data structure
     2. Creat Script Action >Script Action > ServiceNow 201 - Hello World > servicenow.201.hello.world> gs.log('Hello world!', 'marks_logs');
     3. Run Background script > Runscript (JavaScript executed on server) > gs.eventQueue('')
     4. Check logs > Log Entry
+
+
+function onSubmit() { var action = g_form.getActionName(); alert('You pressed ' + action); }
