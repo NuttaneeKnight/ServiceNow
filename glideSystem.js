@@ -80,3 +80,12 @@ if(gs.hasRole('itil' || gs.hasRole('admin'))) {
 }
 
 gs.print(gs.getSession().isLoggedIn()) //returns boolean value
+
+//gs.nil()
+var incidentGR = new GlideRecord('incident')
+incidentGR.query();
+while(incidentGR.next()) {
+    if(gs.nil(incidentGR.short_description)) {
+        gs.print('This incident (' + incidentGR.number + ') has no short description: ' + incidentGR.short_description)
+    }
+} //returns This incident (INC0010002) has no short description:
