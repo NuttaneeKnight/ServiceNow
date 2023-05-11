@@ -75,3 +75,6 @@ incidentGR.query()
 gs.print(incidentGR.getEncodedQuery()) //caller=6816f79cc0a8016401c5a33be04be441
 
 //gs.hasRole()
+if(gs.hasRole('itil' || gs.hasRole('admin'))) {
+    gs.print('The current user has ITIL or Admin')
+}
