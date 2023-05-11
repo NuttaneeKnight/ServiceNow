@@ -72,5 +72,6 @@ while(incidentGR.next()) {
 var incidentGR = new GlideRecord('incident')
 incidentGR.addQuery('caller', gs.getUserID())
 incidentGR.query()
-gs.print(incidentGR.getEncodedQuery())
+gs.print(incidentGR.getEncodedQuery()) //caller=6816f79cc0a8016401c5a33be04be441
 
+//gs.hasRole()
