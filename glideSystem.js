@@ -92,3 +92,8 @@ while(incidentGR.next()) {
 
 //gs.tableExists()
 gs.print(gs.tableExists('incident')) //returns a boolean
+
+//gs.xmlToJSON()
+var xmlString = '<root><test>SOME XML</test></root>'
+var json = gs.xmlToJSON(xmlString)
+gs.print(json.root.test)
