@@ -89,3 +89,6 @@ while(incidentGR.next()) {
         gs.print('This incident (' + incidentGR.number + ') has no short description: ' + incidentGR.short_description)
     }
 } //returns This incident (INC0010002) has no short description:
+
+//gs.tableExists()
+gs.print(gs.tableExists('incident')) //returns a boolean
