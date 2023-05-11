@@ -69,4 +69,8 @@ while(incidentGR.next()) {
     gs.print('Incident: ' + incidentGR.number )
 }
 
+var incidentGR = new GlideRecord('incident')
+incidentGR.addQuery('caller', gs.getUserID())
+incidentGR.query()
+gs.print(incidentGR.getEncodedQuery())
 
