@@ -140,3 +140,12 @@ function onSubmit() { var action = g_form.getActionName(); alert('You pressed ' 
     - Changes to form & fields
     - Referenced by g_form
 The GlideForm API provides methods to customize forms. The global object g_form is used to access GlideForm methods. GlideForm methods are only used on the client. These methods are used to make custom changes to the form view of records. 
+
+Can do this with the UI policy but for the purpose of this demo we use g_form
+
+    function onChamge(control, oldValue, newValue) {
+        if (oldValue == newValue)
+        return;
+
+        g_form.setMandatory('short_description', true)
+    }
