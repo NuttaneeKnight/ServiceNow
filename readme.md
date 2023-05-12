@@ -134,3 +134,9 @@ FI/FO data structure
 
 
 function onSubmit() { var action = g_form.getActionName(); alert('You pressed ' + action); }
+
+***GlideFrom***
+    - Client-side
+    - Changes to form & fields
+    - Referenced by g_form
+The GlideForm API provides methods to customize forms. The global object g_form is used to access GlideForm methods. GlideForm methods are only used on the client. These methods are used to make custom changes to the form view of records. 
