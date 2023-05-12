@@ -102,6 +102,3 @@ gs.print(json.root.test)
 gs.eventQueue('Track Clicks on PDI homepage') // go to the logs to see the events
 
 
-// testing git commit and git push 
-//Doesn't behave normally
-//fixing git typo
