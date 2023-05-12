@@ -97,3 +97,6 @@ gs.print(gs.tableExists('incident')) //returns a boolean
 var xmlString = '<root><test>SOME XML</test></root>'
 var json = gs.xmlToJSON(xmlString)
 gs.print(json.root.test)
+
+//gs.eventQueue()
+gs.eventQueue('Track Clicks on PDI homepage')
