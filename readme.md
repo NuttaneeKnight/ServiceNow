@@ -149,3 +149,13 @@ Can do this with the UI policy but for the purpose of this demo we use g_form
 
         g_form.setMandatory('short_description', true)
     }
+
+***Client-Side Environment***
+ - In browser
+ - Acccess to client side APIs
+    - Most are accessible via global scope
+ - Ctrl+Shift+j
+ - Debug to browser control
+    - console.log()
+    - console.dir()
+    
