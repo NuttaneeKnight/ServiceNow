@@ -150,7 +150,7 @@ Can do this with the UI policy but for the purpose of this demo we use g_form
         g_form.setMandatory('short_description', true)
     }
 
-***Client-Side Environment***
+<Client-Side Environment>
  - In browser
  - Acccess to client side APIs
     - Most are accessible via global scope
@@ -158,4 +158,18 @@ Can do this with the UI policy but for the purpose of this demo we use g_form
  - Debug to browser control
     - console.log()
     - console.dir()
-    
+
+<GlideForm API Overview>
+    <g_form>
+        - form
+        - fields
+methods:
+    getValue()
+    setValue()
+    setVisible()
+    addErrorMessage()
+    clearValue()
+    addInfoMessage()
+    getTableName()
+    getReference()
+    save()
