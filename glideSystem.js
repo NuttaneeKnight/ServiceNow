@@ -99,4 +99,4 @@ var json = gs.xmlToJSON(xmlString)
 gs.print(json.root.test)
 
 //gs.eventQueue()
-gs.eventQueue('Track Clicks on PDI homepage')
+gs.eventQueue('Track Clicks on PDI homepage') // go to the logs to see the events
