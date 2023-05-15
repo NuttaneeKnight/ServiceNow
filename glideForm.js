@@ -35,3 +35,6 @@ g_from.setValue('category', 'software') // cannot set it on a readonly field
 
 // clearValue()
 g_form.clearValue('category')
+
+//save()
+g_form.save()
