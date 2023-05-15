@@ -44,7 +44,7 @@ g_form.setDisabled('category', true)
 g_form.setDisabled('category', false)
 
 // hideRelatedList() list
-g_form.hideRelated()
+g_form.hideRelatedList()
 
-//showRelated()
-g_form.showRelated()
+//showRelatedList()
+g_form.showRelatedList()
