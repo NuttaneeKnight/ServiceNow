@@ -29,3 +29,6 @@ console.dir(g_form) //will show the API call for that table
 // getValue()
 var fieldValue = g_form.getValue('category')
 alert(fieldValue) // alert with "Hardware" will pop up
+
+//setValue()
+g_from.setValue('category', 'software')
