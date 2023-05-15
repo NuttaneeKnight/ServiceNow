@@ -48,3 +48,6 @@ g_form.hideRelatedList()
 
 //showRelatedList()
 g_form.showRelatedList()
+
+// isMandatory() - returns a boolean if the current field is set mandatory or not
+alert(g_form.isMandatory('category'))
