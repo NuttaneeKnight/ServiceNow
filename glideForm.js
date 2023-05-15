@@ -21,3 +21,11 @@ var caller = g_form.getReference('caller_id', callerCallback)
 function callerCallback(caller) {
     g_form.setValue('description', caller.first_name + ' ' + caller.last_name + ' says hello.')
 }
+
+// control+shift+j >> to execute js on the window
+// run client side code and leverage servicenow client side API
+console.dir(g_form) //will show the API call for that table
+
+// getValue()
+var fieldValue = g_form.getValue('category')
+alert(fieldValue) // alert with "Hardware" will pop up
