@@ -54,3 +54,7 @@ alert(g_form.isMandatory('category'))
 
 g_form.setMandatory('category', true); 
 alert(g_form.isMandatory('category'))
+
+// isNewReccord() returns boolean
+var isNewRecord = g_form.isNewRecord()
+alert('Is this a new record? '+ isNewRecord)
