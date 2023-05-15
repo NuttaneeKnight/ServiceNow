@@ -61,3 +61,6 @@ alert('Is this a new record? '+ isNewRecord)
 
 // addInfoMessage()
 g_form.addInfoMessage('Hello World!')
+
+// addErrorMessaage()
+g_form.addErrorMessage('Something is wrong')
