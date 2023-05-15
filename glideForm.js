@@ -38,3 +38,8 @@ g_form.clearValue('category')
 
 //save()
 g_form.save()
+
+//setDisabled()
+g_form.setDisabled('category', true) 
+g_form.setDisabled('category', false)
+
