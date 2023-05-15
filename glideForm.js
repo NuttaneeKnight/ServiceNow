@@ -31,4 +31,4 @@ var fieldValue = g_form.getValue('category')
 alert(fieldValue) // alert with "Hardware" will pop up
 
 //setValue()
-g_from.setValue('category', 'software')
+g_from.setValue('category', 'software') // cannot set it on a readonly field
