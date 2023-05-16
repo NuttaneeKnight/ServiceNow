@@ -64,3 +64,6 @@ g_form.addInfoMessage('Hello World!')
 
 // addErrorMessaage()
 g_form.addErrorMessage('Something is wrong')
+
+// clearMessages()
+g_form.clearMessage()
