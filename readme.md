@@ -173,3 +173,11 @@ methods:
     getTableName()
     getReference()
     save()
+
+<GlideUser API>
+ - Client-side
+ - User information
+ - Referenced by g_user
+ - Relatively small and simple API
+
+ The GlideUser API provides access to information about the currrent user and current user roles. Using the GlideUser API avoids the need to use the slower GlideRecord queries to get user information
