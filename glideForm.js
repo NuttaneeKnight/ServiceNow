@@ -70,3 +70,7 @@ g_form.clearMessage()
 
 //getLabelOf()
 alert(g_form.getLabelOf('category'))
+
+// getTableName()
+var tableName = g_form.getTableName()
+alert('Table: ' + tableName)
