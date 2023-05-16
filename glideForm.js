@@ -67,3 +67,6 @@ g_form.addErrorMessage('Something is wrong')
 
 // clearMessages()
 g_form.clearMessage()
+
+//getLabelOf()
+alert(g_form.getLabelOf('category'))
