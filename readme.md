@@ -209,4 +209,6 @@ methods:
     console.log(g_user.hasRole('approval_admin')) returns true
     console.log(g_user.hasRoleExactly('approval_admin')) returns false
 
-    
+    GlideUser Properties
+    - Object Properties
+    - Don't need getter methods
