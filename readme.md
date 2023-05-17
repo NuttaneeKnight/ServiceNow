@@ -188,3 +188,6 @@ methods:
     if(!hasITIL) {
         alert('You do not have the permission')
     }
+
+    get the link
+    template.print("<a href='"+gs.getProperty('glide.servlet.uri')+ "kb_feedback_task.do?sys_id="+    current.sys_id + "'>"+ current.number +"</a><br/><br/>");
