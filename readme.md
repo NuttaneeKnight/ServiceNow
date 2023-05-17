@@ -181,3 +181,10 @@ methods:
  - Relatively small and simple API
 
  The GlideUser API provides access to information about the currrent user and current user roles. Using the GlideUser API avoids the need to use the slower GlideRecord queries to get user information
+
+    Check if the current user has the ITIL role
+
+    var hasITIL = g_user.hasRole('itil');
+    if(!hasITIL) {
+        alert('You do not have the permission')
+    }
