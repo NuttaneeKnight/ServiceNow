@@ -212,3 +212,5 @@ methods:
     GlideUser Properties
     - Object Properties
     - Don't need getter methods
+
+    Go to DevTool and type console.dir(g_user) to get all the properties
