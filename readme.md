@@ -206,5 +206,7 @@ methods:
     - Takes the name of a role as its argument
     - RReturns true only if user has the specified rolw, even if current user is admin
 
-    console.log(g_user.hasRole('approval_admin'))
-    console.log(g_user.hasRoleExactly('approval_admin'))
+    console.log(g_user.hasRole('approval_admin')) returns true
+    console.log(g_user.hasRoleExactly('approval_admin')) returns false
+
+    
