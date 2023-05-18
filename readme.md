@@ -252,3 +252,7 @@ The GlideAjax class enables a client script to call server-side code in a script
  - 1 Client-side code calls GlideAjjax API, which makes XMLHttpRequest to server (such as onLoad)
  - 2 Server-side code processes the request and returns a response
  - 3 Client-side code processes the response
+
+<2 Scripting Locations To GlideAjax>
+ - 1 Client-side code, Client Script or UI Page
+ - 2 Server-side code, Script Include
