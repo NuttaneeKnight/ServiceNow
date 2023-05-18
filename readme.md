@@ -248,3 +248,7 @@ The GlideAjax class enables a client script to call server-side code in a script
   without requiring a 'page reload'
   - Uses browsers's XMLHttpRequest API
 
+<3 Stages of GlieAjax>
+ - 1 Client-side code calls GlideAjjax API, which makes XMLHttpRequest to server (such as onLoad)
+ - 2 Server-side code processes the request and returns a response
+ - 3 Client-side code processes the response
