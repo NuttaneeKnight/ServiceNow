@@ -214,3 +214,22 @@ methods:
     - Don't need getter methods
 
     Go to DevTool and type console.dir(g_user) to get all the properties
+
+<Where to use GlideForm and GlideUser API?>
+
+<Client Side>
+g_form & g_user
+    Client Scripts
+    UI Actions
+    UI Scripts
+    Service Portal
+
+<Server Side>
+GlideRecord(gr), GlideSystem(gs), GlideDateTime
+    Business Rules
+    UI Actions
+    Script Includes
+    Scheduled Jobs
+    Service Portal
+    Web Services
+    Workflows
