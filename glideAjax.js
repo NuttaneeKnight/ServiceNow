@@ -19,12 +19,12 @@ Task => Update geolocation on task => Task form
 function onLoad() {
     var ga = new GlideAjax('ServiceNow201GlideAjax')
     ga.addParam('sysparm_name', 'sayHello')
-    ga.getXML(ajaxProcessor)
+    ga.getXML(ajaxProcessor) //trigger ajax request
 }
 
 function ajaxProcessor(response) {
-    var answer = response.responseXML.documentElement.getAttribute('answer');
-    g_form.setValue('short_description', answer)
+    var answer = response.responseXML.documentElement.getAttribute('answer'); //answer will return the Hello world!
+    g_form.setValue('short_description', answer) // now we set Hello World into the short description
 }
 // 2. Server-side code
 var ServiceNow201GlideAjax = Class.create()
