@@ -240,3 +240,11 @@ The GlideAjax class enables a client script to call server-side code in a script
  - Client-side
  - Used to call server-side Script Includes
  - Similar to jQuery's ajax method
+
+<AJAX>
+  - Asynchronous JavaScript and XML
+  - Popularized by Google in Google Maps and Gmail
+  - Way to make client-side requests to server-side
+  without requiring a 'page reload'
+  - Uses browsers's XMLHttpRequest API
+
