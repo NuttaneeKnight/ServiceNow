@@ -234,4 +234,9 @@ GlideRecord(gr), GlideSystem(gs), GlideDateTime
     Web Services
     Workflows
 
-    TEST
+<GlideAjax API>
+The GlideAjax class enables a client script to call server-side code in a script include
+
+ - Client-side
+ - Used to call server-side Script Includes
+ - Similar to jQuery's ajax method
