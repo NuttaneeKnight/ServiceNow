@@ -31,6 +31,21 @@ function ajaxProcessor(response) {
     var answer = response.responseXML.documentElement.getAttribute('answer'); //answer will return the Hello world!
     g_form.setValue('short_description', answer) // now we set Hello World into the short description
 }
+/* 
+Script Includes
+ - Run on the server-side
+ - Contain reusable snippets of code, making them modular
+ - Only executed when invoked from another source
+    - Client-side using GlideAjax
+    - Server-side using the new JavaScript operator
+ - May extend other JavaScript classes
+ - When used GlideAjax
+    - Must have Client callable set to true
+    - Extends the AbstractAjaxProcessor class
+    - Typically queries a table and returns record(s) to client-side as JSON
+    - Has access to any variable from client-side that starts with sysparm_
+    - Uses sysparm_name to invoke method in Script Include
+*/
 // 2. Server-side code
 var ServiceNow201GlideAjax = Class.create()
 ServiceNow201GlideAjax.prototype = Object.extensObject(AbstractAjaxProcessor, {
