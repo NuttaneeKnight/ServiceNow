@@ -34,3 +34,9 @@ ServiceNow201GlideAjax.prototype = Object.extensObject(AbstractAjaxProcessor, {
     },
     type: 'ServiceNow201GlideAjax'
 })
+
+/*
+It All Starts With GlideAjax
+ 1. Create a new GlideAjax object
+ 2. Add name of Script In
+*/
