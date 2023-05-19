@@ -94,3 +94,21 @@ JSON
   - Can be a pain to parse
 
 */
+
+/* GlideAjax getXMLAnswer() Method
+
+Shortcut to
+ - getXML()
+ - response.responseXML.documentElement.getAttribute('answer')
+ - Example code below
+*/
+
+function onLoad() {
+    var ga = new GlideAjax('ServiceNow201GlideAjax')
+    ga.addParam('sysparm_name', 'sayHello')
+    ga.getXMLAnswer(ajaxProcessor)
+}
+function ajazProcessor(answer) {
+    //var answer = response.responseXML.documentElement.getAttribute('answer') >> replaced by getXMLAnswer()
+    g_form.setValue('short_description', answer)
+}
