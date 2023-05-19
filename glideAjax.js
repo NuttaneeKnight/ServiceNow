@@ -26,7 +26,18 @@ function onLoad() {
     ga.addParam('sysparm_name', 'sayHello')
     ga.getXML(ajaxProcessor) //trigger ajax request
 }
+/* STAGE 3
+Go back to the Client side
 
+Returned Payload
+ - XML is returned to the client-seide from the server-side (even if JSON)
+ - Use the following to retrieve answer
+    - response.responseXML.documentElement.getAttribut('answer')
+
+The JavaScript Callback
+ - A callback is a function that is passed as an argument, which is then executed at a later time
+ - Once the cliebt receives the response from the server, the callcack is invoked
+*/
 function ajaxProcessor(response) {
     var answer = response.responseXML.documentElement.getAttribute('answer'); //answer will return the Hello world!
     g_form.setValue('short_description', answer) // now we set Hello World into the short description
@@ -68,11 +79,4 @@ ServiceNow201GlideAjax.prototype = Object.extensObject(AbstractAjaxProcessor, {
     type: 'ServiceNow201GlideAjax'
 })
 
-/* STAGE 3
-Go back to the Client side
 
-Returned Payload
- - XML is returned to the client-seide from the server-side (even if JSON)
- - Use the following to retrieve answer
-    - response.responseXML.documentElement.getAttribut('answer')
-*/
