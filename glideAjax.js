@@ -14,7 +14,12 @@ Task => Update geolocation on task => Task form
 */
 
 // Update the short description field of an incident to Hello world! on load.
-
+/*
+It All Starts With GlideAjax
+ 1. Create a new GlideAjax object
+ 2. Add name of Script Include method as sysparm_name parameter
+ 3. Call getXML() method and pass the name of the callback as an argument
+*/
 //1. Client-side code
 function onLoad() {
     var ga = new GlideAjax('ServiceNow201GlideAjax')
@@ -35,8 +40,3 @@ ServiceNow201GlideAjax.prototype = Object.extensObject(AbstractAjaxProcessor, {
     type: 'ServiceNow201GlideAjax'
 })
 
-/*
-It All Starts With GlideAjax
- 1. Create a new GlideAjax object
- 2. Add name of Script In
-*/
