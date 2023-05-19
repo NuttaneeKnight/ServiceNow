@@ -14,7 +14,7 @@ Task => Update geolocation on task => Task form
 */
 
 // Update the short description field of an incident to Hello world! on load.
-/*
+/* STAGE 1
 It All Starts With GlideAjax
  1. Create a new GlideAjax object
  2. Add name of Script Include method as sysparm_name parameter
@@ -31,7 +31,7 @@ function ajaxProcessor(response) {
     var answer = response.responseXML.documentElement.getAttribute('answer'); //answer will return the Hello world!
     g_form.setValue('short_description', answer) // now we set Hello World into the short description
 }
-/* 
+/* STAGE 2
 Script Includes
  - Run on the server-side
  - Contain reusable snippets of code, making them modular
