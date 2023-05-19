@@ -10,10 +10,10 @@ Task => Update geolocation on task => Task form
 6. Requestfrom client invokes Script Include, where request data is used to call specific methods with arguments. Then data is packaged upp in the form of a response. 
 7. Browser receives response from the server side
 8. Client Script callback processes returned data and updates location field on task.
-
 */
 
 // Update the short description field of an incident to Hello world! on load.
+
 /* STAGE 1
 It All Starts With GlideAjax
  1. Create a new GlideAjax object
@@ -50,8 +50,16 @@ Extending AbstractAjaxProcessor
  - AbstractAjaaxProcessor is an out-of-the-box Script Include
  - Provides helper methods
  - Client callable checkbox automatically generates required JavaScript
+
+The GlideAjax Script Include
+ 1. Method passed in sysparm_name gets invoked
+ 2. Server-side scripts are ran
+ 3. return statement ends server-side script execution
+ 4. Response is packaged up as XML and sent to client
 */
+
 // 2. Server-side code
+
 var ServiceNow201GlideAjax = Class.create()
 ServiceNow201GlideAjax.prototype = Object.extensObject(AbstractAjaxProcessor, {
     sayHello: function() {
