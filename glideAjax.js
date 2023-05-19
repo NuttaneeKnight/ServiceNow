@@ -38,7 +38,7 @@ The JavaScript Callback
  - A callback is a function that is passed as an argument, which is then executed at a later time
  - Once the cliebt receives the response from the server, the callcack is invoked
 */
-function ajaxProcessor(response) {
+function ajaxProcessor(response) { //callback
     var answer = response.responseXML.documentElement.getAttribute('answer'); //answer will return the Hello world!
     g_form.setValue('short_description', answer) // now we set Hello World into the short description
 }
@@ -80,3 +80,17 @@ ServiceNow201GlideAjax.prototype = Object.extensObject(AbstractAjaxProcessor, {
 })
 
 
+/* JSON OR XML
+
+JSON
+ - JavaScript Object Notation
+ - Very easy and fast to parse
+ - Uses collections of key/value pairs
+ - Support arrays
+
+ XML
+  - Extensible Markup Language
+  - Uses nodes and node attributes
+  - Can be a pain to parse
+
+*/
