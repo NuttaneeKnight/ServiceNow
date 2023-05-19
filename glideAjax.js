@@ -45,6 +45,11 @@ Script Includes
     - Typically queries a table and returns record(s) to client-side as JSON
     - Has access to any variable from client-side that starts with sysparm_
     - Uses sysparm_name to invoke method in Script Include
+
+Extending AbstractAjaxProcessor
+ - AbstractAjaaxProcessor is an out-of-the-box Script Include
+ - Provides helper methods
+ - Client callable checkbox automatically generates required JavaScript
 */
 // 2. Server-side code
 var ServiceNow201GlideAjax = Class.create()
