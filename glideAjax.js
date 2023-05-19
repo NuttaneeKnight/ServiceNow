@@ -112,3 +112,11 @@ function ajazProcessor(answer) {
     //var answer = response.responseXML.documentElement.getAttribute('answer') >> replaced by getXMLAnswer()
     g_form.setValue('short_description', answer)
 }
+
+/* GlideAjax API Overview
+
+GlideAjax
+ - addParam()
+ - getXML()
+ - getXMLAnswer()
+*/
