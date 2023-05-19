@@ -68,3 +68,11 @@ ServiceNow201GlideAjax.prototype = Object.extensObject(AbstractAjaxProcessor, {
     type: 'ServiceNow201GlideAjax'
 })
 
+/* STAGE 3
+Go back to the Client side
+
+Returned Payload
+ - XML is returned to the client-seide from the server-side (even if JSON)
+ - Use the following to retrieve answer
+    - response.responseXML.documentElement.getAttribut('answer')
+*/
