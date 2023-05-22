@@ -8,7 +8,17 @@
   - Navigate to the incident table
   - Click the hanburger icon and navigate to >> Configure (if it's not there, go to the table header names and click right)>> Client Scripts
   - Create a brand new client script
-
-
+  - Find the new onLoad() Client script below
 */
+
+function onLoad() {
+    var ga = new GlideAjax('ServiceNow201GlideAjax')
+    ga.addParam('sysparm_name', 'sayHello')
+    ga.getXML(ajaxProcessor)
+}
+
+function ajaxProcessor(response) {
+    var answer = response.responseXML.documentElement.getAttribute('answer')
+    g_form.setValue('short_description', answer)
+}
 
