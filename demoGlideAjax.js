@@ -77,3 +77,5 @@ function ajaxProcessor(response) {
 	var answer = response.responseXML.documentElement.getAttribute('answer');
 	consle.log('Status: ' + answer);
 }
+
+// CLick webtool and click to Try it, Example 2 should render on the <h1> tag that we added on the html script
