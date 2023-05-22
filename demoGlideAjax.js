@@ -22,3 +22,10 @@ function ajaxProcessor(response) {
     g_form.setValue('short_description', answer)
 }
 
+/* 
+
+Want to log a status of a specific incident every 5s to the UI page.
+
+
+*/
+
