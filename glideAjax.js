@@ -120,3 +120,5 @@ GlideAjax
  - getXML()
  - getXMLAnswer()
 */
+
+TextDecoderStream()
