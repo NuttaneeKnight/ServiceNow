@@ -17,7 +17,20 @@ ServiceNow201GlideAjax.prototype = Object.extendsObject(AbstractAjaxProcessor, {
     },
 
     getLatestIncidents: function() {
-
+        var incident = [];
+        var limit = parseInt(this.getParameter('sysparm_limit'))
+        if(!gs.nil(limit) && typeof limit === 'number') {
+            incidentGR.orderByDesc('sys_created_on');
+            incidentGR.setLimit(limit);
+            incidentGR.query();
+            while(incidentGR.next()) {
+                var record = {};
+                record.number = incidentGR.number.getDisplayValue();
+                record.sysID = incidentGR.sys_id.getDisplayValue();
+                record.shortDescription = incidentGR.short_description.getDisplayValue();
+                incident.push(record);
+            }
+        }
     },
 
     sayHello: function() {
