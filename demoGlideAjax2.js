@@ -55,3 +55,16 @@ ServiceNow201GlideAjax.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 
 // Scroll down to client script. 
 
+var ga = new GlideAjax('ServiceNow201GlideAjax');
+ga.addParam('sysparm_name', 'getLatestIncidents');
+ga.addParam('sysparm_limit', '5');
+ga.getXML(ajaxProcessor);
+
+function ajaxProcessor(response) {
+	console.log('Response payload: ' + response);
+	var answer = response.responseXML.documentElement.getAttribute('answer');
+	console.log('Answer: ' + answer);
+	var json = answer.evalJSON();
+	console.log('JSON: ' + json);
+	console.log(json[0].shortDescription);
+}
