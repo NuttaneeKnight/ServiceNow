@@ -30,6 +30,7 @@ ServiceNow201GlideAjax.prototype = Object.extendsObject(AbstractAjaxProcessor, {
                 record.shortDescription = incidentGR.short_description.getDisplayValue();
                 incident.push(record);
             }
+            return new JSON().encode(incidents);
         }
     },
 
