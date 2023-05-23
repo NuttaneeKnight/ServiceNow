@@ -23,3 +23,12 @@ var gdt = new GlideDateTime("2017-05-25 12:02:/30")
 //option 3 - string variable
 var someTimeAgo = "2017-05-25 12:02:30"
 var gdt = new GlideDateTime(someTimeAgo)
+
+// GlideDateTime substract( Method)
+// Show the difference in time (days, minutes, seconds) between 2 dates
+
+var start = new GlideDateTime("2017-01-01 09:00:00")
+var end = new GlideDateTime("2017-01-7 08:00:00")
+
+var difference = GlideDateTime.substract(start, end)
+getSelection.print(difference.getDisplayValue())
