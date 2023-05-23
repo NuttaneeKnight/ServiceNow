@@ -31,6 +31,8 @@ ServiceNow201GlideAjax.prototype = Object.extendsObject(AbstractAjaxProcessor, {
                 incident.push(record);
             }
             return new JSON().encode(incidents);
+        } else {
+            return "something isn't right....."
         }
     },
 
