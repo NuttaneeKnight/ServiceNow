@@ -76,4 +76,8 @@ function ajaxProcessor(response) {
  - Use Script Includes to store the server-side code you'd like to run with GlideAjax
  - By default, XML is returned by the GlideAjax API
  - Use APIs to encode/decode JSON
+
+  - The GlideAjax API is exposed to the developer on the Client-Side
+  - Which GlideAjax method executes the browser's Ajax request? getXML()
+  - What does a GlideAjax script call on the server side? A Script Include
 */
