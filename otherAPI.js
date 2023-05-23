@@ -11,3 +11,15 @@ Used for
 Server-side API
 
 */
+
+// GlideDate Time Instantiation
+
+// option 1- current time in GMT
+var gdt = new GlideDateTime();
+
+// option 2 - instantiating a GideDateTime object with string
+var gdt = new GlideDateTime("2017-05-25 12:02:/30")
+
+//option 3 - string variable
+var someTimeAgo = "2017-05-25 12:02:30"
+var gdt = new GlideDateTime(someTimeAgo)
