@@ -42,3 +42,16 @@ ServiceNow201GlideAjax.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 
     type: 'ServiceNow201GlideAjax'
 });
+
+// After save the code above in the script includes >> Go to System UI >> UI Pages
+//Create the new UI and add <h>, make it Example 3
+
+/* 
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<h1>Example 3</h1>
+</j:jelly>
+*/
+
+// Scroll down to client script. 
+
