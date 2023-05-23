@@ -68,3 +68,12 @@ function ajaxProcessor(response) {
 	console.log('JSON: ' + json);
 	console.log(json[0].shortDescription);
 }
+
+/* Final Recap
+
+ - Use GlideAjax when you need to access server-side data while on the cliet-side
+ - GlideAjax is available to you within any client-side scripting location
+ - Use Script Includes to store the server-side code you'd like to run with GlideAjax
+ - By default, XML is returned by the GlideAjax API
+ Use APIs to encode/decode JSON
+*/
