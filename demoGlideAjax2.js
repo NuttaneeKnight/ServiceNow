@@ -75,5 +75,5 @@ function ajaxProcessor(response) {
  - GlideAjax is available to you within any client-side scripting location
  - Use Script Includes to store the server-side code you'd like to run with GlideAjax
  - By default, XML is returned by the GlideAjax API
- Use APIs to encode/decode JSON
+ - Use APIs to encode/decode JSON
 */
