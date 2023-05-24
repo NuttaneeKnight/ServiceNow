@@ -97,14 +97,14 @@ The scoped GlideElement API provide a number of convenient script methods for de
 // direct access
 var incidentGR = new GlideRecord('incident')
 incidentGR.get('b089548397b2211036743246f053af4c')
-gs.print(incidentGR.caller_id)
+gs.print(incidentGR.caller_id) // print caller id
 
 // toString()
 var incidentGR = new GlideRecord('incident')
 incidentGR.get('b089548397b2211036743246f053af4c')
-gs.print(incidentGR.caller_id.toString())
+gs.print(incidentGR.caller_id.toString()) // print the caller id
 
 // getDisplayValue()
 var incidentGR = new GlideRecord('incident')
 incidentGR.get('b089548397b2211036743246f053af4c')
-gs.print(incidentGR.caller_id.getDisplayValue())
+gs.print(incidentGR.caller_id.getDisplayValue()) // Print the name if the caller
