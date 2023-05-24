@@ -77,3 +77,16 @@ var gdt2 = new GlideDateTime()
 gs.print('gdt2: ' + gdt2)
 var difference = GlideDateTime.subtract(gdt, gdt2)
 gs.print('difference: '  + difference.getDisplayValue()) // seconds is not evaluated through this method. 
+
+/* 
+GlideElement API
+
+The scoped GlideElement API provide a number of convenient script methods for dealing with fields and their values. Scoped GlideElement methods are available for the fields of the current GlideRecord
+
+- Used for:
+    - Accessing GlideRecord fields
+    - Manupulating GlideRecord fields
+
+- Server-side API
+
+*/
