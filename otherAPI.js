@@ -43,3 +43,10 @@ gs.print(gdt2)
 var someTimeAgo = "2017-05-25 12:02:30"
 var gdt3 = new GlideDateTime(someTimeAgo);
 gs.print(gdt3);
+
+// addDaysUTC()
+var gdt = new GlideDateTime()
+gs.print('Now: ' + gdt)
+gdt.addDaysUTC(3)
+gs.print('New value: ' + gdt)
+
