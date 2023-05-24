@@ -32,3 +32,9 @@ var end = new GlideDateTime("2017-01-7 08:00:00")
 
 var difference = GlideDateTime.substract(start, end)
 gs.print(difference.getDisplayValue())
+
+// Use it on the background script.
+var gdt = new GlideDateTime();
+gs.print(gdt)
+
+var gdt2 = new GlideDateTime('2017-05-25 12:02:30')
