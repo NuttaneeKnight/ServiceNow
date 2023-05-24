@@ -38,3 +38,8 @@ var gdt = new GlideDateTime();
 gs.print(gdt)
 
 var gdt2 = new GlideDateTime('2017-05-25 12:02:30')
+gs.print(gdt2)
+
+var someTimeAgo = "2017-05-25 12:02:30"
+var gdt3 = new GlideDateTime(someTimeAgo);
+gs.print(gdt3);
