@@ -61,3 +61,11 @@ var gdt = new GlideDateTime()
 gs.print('Now: ' + gdt)
 var gdt2 = new GlideDateTime()
 gs.print('is gdt before gdt2? ' + gdt.before(gdt2))
+
+
+// compareTo()
+var gdt = new GlideDateTime('2017-06-27 19:46:39')
+gs.print('gdt: ' + gdt)
+var gdt2 = new GlideDateTime()
+gs.print('gdt2: ' + gdt2)
+gs.print('is gdt before gdt2? ' + gdt.compareTo(gdt2)) 
