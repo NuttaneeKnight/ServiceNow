@@ -94,3 +94,17 @@ The scoped GlideElement API provide a number of convenient script methods for de
 // GlideElement getDisplayValue() Method
 // Direct access vs toString() vs getDisplayValue()
 
+// direct access
+var incidentGR = new GlideRecord('incident')
+incidentGR.get('b089548397b2211036743246f053af4c')
+gs.print(incidentGR.caller_id)
+
+// toString()
+var incidentGR = new GlideRecord('incident')
+incidentGR.get('b089548397b2211036743246f053af4c')
+gs.print(incidentGR.caller_id.toString())
+
+// getDisplayValue()
+var incidentGR = new GlideRecord('incident')
+incidentGR.get('b089548397b2211036743246f053af4c')
+gs.print(incidentGR.caller_id.getDisplayValue())
