@@ -90,3 +90,7 @@ The scoped GlideElement API provide a number of convenient script methods for de
 - Server-side API
 
 */
+
+// GlideElement getDisplayValue() Method
+// Direct access vs toString() vs getDisplayValue()
+
