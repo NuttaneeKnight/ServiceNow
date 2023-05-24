@@ -130,7 +130,7 @@ gs.print(incidentGR.comments.getJournalEntry(-1))
 
 // nil method in glideElement
 
-var incidentGR = newGlideRecord('incident')
+var incidentGR = new GlideRecord('incident')
 incidentGR.query()
 while(incidentGR.next()) {
     if(incidentGR.short_description.nil()) {
