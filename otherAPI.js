@@ -69,3 +69,11 @@ gs.print('gdt: ' + gdt)
 var gdt2 = new GlideDateTime()
 gs.print('gdt2: ' + gdt2)
 gs.print('compare ' + gdt.compareTo(gdt2)) //false return -1
+
+// substract()
+var gdt = new GlideDateTime('2017-06-27 19:46:39')
+gs.print('gdt: ' + gdt)
+var gdt2 = new GlideDateTime()
+gs.print('gdt2: ' + gdt2)
+var difference = GlideDateTime.substract(gdt, gdt2)
+gs.print('difference: '  + difference.getDisplayValue())
