@@ -121,9 +121,19 @@ gs.print(kbArticleGR.text.getHTMLValue())
 
 var incidentGR = new GlideRecord('incident')
 incidentGR.get('b089548397b2211036743246f053af4c')
-gs.print(incidentGR.comment)
+gs.print(incidentGR.comments)
 
 //grab all the journal entries
 var incidentGR = new GlideRecord('incident')
 incidentGR.get('b089548397b2211036743246f053af4c')
 gs.print(incidentGR.comments.getJournalEntry(-1))
+
+// nil method in glideElement
+
+var incidentGR = newGlideRecord('incident')
+incidentGR.query()
+while(incidentGR.next()) {
+    if(incidentGR.short_description.nil()) {
+        gs.print(incidentGR.number)
+    }
+}
