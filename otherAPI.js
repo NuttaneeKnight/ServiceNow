@@ -108,3 +108,10 @@ gs.print(incidentGR.caller_id.toString()) // print the caller id
 var incidentGR = new GlideRecord('incident')
 incidentGR.get('b089548397b2211036743246f053af4c')
 gs.print(incidentGR.caller_id.getDisplayValue()) // Print the name if the caller
+
+// GlideElement getHTMLValue()
+// Grab thee HTML of an HTML field
+
+var kbArticleGR = new GlideRecord('kb_knowledge')
+kbArticleGR.get('e97ee81eff6002009b20ffffffffffe0')
+gs.print(kbArticleGR.text.getHTMLValue())
