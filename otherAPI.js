@@ -136,4 +136,4 @@ while(incidentGR.next()) {
     if(incidentGR.short_description.nil()) {
         gs.print(incidentGR.number)
     }
-}
+} // print the incidents that has no short description
