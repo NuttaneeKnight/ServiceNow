@@ -50,3 +50,8 @@ gs.print('Now: ' + gdt)
 gdt.addDaysUTC(3)
 gs.print('New value: ' + gdt)
 
+// addMonthsUTC()
+var gdt = new GlideDateTime()
+gs.print('Now: ' + gdt)
+gdt.addMonthsUTC(3)
+gs.print('New value: ' + gdt)
