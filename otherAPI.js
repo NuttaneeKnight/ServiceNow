@@ -76,4 +76,4 @@ gs.print('gdt: ' + gdt)
 var gdt2 = new GlideDateTime()
 gs.print('gdt2: ' + gdt2)
 var difference = GlideDateTime.subtract(gdt, gdt2)
-gs.print('difference: '  + difference.getDisplayValue())
+gs.print('difference: '  + difference.getDisplayValue()) // seconds is not evaluated through this method. 
