@@ -31,4 +31,4 @@ var start = new GlideDateTime("2017-01-01 09:00:00")
 var end = new GlideDateTime("2017-01-7 08:00:00")
 
 var difference = GlideDateTime.substract(start, end)
-getSelection.print(difference.getDisplayValue())
+gs.print(difference.getDisplayValue())
