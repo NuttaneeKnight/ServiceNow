@@ -115,3 +115,15 @@ gs.print(incidentGR.caller_id.getDisplayValue()) // Print the name if the caller
 var kbArticleGR = new GlideRecord('kb_knowledge')
 kbArticleGR.get('e97ee81eff6002009b20ffffffffffe0')
 gs.print(kbArticleGR.text.getHTMLValue())
+
+// glideElement get JournalEntry()
+// Grab the display value of a reference field
+
+var incidentGR = new GlideRecord('incident')
+incidentGR.get('b089548397b2211036743246f053af4c')
+gs.print(incidentGR.comment)
+
+//grab all the journal entries
+var incidentGR = new GlideRecord('incident')
+incidentGR.get('b089548397b2211036743246f053af4c')
+gs.print(incidentGR.comments.getJournalEntry(-1))
