@@ -35,7 +35,7 @@ gs.print(difference.getDisplayValue())
 
 // Use it on the background script.
 var gdt = new GlideDateTime();
-gs.print(gdt)
+gs.print(gdt) // can add typeof to see what typy of value it is (typeof gdt)
 
 var gdt2 = new GlideDateTime('2017-05-25 12:02:30')
 gs.print(gdt2)
