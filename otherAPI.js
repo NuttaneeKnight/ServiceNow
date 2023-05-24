@@ -55,3 +55,9 @@ var gdt = new GlideDateTime()
 gs.print('Now: ' + gdt)
 gdt.addMonthsUTC(3)
 gs.print('New value: ' + gdt)
+
+// before() will be false because the processing time is faster than the system
+var gdt = new GlideDateTime()
+gs.print('Now: ' + gdt)
+var gdt2 = new GlideDateTime()
+gs.print('is gdt before gdt2? ' + gdt.before(gdt2))
