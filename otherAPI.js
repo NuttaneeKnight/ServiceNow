@@ -218,3 +218,10 @@ someScript.prototype = Object.extendsObject(AbstractAjaxProcessor, {
     type: 'someScript'
 })
 
+/* 
+Creating Our Own API (With Script Include)
+ -What we'll need
+  - A collection of common functions
+  - A Acript Include
+  - A place we'd like to invooke them from 
+*/
