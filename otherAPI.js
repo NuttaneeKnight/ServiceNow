@@ -144,7 +144,7 @@ while(incidentGR.next()) {
 
  - Used for: working with XML documents and nodes
  - Server-side API
-
+ - check in bg script
 */
 var xmlString = '<xml><incident><actions_taken/><active>true</active><activity_due/><additional_assignee_list/><approval>not requested</approval><approval_history/><approval_set/><assigned_to display_value="Mickey Mouse">b64ad88397b2211036743246f053afef</assigned_to></incident></xml>'
 
@@ -158,4 +158,12 @@ var xmlString = '<xml><incident><actions_taken/><active>true</active><activity_d
 var xmlDocument = new XMLDocument2()
 xmlDocument.parseXML(xmlString)
 xmlDocument.createElement('pet')
+gs.print(xmlDocument)
+
+//createElementWithTextValue()
+var xmlString = '<xml><incident><actions_taken/><active>true</active><activity_due/><additional_assignee_list/><approval>not requested</approval><approval_history/><approval_set/><assigned_to display_value="Mickey Mouse">b64ad88397b2211036743246f053afef</assigned_to></incident></xml>'
+
+var xmlDocument = new XMLDocument2()
+xmlDocument.parseXML(xmlString)
+xmlDocument.createElementWithTextValue('pet', 'Oscar')
 gs.print(xmlDocument)
