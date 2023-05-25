@@ -174,3 +174,15 @@ var xmlString = '<xml><incident><actions_taken/><active>true</active><activity_d
 var xmlDocument = new XMLDocument2()
 xmlDocument.parseXML(xmlString)
 gs.print(xmlDocument.getFirstNode('xml/incident'))
+
+/* More Documented APIs
+ - GlideModal
+ - Workflow
+ - GlideSysAttachment
+ - RESTMessageV2
+ - RESTResponseV2
+ - SOAPMessageV2
+ - SOAPResponseV2
+ - GlideDuration
+ - etc.
+*/
