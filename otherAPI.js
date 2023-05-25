@@ -200,5 +200,5 @@ More Documented APIs
    - GlideStringUtil
    - Cart
    - SPCart
-   - etc.
+   - etc. Never modify these out of the box Script Includes!!
 */
