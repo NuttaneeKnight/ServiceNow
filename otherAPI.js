@@ -175,7 +175,9 @@ var xmlDocument = new XMLDocument2()
 xmlDocument.parseXML(xmlString)
 gs.print(xmlDocument.getFirstNode('xml/incident'))
 
-/* More Documented APIs
+/* 
+
+More Documented APIs
  - GlideModal
  - Workflow
  - GlideSysAttachment
@@ -185,4 +187,18 @@ gs.print(xmlDocument.getFirstNode('xml/incident'))
  - SOAPResponseV2
  - GlideDuration
  - etc.
+
+ Undocumented APIs
+  - Script Includes or inaccessible server scripts
+  - Common undocumented APIs
+   - JSUtils
+   - Workflow
+   - DiscoveryCMDBUtil
+   - AssetandCI
+   - CMDBItem
+   - SNC
+   - GlideStringUtil
+   - Cart
+   - SPCart
+   - etc.
 */
