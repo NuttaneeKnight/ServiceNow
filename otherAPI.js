@@ -137,3 +137,13 @@ while(incidentGR.next()) {
         gs.print(incidentGR.number)
     }
 } // print the incidents that has no short description
+
+/* XML Document2 API 
+
+ XMLDocument2 is a JavaScript Object wrapper for parsing and extracting XML data from an XML string.
+
+ - Used for: working with XML documents and nodes
+ - Server-side API
+
+*/
+
