@@ -201,4 +201,20 @@ More Documented APIs
    - Cart
    - SPCart
    - etc. Never modify these out of the box Script Includes!!
+
+Spotting Script Includes
+ - In out-of-the box scripts, you'll see something like this:
+Eample below
 */
+
+var someVar = new someScript().someFunction();
+
+// such as
+var someScript = Class.create;
+someScript.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    someFunction: function() {
+        return 'Hello World!'
+    },
+    type: 'someScript'
+})
+
