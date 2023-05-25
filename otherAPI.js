@@ -181,7 +181,7 @@ gs.print(xmlDocument.getFirstNode('xml/incident'))
  - GlideSysAttachment
  - RESTMessageV2
  - RESTResponseV2
- - SOAPMessageV2
+ - SOAPMessageV2 , Simple Object Access Protoocol
  - SOAPResponseV2
  - GlideDuration
  - etc.
