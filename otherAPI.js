@@ -146,8 +146,4 @@ while(incidentGR.next()) {
  - Server-side API
 
 */
-var xmlString = '<xml><incident><actions_taken/><active>true</active><activity_due/><additional_assignee_list/>
-<approval>not requested</approval>
-<approval_history/>
-<approval_set/>
-<assigned_to display_value="Mickey Mouse">b64ad88397b2211036743246f053afef</assigned_to></xml>'
+var xmlString = '<xml><incident><actions_taken/><active>true</active><activity_due/><additional_assignee_list/><approval>not requested</approval><approval_history/><approval_set/><assigned_to display_value="Mickey Mouse">b64ad88397b2211036743246f053afef</assigned_to></xml>'
