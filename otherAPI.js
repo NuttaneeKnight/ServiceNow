@@ -227,4 +227,30 @@ Creating Our Own API (With Script Include)
 
   Our API >> Script Include
   Then leverage with GlideRecord
+
+  Steps:
+   - Go to Script Include(System Definition) then create NEW
+   - Create the name of your choiice, must be unique then the system will auto generte the script. 
+   - See customed sample script below
 */
+
+var IncidentUtils = Class.create();
+IncidentUtils.prototype = {
+    initialize: function() {
+    },
+	
+	getLatestIncidents: function(num) {
+		var limit = num || 5;
+		var results = [];
+		var incidentGR = new GlideRecord('incident');
+		incidentGR.orderByDesc('sys_created_on');
+		incidentGR.setLimit(limit);
+		incidentGR.query();
+		while(incidentGR.next()) {
+			result.push(incidentGR.number.getDisplayValue());
+		}
+		return result;
+	},
+
+    type: 'IncidentUtils'
+};
