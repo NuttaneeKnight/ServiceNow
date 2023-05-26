@@ -224,4 +224,7 @@ Creating Our Own API (With Script Include)
   - A collection of common functions
   - A Acript Include
   - A place we'd like to invoke them from 
+
+  Our API >> Script Include
+  Then leverage with GlideRecord
 */
