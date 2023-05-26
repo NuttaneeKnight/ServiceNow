@@ -256,3 +256,12 @@ The GlideAjax class enables a client script to call server-side code in a script
 <2 Scripting Locations To GlideAjax>
  - 1 Client-side code, Client Script or UI Page
  - 2 Server-side code, Script Include
+
+<Scripting Best Practices>
+
+**General Scripting**
+ - Add a short description to scripts when available
+ - Use condition statements if condition field is available depending on scripting location
+ - Comment your code!
+ - Follow a convention - easily for debugging
+ - Wrap code in functions to prevent polluting the global namespace
