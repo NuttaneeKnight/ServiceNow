@@ -273,3 +273,7 @@ IncidentUtils.prototype = {
 
 var incidents = new IncidentUtils().getLatestIncidents(10)
 gs.print(incidents);
+
+//Test for grabRecords
+var records = new IncidentUtils().grabRecords('incident', 10, 'sys_created_on')
+gs.print(records)
