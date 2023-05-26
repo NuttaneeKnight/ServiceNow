@@ -277,3 +277,31 @@ gs.print(incidents);
 //Test for grabRecords
 var records = new IncidentUtils().grabRecords('incident', 10, 'sys_created_on')
 gs.print(records)
+
+/* 
+    Client Side
+     - GlideForm
+     - GlideUser
+     - GlideAjax
+     - Client Scripts
+     - UI Actions
+     - UI Scripts
+     - Service Piortal
+
+    Server Side
+     - GlideRecord
+     - GlideSystem
+     - GlideDateTime
+     - GlideElement
+     - XMLDocument2
+     - Business Rules
+     - UI Actions
+     - Script Includes
+     - Scheduled Jobs
+     - Web Services
+     - Workflows
+
+
+
+
+*/
