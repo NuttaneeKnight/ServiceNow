@@ -240,17 +240,31 @@ IncidentUtils.prototype = {
     },
 	
 	getLatestIncidents: function(num) {
-		var limit = num || 5;
-		var results = [];
-		var incidentGR = new GlideRecord('incident');
-		incidentGR.orderByDesc('sys_created_on');
-		incidentGR.setLimit(limit);
-		incidentGR.query();
+		var limit = num || 5
+		var results = []
+		var incidentGR = new GlideRecord('incident')
+		incidentGR.orderByDesc('sys_created_on')
+		incidentGR.setLimit(limit)
+		incidentGR.query()
 		while(incidentGR.next()) {
-			results.push(incidentGR.number.getDisplayValue());
+			results.push(incidentGR.number.getDisplayValue())
 		}
-		return results;
+		return results
 	},
+
+    grabRecords: function(tab, lim, order) {
+        var table = tab || 'incident'
+        var limit = lim || 5;
+        var orderBy = order || 'sys_created_on'
+        var gr = new GlideRecord(table)
+        gr.orderBy(order)
+        gr.setLimit(limit)
+        gr.query()
+        while(gr.next()){
+            results.push(gr.number.getDisplayValue())
+        }
+        return results
+    },
 
     type: 'IncidentUtils'
 };
