@@ -247,9 +247,9 @@ IncidentUtils.prototype = {
 		incidentGR.setLimit(limit);
 		incidentGR.query();
 		while(incidentGR.next()) {
-			result.push(incidentGR.number.getDisplayValue());
+			results.push(incidentGR.number.getDisplayValue());
 		}
-		return result;
+		return results;
 	},
 
     type: 'IncidentUtils'
