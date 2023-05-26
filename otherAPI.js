@@ -301,7 +301,12 @@ gs.print(records)
      - Web Services
      - Workflows
 
-
-
+Tips:
+ - Use GlideDateTime when dealing with dates and times
+ - Use GlideEleement wh nmanipulating fields in a GlideRecord query
+ - Use XML Document2 when dealing with XML
+ When trying to find documentation on a undocumented API, Google is the BFF
+ - If Script Include is accessible, read through it
+ - Create new APIs by using Script Includes
 
 */
