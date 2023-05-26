@@ -254,3 +254,8 @@ IncidentUtils.prototype = {
 
     type: 'IncidentUtils'
 };
+
+// Go test in the background script with the following code.
+
+var incidents = new IncidentUtils().getLatestIncidents(10)
+gs.print(incidents);
