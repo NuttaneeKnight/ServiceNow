@@ -265,3 +265,7 @@ The GlideAjax class enables a client script to call server-side code in a script
  - Comment your code!
  - Follow a convention - easily for debugging
  - Wrap code in functions to prevent polluting the global namespace
+ - Do not use hardcoded values
+ - Use descriptive variables and function names
+ - Verify a value exists before using it
+ - le the database do the work
