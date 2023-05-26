@@ -269,3 +269,20 @@ The GlideAjax class enables a client script to call server-side code in a script
  - Use descriptive variables and function names
  - Verify a value exists before using it
  - le the database do the work
+
+ **Server Side**
+  - Use GlideAggregate over GlideRecord when dealing with aggregates link counts
+  - Log records before deleting
+  - Use GlideRecordSecure where appropriate
+  - Use Script Includes over global Business Rules
+
+  **Client-Side**
+   - Make as few calls as possible
+   - Do not make synchronous calls
+    - GlideRecord on client-side
+    - g_form.getReference w/o callback
+   - Use GlideAjax when passing data beween server-side and client-side
+    - use JSON when passing data from server-side to client-side
+   - Debug using console.log
+   - Avoid direct DOM manipulation
+   - Use UI Policies over Client Scripts when available 
