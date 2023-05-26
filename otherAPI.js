@@ -309,4 +309,8 @@ Tips:
  - If Script Include is accessible, read through it
  - Create new APIs by using Script Includes
 
+ Quizes: 
+  - Which API is used to manipulate GlideRecord elements? GlideElement
+  - Which GlideDateTime method will compare 2 dates and return a -1, 0 or 1 depending whether the dates equal each other? compareTo()
+  - Undocumented APIs are commonly found within which record type?
 */
