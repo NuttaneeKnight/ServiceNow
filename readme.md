@@ -286,4 +286,5 @@ The GlideAjax class enables a client script to call server-side code in a script
    - Debug using console.log
    - Avoid direct DOM manipulation
    - Use UI Policies over Client Scripts when available 
-   
+
+test
