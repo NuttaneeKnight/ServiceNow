@@ -287,4 +287,12 @@ The GlideAjax class enables a client script to call server-side code in a script
    - Avoid direct DOM manipulation
    - Use UI Policies over Client Scripts when available 
 
-test
+**Debugging**
+- Is the issue reproducible? Why not?
+- Know your tools
+- Is the error/bug due to:
+ - ServiceNowAPI
+ - JS problem
+ - Scoping issue
+ - etc.
+- Most of the time logging the value will be enough
