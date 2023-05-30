@@ -296,3 +296,12 @@ The GlideAjax class enables a client script to call server-side code in a script
  - Scoping issue
  - etc.
 - Most of the time logging the value will be enough
+
+**Debugging Tools**
+- Server Side
+ script debugger
+ session debugger
+- Client Side
+ browser console
+ JS executer
+ 
