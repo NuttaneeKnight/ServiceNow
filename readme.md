@@ -304,4 +304,9 @@ The GlideAjax class enables a client script to call server-side code in a script
 - Client Side
  browser console
  JS executer
- 
+
+<Script Debugger>
+    - Set breakpoints
+    - View variables
+    - Examine call stack
+
