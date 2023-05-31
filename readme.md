@@ -310,3 +310,7 @@ The GlideAjax class enables a client script to call server-side code in a script
     - View variables
     - Examine call stack
 
+<Session Debugging>
+    - Oftentimes a last resort
+    - Can log just about everything
+    - Business Rules orders, Security, UI policies, etc.
