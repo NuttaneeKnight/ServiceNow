@@ -332,3 +332,5 @@ for(property in g_user) { console.log(property + ': ' + g_user[property])}
 
 <Quiz>
  1. Debigging in servicenow can happen in both service side and client side? True
+ 2. It's more efficient to perform server-side logic with JavaScript than within the database query? False
+ 3. This is a modern debugging tool where you can set breakpoints and examine scopes in scripts? Script Debugger
