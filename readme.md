@@ -400,4 +400,14 @@ Adoption Centers {
 }
 ![image](https://github.com/NuttaneeKnight/ServiceNow/assets/110426340/d5941ab8-795b-426b-be86-7ae70238a95e)
 
+ *Execution* 
+ 1. Create Customm Ap
+ 2. Create Tables
+ 3. Create Fields
+ 4. Configure Form View
+ 5. Create UI Page
+ 6. Create Event
+ 8. Create Email Notifivation
+ 9. Create UI Action
+
 
