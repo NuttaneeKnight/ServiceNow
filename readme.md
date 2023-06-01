@@ -377,4 +377,5 @@ for(property in g_user) { console.log(property + ': ' + g_user[property])}
    3. UI Action
     a. Adopt button on dog form
    4. Event
-   5. Email Notofication
+   5. Email Notification
+
