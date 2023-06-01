@@ -346,3 +346,7 @@ for(property in g_user) { console.log(property + ': ' + g_user[property])}
  7. Demo - Customizing Fetch
  8. ection Recap
 
+<Custom App>
+ - Dog adoption app
+ - Focus on scripting
+ - Rapid prototyping
