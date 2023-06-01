@@ -329,3 +329,6 @@ for(property in g_user) { console.log(property + ': ' + g_user[property])}
  - Navigate to filter
  - Put the condition that "Script contains JSUtil"
  - Run the condition
+
+<Quiz>
+ 1. Debigging in servicenow can happen in both service side and client side? True
