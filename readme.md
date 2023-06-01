@@ -319,3 +319,4 @@ The GlideAjax class enables a client script to call server-side code in a script
 {tablename}.list
 sc_cat_item.list >> Will lead to the list view of the catalog item
 {tablename}.do >> Will take you to the do list view (showing inside the record)
+To find ut the field and the table name click right and >> show. or click dictionary
