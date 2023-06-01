@@ -314,3 +314,8 @@ The GlideAjax class enables a client script to call server-side code in a script
     - Oftentimes a last resort
     - Can log just about everything
     - Business Rules orders, Security, UI policies, etc.
+
+<Shortcut in the all navigator>
+{tablename}.list
+sc_cat_item.list >> Will lead to the list view of the catalog item
+{tablename}.do >> Will take you to the do list view
