@@ -323,3 +323,9 @@ To find ut the field and the table name click right and >> show. or click dictio
 
 <Find the property in the console> Useful for undocumented document 
 for(property in g_user) { console.log(property + ': ' + g_user[property])}
+
+<Find the script that use JSUtil API>
+ - Navigate to Script Includes
+ - Navigate to filter
+ - Put the condition that "Script contains JSUtil"
+ - Run the condition
