@@ -360,3 +360,8 @@ for(property in g_user) { console.log(property + ': ' + g_user[property])}
     >> I'd like the ability to receive emails bout adoption requests
     >> I'd like the ability to edit information about a specific dog
 
+ <Scope>
+  - For the purpose of practice we will have only 2 tables
+  - UI Page & UI Action so we can leverage APIs
+  - Minimum Viable Product (MVP)
+  - Will not represent Cuustom App Development Practices
