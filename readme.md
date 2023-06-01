@@ -365,3 +365,16 @@ for(property in g_user) { console.log(property + ': ' + g_user[property])}
   - UI Page & UI Action so we can leverage APIs
   - Minimum Viable Product (MVP)
   - Will not represent Cuustom App Development Practices
+
+  <Design>
+
+  Components:
+   1. Tables
+    a. Dogs (x_0232_ fetch_dogs)
+    b. Adoption Centers (x_0232_fetch_adoption_center)
+   2. UI Page
+    a. Create new dog records
+   3. UI Action
+    a. Adopt button on dog form
+   4. Event
+   5. Email Notofication
