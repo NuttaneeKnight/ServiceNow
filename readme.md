@@ -379,3 +379,22 @@ for(property in g_user) { console.log(property + ': ' + g_user[property])}
    4. Event
    5. Email Notification
 
+Dogs {
+    number : String,
+    name: String,
+    status: Choice,
+    picture: Image,
+    breed: Choice,
+    age: Integer
+    shots: Y/N
+    neutered: Y/N
+    bio: String
+    adoption_center: Reference
+}
+
+Adoption Centers {
+    number: String,
+    name: String,
+    phone: Phone Number
+    email: String,
+}
