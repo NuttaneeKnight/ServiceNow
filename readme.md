@@ -399,5 +399,4 @@ Adoption Centers {
     email: String,
 }
 
-![API](API.png)
 
