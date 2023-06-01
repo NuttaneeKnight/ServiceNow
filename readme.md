@@ -350,3 +350,13 @@ for(property in g_user) { console.log(property + ': ' + g_user[property])}
  - Dog adoption app
  - Focus on scripting
  - Rapid prototyping
+
+ <Requirements>
+  - As a person adopting a dog:
+    >> I'd like to view all available dogs
+    >> I'd like the ability to send an adoption request to adoption center
+  - As an adoption center:
+    >> I'd like to post new dogs
+    >> I'd like the ability to receive emails bout adoption requests
+    >> I'd like the ability to edit information about a specific dog
+
