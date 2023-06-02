@@ -461,3 +461,9 @@ Resume to creat a New table
 
 Create Age field
  - Do the same for the age, make sure that the type is integer. 
+
+Create Shots fields
+ - Same procedure but the request type is boolean. With service it is under True/False type value.
+
+Create is Neutered/Spay field
+ - Same procedure set the type to be boolean. 
