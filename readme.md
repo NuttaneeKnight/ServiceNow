@@ -411,3 +411,14 @@ Adoption Centers {
  9. Create UI Action
 
 
+
+Building App
+
+- Navigate to Applications, System Applications >> Studio
+- Create an App
+- Name it and it automatically generate the scope
+- x_1028511_fetch
+- Then create
+- x_1028511_fetch.user
+- Navigate to Crete a table
+- Create table from scratch
