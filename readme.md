@@ -448,4 +448,7 @@ Once it's done
  - Make sure that you Sequence has a value of "1" as an integer
  - Do the same for Adopted and increment the sequence.
 
+Create an a Picture table as well with an image type
+ - Follow the same process
+
 
