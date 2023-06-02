@@ -422,3 +422,9 @@ Building App
 - x_1028511_fetch.user
 - Navigate to Crete a table
 - Create table from scratch
+
+Once it's done
+
+ - Navigate to your application "fetch"
+ - The left panel view are all our associated list
+ 
