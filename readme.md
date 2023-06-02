@@ -457,5 +457,5 @@ Resume to creat a New table
  - will add the choices later after save
  - Go down to the related list and creat new choices after
 
-
+**To see all the updates, go to the top of the form click right and choose Reload form. This will prevent the page to go back to default again**
 
