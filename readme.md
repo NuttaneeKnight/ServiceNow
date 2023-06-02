@@ -459,3 +459,5 @@ Resume to creat a New table
 
 **To see all the updates, go to the top of the form click right and choose Reload form. This will prevent the page to go back to default again**
 
+Create Age field
+ - Do the same for the age, make sure that the type is integer. 
