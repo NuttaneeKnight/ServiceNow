@@ -471,3 +471,11 @@ Create is Neutered/Spay field
 Create a Bio field
  - Set the Bio to be a string type and set the Max Lenggth to 4,000 so that we can write the details about the pooch!
 
+Now that we have all the main fields for the "Dogs table" Next step is to create an Adoption center table
+
+Adoption Center Table
+
+ - Navigate to the top left go to "+ Create Application File"
+ - Select Table
+ - Click Create, If the screen doesn't render, double click it and you should be ablt to create it with the new Utah updates.
+ 
