@@ -432,5 +432,6 @@ Once it's done
  - Provide a type of string for the field
  - Give "Name" to th Column Lable, this will auto generate Coulumn name.
  - Give Max Length to 100 characters. 
+ - Submit the form
 
 
