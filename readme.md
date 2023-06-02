@@ -467,3 +467,7 @@ Create Shots fields
 
 Create is Neutered/Spay field
  - Same procedure set the type to be boolean. 
+
+Create a Bio field
+ - Set the Bio to be a string type and set the Max Lenggth to 4,000 so that we can write the details about the pooch!
+
