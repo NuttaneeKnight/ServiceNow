@@ -427,11 +427,21 @@ Once it's done
 
  - Navigate to your application "fetch"
  - The left panel view are all our associated list
- - Navigate to Gods table
+ 
+ Navigate to Dogs table
  - Click on the "New" button
  - Provide a type of string for the field
  - Give "Name" to th Column Lable, this will auto generate Coulumn name.
  - Give Max Length to 100 characters. 
  - Submit the form
 
-
+ - Create another new field for dogs, this time it will be a Choice for type
+ - Submit the form first then we will add the choices later
+ - Go to the related list below
+ - Navigate to Choices
+ - Create New
+ - Name the Element Status
+ - Name Lable to Active
+ - Name Value to active 
+ - Save the progress
+ 
