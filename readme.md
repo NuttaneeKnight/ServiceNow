@@ -478,4 +478,8 @@ Adoption Center Table
  - Navigate to the top left go to "+ Create Application File"
  - Select Table
  - Click Create, If the screen doesn't render, double click it and you should be ablt to create it with the new Utah updates.
- 
+
+ - Give the lable name as Adoption Center
+ - Under related list >> Controls, check off auto-number
+ - Set prefix to AC - Adoption Center
+ - Submit the form
