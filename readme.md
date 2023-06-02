@@ -435,7 +435,7 @@ Once it's done
  - Give Max Length to 100 characters. 
  - Submit the form
 
- - Create another new field for dogs, this time it will be a Choice for type
+ - Create another new field for dogs, for Status this time it will be a Choice for type
  - Submit the form first then we will add the choices later
  - Go to the related list below
  - Navigate to Choices
@@ -444,4 +444,7 @@ Once it's done
  - Name Lable to Active
  - Name Value to active 
  - Save the progress
- 
+ - Do the same for "Pending" then insert and stay to not lose the record. 
+ - Make sure that you Sequence has a value of "1" as an integer
+
+
