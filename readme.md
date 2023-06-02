@@ -455,6 +455,7 @@ Resume to creat a New table
  - Make this a Choice type
  - the name will be breed
  - will add the choices later after save
- 
+ - Go down to the related list and creat new choices after
+
 
 
