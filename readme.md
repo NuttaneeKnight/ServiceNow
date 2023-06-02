@@ -446,5 +446,6 @@ Once it's done
  - Save the progress
  - Do the same for "Pending" then insert and stay to not lose the record. 
  - Make sure that you Sequence has a value of "1" as an integer
+ - Do the same for Adopted and increment the sequence.
 
 
