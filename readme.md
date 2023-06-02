@@ -427,4 +427,10 @@ Once it's done
 
  - Navigate to your application "fetch"
  - The left panel view are all our associated list
- 
+ - Navigate to Gods table
+ - Click on the "New" button
+ - Provide a type of string for the field
+ - Give "Name" to th Column Lable, this will auto generate Coulumn name.
+ - Give Max Length to 100 characters. 
+
+
