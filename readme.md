@@ -484,5 +484,7 @@ Adoption Center Table
  - Set prefix to AC - Adoption Center
  - Submit the form
 
- Add some fields to the table by cliuck create New
- - 
+ Add some fields to the table by click create New
+ - Navigate to the related list below to the table columns
+ - Add a "Name" Field by giving it to the typee of string. 100 characters should be plenty
+
