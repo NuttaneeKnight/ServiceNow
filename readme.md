@@ -487,4 +487,4 @@ Adoption Center Table
  Add some fields to the table by click create New
  - Navigate to the related list below to the table columns
  - Add a "Name" Field by giving it to the typee of string. 100 characters should be plenty
-
+ - Add a "Phone" field and give it a type of Phone Number (E164), can be found on the list 
