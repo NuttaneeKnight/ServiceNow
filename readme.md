@@ -484,4 +484,5 @@ Adoption Center Table
  - Set prefix to AC - Adoption Center
  - Submit the form
 
- testing
+ Add some fields to the table by cliuck create New
+ - 
