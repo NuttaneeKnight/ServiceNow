@@ -489,3 +489,7 @@ Adoption Center Table
  - Add a "Name" Field by giving it to the typee of string. 100 characters should be plenty
  - Add a "Phone" field and give it a type of Phone Number (E164), can be found on the list 
  - Add the email field, give it a string type and make it 100 chars
+
+Navigate back to the Dogs table
+ - We will reference the adoption center to the dogs field
+ 
