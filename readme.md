@@ -492,4 +492,6 @@ Adoption Center Table
 
 Navigate back to the Dogs table
  - We will reference the adoption center to the dogs field
- 
+ - Make it a reference ype
+ - Name it the same as the Adoption Center table
+ - Go down to the related list below and specify the table (Adoption Center)
