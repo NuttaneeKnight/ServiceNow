@@ -495,3 +495,5 @@ Navigate back to the Dogs table
  - Make it a reference ype
  - Name it the same as the Adoption Center table
  - Go down to the related list below and specify the table (Adoption Center)
+
+You can find the App by going to the navigation center and type Fetch
