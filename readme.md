@@ -510,4 +510,5 @@ You can find the App by going to the navigation center and type Fetch
  - Name a UI Page, Create Dog
  - Copy html, work with IDE then copy it back later
  - Afrter submiting the form, Click Try it to see the form view
+ - The html is just the form page now we need a Cliebt Script to make this work
 
