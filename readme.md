@@ -509,5 +509,5 @@ You can find the App by going to the navigation center and type Fetch
  - Create a new UI Page
  - Name a UI Page, Create Dog
  - Copy html, work with IDE then copy it back later
- 
+ - Afrter submiting the form, Click Try it to see the form view
 
