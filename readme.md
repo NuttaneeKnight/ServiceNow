@@ -498,4 +498,5 @@ Navigate back to the Dogs table
 
 You can find the App by going to the navigation center and type Fetch
  - Go to All, to get the access of the list view
- 
+ - Navigate to the New form
+ - Click right >> Configure >> Form Layout
