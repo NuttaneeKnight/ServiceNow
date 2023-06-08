@@ -497,3 +497,5 @@ Navigate back to the Dogs table
  - Go down to the related list below and specify the table (Adoption Center)
 
 You can find the App by going to the navigation center and type Fetch
+ - Go to All, to get the access of the list view
+ 
