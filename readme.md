@@ -500,3 +500,4 @@ You can find the App by going to the navigation center and type Fetch
  - Go to All, to get the access of the list view
  - Navigate to the New form
  - Click right >> Configure >> Form Layout
+ - When you need to correct the typo for the field names >> Click right >> Configure Label. This will lead you right to it to adjust
