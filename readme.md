@@ -503,3 +503,10 @@ You can find the App by going to the navigation center and type Fetch
  - When you need to correct the typo for the field names >> Click right >> Configure Label. This will lead you right to it to adjust
  - Create a new adoption center
  - After created the record, link it to the created dog
+
+<Extending Fetch Part 1>
+ - Navigate to UI Page
+ - Create a new UI Page
+ - Name a UI Page, Create Dog
+ - Copy html
+ 
