@@ -1,3 +1,3 @@
-jQuery('#addDog').click(function()) {
-    return
-}
+jQuery('#addDog').click(function() {
+    
+})
