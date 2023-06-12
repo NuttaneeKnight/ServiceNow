@@ -16,3 +16,13 @@ function fetchBallback(response) {
 
 // After creating UI Page forr both HTML andd Client Script, Navigate to Script Includes
 // Create a new Script Include
+// Provie the name fetchUtils to match our above script form the UI Page
+// ****Make sure to check Client Callable
+
+var fetchUtils = Class.create();
+fetchUtils.prototype = {
+    initialize: function() {
+    },
+
+    type: 'fetchUtils'
+};
