@@ -13,3 +13,6 @@ function fetchBallback(response) {
     var answer = response.responseXML.documentElement.getAttribute('answer').split('|');
     jQuery('#msg').append('<p>' + answer[0] + ' has successfully been created. Dog ID: ' + answer[1] + ' </p><br/><a href="' + answer[2] + '">View new dog</a>')
 }
+
+// After creating UI Page forr both HTML andd Client Script, Navigate to Script Includes
+// Create a new Script Include
