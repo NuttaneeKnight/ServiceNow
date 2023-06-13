@@ -52,3 +52,6 @@ fetchUtils.prototype = {
 
     type: 'fetchUtils'
 };
+
+// Go to Event Registry
+// Create a new event
