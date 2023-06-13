@@ -55,3 +55,9 @@ fetchUtils.prototype = {
 
 // Go to Event Registry
 // Create a new event
+/* 
+Suffix >> adoption_email
+Fired by >> UI Action
+Description >> Thi event will send an email notification
+
+*/
