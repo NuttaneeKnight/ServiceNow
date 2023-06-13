@@ -35,6 +35,12 @@ fetchUtils.prototype = {
         newDog.newRecord()
         newDog.name = dogName
         newDog.age = dogAge
+        if(dogShots) {
+            newDog.shots = true;
+        }
+        if(dogNeuteredOrSpay) {
+            newDog.neutered_or_spay = true;
+        }
         
     },
 
