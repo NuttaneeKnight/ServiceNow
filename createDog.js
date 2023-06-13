@@ -78,5 +78,8 @@ then creat  simpe html message with ${event.param2} in the body of an email
 Go back to script includes - fetchUtils
 add another function after crete dog
 See the code above after createDog funtion()
+Go to any dog record
+Click right >> Configure >> UI Actions
+
 */
 
