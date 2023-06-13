@@ -1,15 +1,16 @@
 //Client Script for the UI Create Dog PAge
+//Client Script for the UI Create Dog PAge
 jQuery('#addDog').click(function() {
     var ga = new GlideAjax('fetchUtils')
     ga.addParam('sysparm_name', 'createDog')
     ga.addParam('sysparm_dog_name', jQuery('#dogName').val())
     ga.addParam('sysparm_dog_age', jQuery('#dogAge').val())
-    ga.addParam('sysparm_dog_nutered_or_spay', jQuery('#dogNewteredOrSpay').is(':checked'))
+    ga.addParam('sysparm_dog_nutered_or_spay', jQuery('#dogNuteredOrSpay').is(':checked'))
     ga.addParam('sysparm_dog_shots', jQuery('#dogShots').is(':checked'))
-    ga.getXML(fetchBallback)
+    ga.getXML(fetchCallback)
 })
 
-function fetchBallback(response) {
+function fetchCallback(response) {
     var answer = response.responseXML.documentElement.getAttribute('answer').split('|');
     jQuery('#msg').append('<p>' + answer[0] + ' has successfully been created. Dog ID: ' + answer[1] + ' </p><br/><a href="' + answer[2] + '">View new dog</a>')
 }
@@ -28,24 +29,24 @@ fetchUtils.prototype = {
         var dogName = this.getParameter('sysparm_dog_name');
         var dogAge = this.getParameter('sysparm_dog_age');
         var dogShots = this.getParameter('sysparm_dog_shots');
-        var dogNeuteredOrSpay = this.getParameter('sysparm_dog_neutered_or_spay');
+        var dogNuteredOrSpay = this.getParameter('sysparm_dog_nutered_or_spay');
 
         // using a Glide Record to "insert dog"
-        var newDog = new GlideRecord('x_1028511_fetch_dogs')
+        var newDog = new GlideRecord('x_1028511_fetch.dogs')
         newDog.newRecord()
         newDog.name = dogName
         newDog.age = dogAge
         if(dogShots) {
             newDog.shots = true;
         }
-        if(dogNeuteredOrSpay) {
-            newDog.neutered_or_spay = true;
+        if(dogNuteredOrSpay) {
+            newDog.nutered_or_spay = true;
         }
         var dogNumber = newDog.number.getDisplayValue()
         var sysID = newDog.insert()
         var dogLink = newDog.getLink()
 
-        // returnvalues
+        // return values
         return dogName + '|' + dogNumber + '|' + dogLink;
     },
 
