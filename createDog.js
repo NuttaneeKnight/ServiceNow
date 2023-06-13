@@ -29,6 +29,13 @@ fetchUtils.prototype = {
         var dogAge = this.getParameter('sysparm_dog_age');
         var dogShots = this.getParameter('sysparm_dog_shots');
         var dogNeuteredOrSpay = this.getParameter('sysparm_dog_neutered_or_spay');
+
+        // using a Glide Record to "insert dog"
+        var newDog = new GlideRecord('x_1028511_fetch_dogs')
+        newDog.newRecord()
+        newDog.name = dogName
+        newDog.age = dogAge
+        
     },
 
     type: 'fetchUtils'
