@@ -65,4 +65,7 @@ Go to email notifications
 Creat a new one
 Make sure that the table name is NONE
 then creat  simpe html message with ${event.param2} in the body of an email
+Go back to script includes - fetchUtils
+add another function after crete dog
+See the code below
 */
