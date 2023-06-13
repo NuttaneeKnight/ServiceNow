@@ -25,7 +25,10 @@ fetchUtils.prototype = {
     // },
 
     createDog: function() {
-        var dogName = this.getParameter('sysparm_dog_name')
+        var dogName = this.getParameter('sysparm_dog_name');
+        var dogAge = this.getParameter('sysparm_dog_age');
+        var dogShots = this.getParameter('sysparm_dog_shots');
+        var dogNeuteredOrSpay = this.getParameter('sysparm_dog_neutered_or_spay');
     },
 
     type: 'fetchUtils'
