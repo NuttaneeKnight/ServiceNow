@@ -80,6 +80,13 @@ add another function after crete dog
 See the code above after createDog funtion()
 Go to any dog record
 Click right >> Configure >> UI Actions
+Click "New" to create a new UI Actions
 
+
+Name >> Adopt
+Click the Client checkbox
+Unselect Show Insert
+Give the Client side fucntion in the Onclick field >> adoptDog()
+Condition = current.status == 'active'
 */
 
