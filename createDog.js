@@ -49,6 +49,16 @@ fetchUtils.prototype = {
         // return values
         return dogName + '|' + dogNumber + '|' + dogLink;
     },
+    createEmailNotification: function() {
+        var adopterEmail = this.getParameter('sysparm_adopter_email')
+        var adoptionCenter = this.getParameter('sysparm_adoption_center')
+        var adoptionCenterEmail = ''
+        var ac = newGlideRecord('x_1028511_fetch_adoption_center')
+        ac.get(adoptionCenter)
+        adoptionCenterEmail = ac.email.getDisplayValue()
+        getSelection.eventQueue('x_1028511_fetch_adoption_email', ac, adoptionCenterEmail, adopterEmail)
+        return;
+    },
 
     type: 'fetchUtils'
 };
@@ -67,5 +77,6 @@ Make sure that the table name is NONE
 then creat  simpe html message with ${event.param2} in the body of an email
 Go back to script includes - fetchUtils
 add another function after crete dog
-See the code below
+See the code above after createDog funtion()
 */
+
