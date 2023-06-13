@@ -88,5 +88,20 @@ Click the Client checkbox
 Unselect Show Insert
 Give the Client side fucntion in the Onclick field >> adoptDog()
 Condition = current.status == 'active'
+Select Form button check box
+Create adoptDog() in the script field
+
 */
 
+function adoptDog() {
+    var email = prompt('Please enter your email address');
+    if (email != '') {
+        var ga = new GlideAjax('fetchUtils')
+        ga.addParam('sysparm_name', 'createEmailNotification')
+        ga.addParam('sysparm_adoption_center', g_form.getValue('adoption_center'))
+        ga.addParam('sysparm_adopter_email', 'email')
+        ga.getXMLAnswer(ajaxProcessor)
+    } else {
+        alert('This email is not valid')
+    }
+}
