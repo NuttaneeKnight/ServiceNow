@@ -41,7 +41,12 @@ fetchUtils.prototype = {
         if(dogNeuteredOrSpay) {
             newDog.neutered_or_spay = true;
         }
-        
+        var dogNumber = newDog.number.getDisplayValue()
+        var sysID = newDog.insert()
+        var dogLink = newDog.getLink()
+
+        // returnvalues
+        return dogName + '|' + dogNumber + '|' + dogLink;
     },
 
     type: 'fetchUtils'
