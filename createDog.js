@@ -109,3 +109,5 @@ function adoptDog() {
 function ajaxProcess(answer) {
     alert('Thank you for your request. Someone will be with you shortly')
 }
+
+//adop button will pop up on the UI action just add the email. 
