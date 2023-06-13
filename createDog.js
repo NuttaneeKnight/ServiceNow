@@ -25,7 +25,7 @@ fetchUtils.prototype = {
     // },
 
     createDog: function() {
-
+        var dogName = this.getParameter('sysparm_dog_name')
     },
 
     type: 'fetchUtils'
