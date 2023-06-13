@@ -105,3 +105,7 @@ function adoptDog() {
         alert('This email is not valid')
     }
 }
+
+function ajaxProcess(answer) {
+    alert('Thank you for your request. Someone will be with you shortly')
+}
