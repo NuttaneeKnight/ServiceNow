@@ -62,5 +62,7 @@ Description >> Thi event will send an email notification
 
 
 Go to email notifications
-
+Creat a new one
+Make sure that the table name is NONE
+then creat  simpe html message with ${event.param2} in the body of an email
 */
