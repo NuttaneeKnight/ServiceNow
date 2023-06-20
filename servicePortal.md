@@ -17,3 +17,8 @@
 - Render data in a modern user interface
 - Leverage 3rd-party libraries
 - Mobile friendly
+
+# Service Portal Users
+    1. End User - Has no roles an is typically ono-IT (HR, Finance)
+    2. Managerial User - Manages users
+    3. Admin/Develper - Has admin rights to the platform
