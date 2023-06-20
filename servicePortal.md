@@ -11,3 +11,9 @@
 - Other features incude
     - HR functionality
     - Custon apps
+
+# Pros of Service Portal
+- CMS is old and a complete pain
+- Render data in a modern user interface
+- Leverage 3rd-party libraries
+- Mobile friendly
