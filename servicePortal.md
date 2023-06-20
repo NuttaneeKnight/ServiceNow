@@ -8,3 +8,6 @@
     1. Submit requests (service catalog)
     2. Browse knowledge (knowledge management)
     3. Check statuses
+- Other features incude
+    - HR functionality
+    - Custon apps
