@@ -22,3 +22,9 @@
     1. End User - Has no roles an is typically ono-IT (HR, Finance)
     2. Managerial User - Manages users
     3. Admin/Develper - Has admin rights to the platform
+
+# Core Service Portal Technologies
+    - AngularJS
+    - Bootstraps
+    - SASS
+    - Others AngularJS UI, moment.js
