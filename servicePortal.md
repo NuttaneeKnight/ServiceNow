@@ -28,3 +28,8 @@
     - Bootstraps
     - SASS
     - Others AngularJS UI, moment.js
+
+# Out-of-Box Service Portal
+- Loaded with ServiceNow
+- Name: ServicePortal
+- URL: sp
