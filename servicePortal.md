@@ -36,3 +36,6 @@
 
 Platform view = Catalog
 Client = Service Portal
+
+# OOB Knowledge Base
+- On the top right you should find the id number of the kowledge base article such as KB0000016
