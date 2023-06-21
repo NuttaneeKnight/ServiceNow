@@ -42,3 +42,4 @@ Client = Service Portal
 
 # Additional Service Portal Features
 - The current status table is: cmdb_ci_outage 
+- the param is sp?id=services_status , showing all the business services table, the related list is located in the bottom of the screen
