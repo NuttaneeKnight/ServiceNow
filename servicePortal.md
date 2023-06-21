@@ -47,4 +47,4 @@ Client = Service Portal
 # Why come to the SP?
 1. Request a service
 2. View knowledge articles
-3. Cheeck status
+3. Cheeck statuses
