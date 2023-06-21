@@ -41,4 +41,4 @@ Client = Service Portal
 - On the top right you should find the id number of the kowledge base article such as KB0000016
 
 # Additional Service Portal Features
-- 
+- The current status table is: cmdb_ci_outage 
