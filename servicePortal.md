@@ -33,3 +33,6 @@
 - Loaded with ServiceNow
 - Name: ServicePortal
 - URL: sp
+
+Platform view = Catalog
+Client = Service Portal
