@@ -48,3 +48,10 @@ Client = Service Portal
 1. Request a service
 2. View knowledge articles
 3. Cheeck statuses
+
+# Portal Structure, anatomy
+- Service Portal structure
+- Primary Service Portal tables
+- Page layout
+- Styling
+- Modular by design
