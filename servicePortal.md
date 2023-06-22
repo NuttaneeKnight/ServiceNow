@@ -75,3 +75,5 @@ Client = Service Portal
 - Theme [sp_theme]
 - Widget [sp_widget] +
 - Widget instance [sp_instance] +
+
+Hot Link sp_portal in the SNutils or sp_portal.list in the search bar
