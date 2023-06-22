@@ -71,6 +71,7 @@ Client = Service Portal
     - Header & Footer
 # Primary Tables
 - Portal [sp_portal]
-- Page [sp_page] +
+- Page [sp_page] + (extended associated tables)
 - Theme [sp_theme]
 - Widget [sp_widget] +
+- Widget instance [sp_instance] +
