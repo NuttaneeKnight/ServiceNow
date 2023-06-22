@@ -69,3 +69,8 @@ Client = Service Portal
     - Style sheets
     - JavaScript files
     - Header & Footer
+# Primary Tables
+- Portal [sp_portal]
+- Page [sp_page] +
+- Theme [sp_theme]
+- Widget [sp_widget] +
