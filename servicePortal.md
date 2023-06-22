@@ -88,3 +88,6 @@ Navigtion to the list of tables
 - Contains properties
     - URL suffixes
     - Hoomepage
+    - Service ctalog
+    - Knowledge base
+    
