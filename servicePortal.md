@@ -63,3 +63,9 @@ Client = Service Portal
         - Rows
             - Columns
                 - Widget instances
+
+- Widget
+- Theme
+    - Style sheets
+    - JavaScript files
+    - Header & Footer
