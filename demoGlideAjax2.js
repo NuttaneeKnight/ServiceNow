@@ -69,6 +69,8 @@ function ajaxProcessor(response) {
 	console.log(json[0].shortDescription);
 }
 
+// JSON.parse() is a better method
+
 /* Final Recap
 
  - Use GlideAjax when you need to access server-side data while on the cliet-side

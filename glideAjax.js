@@ -108,7 +108,7 @@ function onLoad() {
     ga.addParam('sysparm_name', 'sayHello')
     ga.getXMLAnswer(ajaxProcessor)
 }
-function ajazProcessor(answer) {
+function ajaxProcessor(answer) {
     //var answer = response.responseXML.documentElement.getAttribute('answer') >> replaced by getXMLAnswer()
     g_form.setValue('short_description', answer)
 }
