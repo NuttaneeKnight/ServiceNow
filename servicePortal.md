@@ -55,3 +55,11 @@ Client = Service Portal
 - Page layout
 - Styling
 - Modular by design
+
+# Service Portal Structure
+- Portal
+- Pages
+    - Containers
+        - Rows
+            - Columns
+                - Widget instances
