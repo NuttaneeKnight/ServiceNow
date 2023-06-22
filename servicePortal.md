@@ -77,3 +77,9 @@ Client = Service Portal
 - Widget instance [sp_instance] +
 
 Hot Link sp_portal in the SNutils or sp_portal.list in the search bar
+
+Navigtion to the list of tables
+ - Go to sp_portal.list
+ - In the header >> click right >> Configure >> Table
+ - The list of Service portal will show up
+ 
