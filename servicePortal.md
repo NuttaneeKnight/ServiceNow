@@ -90,4 +90,15 @@ Navigtion to the list of tables
     - Hoomepage
     - Service ctalog
     - Knowledge base
-    
+    - And more
+# The Page Record
+- Key properties
+    - ID, title, short description
+    - Access controls
+    - Container for structure of page
+
+Portal A    ]
+Portal B    >>>>>>              Page
+Portal C    ]
+
+**All 3 portals can access to Page**
