@@ -82,4 +82,9 @@ Navigtion to the list of tables
  - Go to sp_portal.list
  - In the header >> click right >> Configure >> Table
  - The list of Service portal will show up
- 
+ - Go to related list and click "Show Schema Map"
+# The Portal Record
+- Entry Point
+- Contains properties
+    - URL suffixes
+    - Hoomepage
