@@ -103,3 +103,5 @@ Portal C    ]
 
 **All 3 portals can access to Page**
 https://dev90700.service-now.com/sp?id=404 => can change the id to anything that we set the param
+
+# Checklist for updates
