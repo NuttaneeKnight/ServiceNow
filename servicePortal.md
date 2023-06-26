@@ -105,3 +105,5 @@ Portal C    ]
 https://dev90700.service-now.com/sp?id=404 => can change the id to anything that we set the param
 
 # Checklist for updates
+
+https://dev90700.service-now.com/sp?id=security_home to access the security home pge. 
