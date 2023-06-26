@@ -107,3 +107,7 @@ https://dev90700.service-now.com/sp?id=404 => can change the id to anything that
 # Checklist for updates
 
 https://dev90700.service-now.com/sp?id=security_home to access the security home pge. 
+
+# The Widget
+- Contains the actual content in ServiceNow
+    - HTML, CSS, JavaScript.
