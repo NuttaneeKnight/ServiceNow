@@ -113,3 +113,13 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
     - HTML, CSS, JavaScript.
 - Acts as blueprint
 - Each widget is an Angular directive
+
+# The Widget Instance - the way we display widget on the page
+- Automatically created from Service Portal Designer
+- Many useful options that help to define a widget
+
+# Cloning
+- Out-of-box widgets cannot be modified
+- Clone in one click
+- Preserve out-of-box functionality
+
