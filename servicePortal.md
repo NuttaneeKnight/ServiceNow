@@ -111,3 +111,5 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 # The Widget
 - Contains the actual content in ServiceNow
     - HTML, CSS, JavaScript.
+- Acts as blueprint
+- Each widget is an Angular directive
