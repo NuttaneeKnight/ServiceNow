@@ -127,4 +127,21 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 - Defines structure of a page
 - Based on Bootstrap 3's grid system
     - containers, rows, columns
-    
+
+# The container
+- Fixed or Fluid
+- Backgrounf color or image
+- CSS classes
+- Order
+
+# The Row 
+- Groups colums
+- CSS class
+- Order
+
+# The Column
+- Groups widget instances
+- CSS class
+- Grid size
+
+
