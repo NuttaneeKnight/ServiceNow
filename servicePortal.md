@@ -123,3 +123,8 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 - Clone in one click
 - Preserve out-of-box functionality
 
+# Page Layout
+- Defines structure of a page
+- Based on Bootstrap 3's grid system
+    - containers, rows, columns
+    
