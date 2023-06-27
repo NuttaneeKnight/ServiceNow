@@ -163,3 +163,7 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 - PAge Designer
 - PAge Editor
 - Widget Editor
+
+# Platform View of Records
+- Every record can be uppdated from the platform view
+- You don't need to use the Service Portal tools, but they typically provide a better experience
