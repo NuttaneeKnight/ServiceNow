@@ -146,4 +146,8 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 
 # The Theme
 - Defines a portl look and feel
+    - store SASS variables
+    - CSS
+    - JavaScript
+
 
