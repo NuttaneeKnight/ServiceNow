@@ -150,4 +150,11 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
     - CSS
     - JavaScript
 
+# The Menu
+- Define menu items for a portal
+- No HTML or scripting required
+
+# Modular !!
+- Portal A Page 1, Page 2 with Theme A
+- Portal B shares Page 1 and PAge 3 with Theme A 
 
