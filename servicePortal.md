@@ -167,3 +167,8 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 # Platform View of Records
 - Every record can be uppdated from the platform view
 - You don't need to use the Service Portal tools, but they typically provide a better experience
+
+# Branding Editor
+- Modify titles, logos, colors
+- Similar to WordPress
+- Very easy ro use
