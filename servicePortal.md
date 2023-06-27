@@ -154,7 +154,7 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 - Define menu items for a portal
 - No HTML or scripting required
 
-# Modular !!
+# Modular !! stands by itself
 - Portal A Page 1, Page 2 with Theme A
 - Portal B shares Page 1 and PAge 3 with Theme A 
 
