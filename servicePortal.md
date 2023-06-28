@@ -178,3 +178,5 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 - Control _ Click on a widget within Service Portal
 - Require sp_admin role
 - A number of useful options
+
+# Navigate to All navigation and typr "Service Portal Configuration" to access the editor.
