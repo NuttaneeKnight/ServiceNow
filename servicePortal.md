@@ -157,22 +157,6 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 # Modular !! stands by itself
 - Portal A Page 1, Page 2 with Theme A
 - Portal B shares Page 1 and PAge 3 with Theme A 
-
-# Service Portal Tools
-- Branding Editor
-- PAge Designer
-- PAge Editor
-- Widget Editor
-
-# Platform View of Records
-- Every record can be uppdated from the platform view
-- You don't need to use the Service Portal tools, but they typically provide a better experience
-
-# Branding Editor
-- Modify titles, logos, colors
-- Similar to WordPress
-- Very easy ro use
-
 # Service Portal Tools
 - Branding Editor
 - Page Designer
@@ -182,3 +166,10 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 # Platform View of Records
 - Every record can be updated from the platform view
 - You don't need to use the Service Portal tools, but they typically provide a better experience
+# Branding Editor
+- Modify titles, logos, colors
+- Similar to WordPress
+- Very easy to use
+
+# Designer
+- Great for building the layout of a page
