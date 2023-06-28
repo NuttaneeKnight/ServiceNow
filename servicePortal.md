@@ -179,3 +179,6 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 - Page Editor
 - Wdget Editor
 
+# Platform View of Records
+- Every record can be updated from the platform view
+- You don't need to use the Service Portal tools, but they typically provide a better experience
