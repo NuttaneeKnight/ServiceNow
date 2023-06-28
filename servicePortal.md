@@ -180,3 +180,9 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 - A number of useful options
 
 # Navigate to All navigation and typr "Service Portal Configuration" to access the editor.
+
+# Page Editor
+- Useful for
+    - Modifying instances
+    - Modifying containers, rows, column
+    - Viewing the layout of a page
