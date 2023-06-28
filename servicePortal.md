@@ -172,3 +172,10 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 - Modify titles, logos, colors
 - Similar to WordPress
 - Very easy ro use
+
+# Service Portal Tools
+- Branding Editor
+- Page Designer
+- Page Editor
+- Wdget Editor
+
