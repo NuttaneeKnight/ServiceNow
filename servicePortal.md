@@ -173,3 +173,8 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 
 # Designer
 - Great for building the layout of a page
+
+# Control + Click
+- Control _ Click on a widget within Service Portal
+- Require sp_admin role
+- A number of useful options
