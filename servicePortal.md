@@ -208,3 +208,14 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 
 # Widgets and Angular
 - Widgets are AngularJS directives. When a page is loaded, a directivve is created for each widget on the page. They are tightly coupled to the server-side Javascript code which is powered by the Rhini engine inder the ServiceNow Platform
+
+# Primary Widget Components
+- Ex. Top Rated Articles
+1. Server
+2. Client
+
+The components are:
+1. Server Script - Server
+2. HTML Template - Client
+3. CSS - Client
+4. Client Script - Client
