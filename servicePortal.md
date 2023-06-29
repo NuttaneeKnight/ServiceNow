@@ -226,3 +226,13 @@ The components are:
     ||
     \/
     Widget A Instance
+
+# Commonly Used Instance Options
+    - Title
+    - Short description
+    - Bootstrap color
+    - Bootstrap size
+    - HREF/URL
+    - Additional options*
+
+    
