@@ -193,3 +193,15 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 - The hamburger bar on the top right, you can Edit option schema. We will revisit that later. 
 - If you want to find the list of different methods on the service portal, Go to server script => Go inside the finction scope than type $sp. this will render the method list with explanation that can be useful for calling the method on the server side. 
 - The same goes fr the Client Script method call, if you type spUtil. the method list will show up 
+
+# What is a Widget? 
+- An analogu = Cover Letter
+    - Have a templete for each job posting and edit it from there
+    - This will help make things fater and minimize the error. 
+- Resuable, modular component
+- Defines content and behavior
+- Almost everything is a widget
+- Exampes: 
+    - KB Article
+    - Sc Cat Item
+
