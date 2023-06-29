@@ -215,7 +215,14 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 2. Client
 
 The components are:
-1. Server Script - Server
-2. HTML Template - Client
-3. CSS - Client
-4. Client Script - Client
+1. Server Script 
+2. HTML Template 
+3. CSS 
+4. Client Script 
+5. Option Schema 
+
+# The Widget Instance
+1. Widget A [sp_widget] - the widget instance got created right away as a place holder
+    ||
+    \/
+    Widget A Instance
