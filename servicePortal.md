@@ -191,3 +191,4 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
 - Best way to edit a widget
 - There is an eye icon for a preview(live on vs code) to see our changes and progress on the component. This can be a powerful tool. 
 - The hamburger bar on the top right, you can Edit option schema. We will revisit that later. 
+- If you want to find the list of different methods on the service portal, Go to server script => Go inside the finction scope than type $sp. this will render the method list with explanation that can be useful for calling the method on the server side. 
