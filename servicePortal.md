@@ -186,3 +186,6 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
     - Modifying instances
     - Modifying containers, rows, column
     - Viewing the layout of a page
+
+# Widget Editor
+- Best way to edit a widget
