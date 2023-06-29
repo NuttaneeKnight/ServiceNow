@@ -187,6 +187,7 @@ https://dev90700.service-now.com/sp?id=security_home to access the security home
     - Modifying containers, rows, column
     - Viewing the layout of a page
 
-# Widget Editor
+# Widget Editor 
 - Best way to edit a widget
 - There is an eye icon for a preview(live on vs code) to see our changes and progress on the component. This can be a powerful tool. 
+- The hamburger bar on the top right, you can Edit option schema. We will revisit that later. 
