@@ -241,5 +241,10 @@ The components are:
 # Option Schema
 - Widget-specific parameters
 - Copied over from the widget to the widget instance
-- Stored in JSON format
-
+- Stored in JSON format in the widget record
+- Support types:
+    - Strings
+    - Lists
+    - References
+    - Booleans
+    -More...
