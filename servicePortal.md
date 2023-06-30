@@ -252,3 +252,7 @@ The components are:
 # Extending Widgets Through the Option Schema
 - Cool Clock Widget -> Cool Clok Widget Instance
 - With that instance, we will have the ability to midify
+
+# Adding Fields to the Instance Option modal
+- Widget A [sp_widget] -> Widget A Instance
+- Fields (Title, Shortdescription, Bootcamp color)
