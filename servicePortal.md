@@ -247,4 +247,8 @@ The components are:
     - Lists
     - References
     - Booleans
-    -More...
+    - More...
+
+# Extending Widgets Through the Option Schema
+- Cool Clock Widget -> Cool Clok Widget Instance
+- With that instance, we will have the ability to midify
