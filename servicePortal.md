@@ -240,3 +240,6 @@ The components are:
 
 # Option Schema
 - Widget-specific parameters
+- Copied over from the widget to the widget instance
+- Stored in JSON format
+
