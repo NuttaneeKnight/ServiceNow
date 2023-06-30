@@ -235,4 +235,4 @@ The components are:
     - HREF/URL
     - Additional options*
 
-    
+- Hero text is the header navigation text that shows on instance title og the form  
