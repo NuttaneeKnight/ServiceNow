@@ -236,3 +236,4 @@ The components are:
     - Additional options*
 
 - Hero text is the header navigation text that shows on instance title og the form  
+- Secondary text wll be right below the hero text -> Short description
