@@ -274,3 +274,4 @@ The components are:
 - Type "widget instance"
 - This will show the list of the widget instance
 - On the "class" field is where we can find which instance the widget uis from.
+- If you group by class you will see all of them in the different instances class
