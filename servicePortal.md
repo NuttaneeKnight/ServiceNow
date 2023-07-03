@@ -269,3 +269,8 @@ The components are:
 - Widget A [sp_widget] (* Data table >> Instance[sp_instance])
 - Widget A Instance [sp_instance]
 
+# Widget Instance
+- Go to navigation
+- Type "widget instance"
+- This will show the list of the widget instance
+- On the "class" field is where we can find which instance the widget uis from.
