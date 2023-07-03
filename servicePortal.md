@@ -256,3 +256,4 @@ The components are:
 # Adding Fields to the Instance Option modal
 - Widget A [sp_widget] -> Widget A Instance
 - Fields (Title, Shortdescription, Bootcamp color)
+- If you go into the widget form >> scroll down >> *Data table >> "Fields" that way you can access the instace field from the sn field table.
