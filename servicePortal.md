@@ -265,3 +265,7 @@ The components are:
         - In stance with Link >> Page
         - Instance with Carousel >> Carousel Image
         - * Instance with Table >> Table & filter (which table do we want to show [sp_instance] to the user)
+# Choosing an Instance Type
+- Widget A [sp_widget] (* Data table >> Instance[sp_instance])
+- Widget A Instance [sp_instance]
+
