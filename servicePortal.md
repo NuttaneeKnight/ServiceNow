@@ -260,6 +260,8 @@ The components are:
 
 # Instance Option Revisited
 - The Different Instance Types
-    Instance >> Title & Short Description
-- Instance with Menu >> Menu items
-- In stance with Link >> Page
+    Instance >> Title & Short Description (Branch below)
+        - Instance with Menu >> Menu items
+        - In stance with Link >> Page
+        - Instance with Carousel >> Carousel Image
+        - * Instance with Table >> Table & filter
