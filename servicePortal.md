@@ -259,3 +259,7 @@ The components are:
 - If you go into the widget form >> scroll down >> *Data table >> "Fields" that way you can access the instace field from the sn field table.
 
 # Instance Option Revisited
+- The Different Instance Types
+    Instance >> Title & Short Description
+- Instance with Menu >> Menu items
+- In stance with Link >> Page
