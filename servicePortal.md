@@ -264,4 +264,4 @@ The components are:
         - Instance with Menu >> Menu items
         - In stance with Link >> Page
         - Instance with Carousel >> Carousel Image
-        - * Instance with Table >> Table & filter
+        - * Instance with Table >> Table & filter (which table do we want to show [sp_instance] to the user)
