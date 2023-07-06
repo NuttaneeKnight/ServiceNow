@@ -276,5 +276,6 @@ The components are:
 - On the "class" field is where we can find which instance the widget uis from.
 - If you group by class you will see all of them in the different instances class
 
+***Select Box in ServiceNow is a dropdown***
 # Widget - things to consider
 - Before creating the widget go and look back if there is any that is out of the box
