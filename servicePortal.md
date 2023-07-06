@@ -275,3 +275,6 @@ The components are:
 - This will show the list of the widget instance
 - On the "class" field is where we can find which instance the widget uis from.
 - If you group by class you will see all of them in the different instances class
+
+# Widget - things to consider
+- Before creating the widget go and look back if there is any that is out of the box
