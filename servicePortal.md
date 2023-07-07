@@ -285,7 +285,7 @@ The components are:
 - Build onto this widget
 - Focusing on HTML
 
-# Demo
+# Demo - How to create a new widget
 - Type > Service Portal Configuration
 - Navigate to Widget Editor
 - Click - Create a new Widget
