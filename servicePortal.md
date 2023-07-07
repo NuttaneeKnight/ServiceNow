@@ -284,3 +284,10 @@ The components are:
 - Submit an Incident widget
 - Build onto this widget
 - Focusing on HTML
+
+# Demo
+- Type > Service Portal Configuration
+- Navigate to Widget Editor
+- Click - Create a new Widget
+- Name it > Create an incident
+- check off "Create test page" > Submit
