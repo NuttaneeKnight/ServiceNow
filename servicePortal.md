@@ -291,3 +291,4 @@ The components are:
 - Click - Create a new Widget
 - Name it > Create an incident
 - check off "Create test page" > Submit
+- Click on the hanburger menu on the top rright > check off "Enable Preview" 
