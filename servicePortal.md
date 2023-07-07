@@ -279,3 +279,8 @@ The components are:
 ***Select Box in ServiceNow is a dropdown***
 # Widget - things to consider
 - Before creating the widget go and look back if there is any that is out of the box
+
+# Creating a Wudget
+- Submit an Incident widget
+- Build onto this widget
+- Focusing on HTML
