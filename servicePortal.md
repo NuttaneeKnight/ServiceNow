@@ -296,3 +296,6 @@ The components are:
 # Primary Widget Development
 - Examine page & Widget lifecycles
 - Explore global objects
+- Introduct server & client-side development
+- Look at a common AngularJS directives
+- Inspect AngularJS in developer tools
