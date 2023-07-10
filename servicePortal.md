@@ -300,3 +300,7 @@ The components are:
 - Look at a common AngularJS directives
 - Inspect AngularJS in developer tools
 - OOB components are your friends. Use it as a boiler plate
+
+# Widget Lifecycle
+- Server side >> Widget instance >> Instance Options >> Server Script
+- Then the Angular will bootstrap and send it back to the Client side in HTML template, CSS, Client Script along with the "DATA" 
