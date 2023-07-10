@@ -292,3 +292,7 @@ The components are:
 - Name it > Create an incident
 - check off "Create test page" > Submit
 - Click on the hanburger menu on the top rright > check off "Enable Preview" 
+
+# Primary Widget Development
+- Examine page & Widget lifecycles
+- Explore global objects
