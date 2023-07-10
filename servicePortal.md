@@ -299,3 +299,4 @@ The components are:
 - Introduct server & client-side development
 - Look at a common AngularJS directives
 - Inspect AngularJS in developer tools
+- OOB components are your friends. 
