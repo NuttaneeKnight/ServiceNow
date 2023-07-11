@@ -322,3 +322,7 @@ The components are:
 ***c represent the controller view***
 - c.data.a = 2
 - c.server.update(O); >> This will bundle up
+# Server-Side Development
+- Power of ServiceNow (Rhino JS Engine)
+- $sp API - useful api 
+- Invoke script includes from server script
