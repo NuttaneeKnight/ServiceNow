@@ -320,4 +320,5 @@ The components are:
 - c.data{a:1}
 - c.options = {[[[]]]}
 ***c represent the controller view***
-
+- c.data.a = 2
+- c.server.update(O); >> This will bundle up
