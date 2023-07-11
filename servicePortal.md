@@ -311,4 +311,7 @@ The components are:
 2. Options
 3. Inputs
 
+# Global Objects in Action
 
+- data = {a: 1}
+- options = {[[[]]]}
