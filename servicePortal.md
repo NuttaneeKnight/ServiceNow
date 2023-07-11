@@ -319,4 +319,5 @@ The components are:
 ***When we send it back the names transformed***
 - c.data{a:1}
 - c.options = {[[[]]]}
+***c represent the controller view***
 
