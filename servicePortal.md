@@ -315,3 +315,8 @@ The components are:
 
 - data = {a: 1}
 - options = {[[[]]]}
+
+***When we send it back the names transformed***
+- c.data{a:1}
+- c.options = {[[[]]]}
+
