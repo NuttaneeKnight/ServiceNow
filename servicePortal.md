@@ -326,3 +326,15 @@ The components are:
 - Power of ServiceNow (Rhino JS Engine)
 - $sp API - useful api 
 - Invoke script includes from server script
+# Server Script Example
+- Display the current user's active incidents
+
+***Client-Side***
+1. For each object in array, display number and short_description
+
+***Server-Side***
+1. Query incident table
+2. For each incident
+    1. add the number and short_description to a temp object
+    2. Push object to array 
+
