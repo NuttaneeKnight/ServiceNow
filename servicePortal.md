@@ -338,3 +338,7 @@ The components are:
     1. add the number and short_description to a temp object
     2. Push object to array 
 
+# The $sp API
+- GlideSPScriptable
+- Helper methods specific for Service Portal
+    ex. canReadRecord() - testswhether a user can read a specific GlideRecord. *User Criteria
