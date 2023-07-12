@@ -345,3 +345,5 @@ The components are:
     - getForm() - returns a form
     - getParameter() - returns specified URL parameter
     - getPortalRecord() - returns GlideRecord of portal record
+
+
