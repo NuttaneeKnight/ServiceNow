@@ -341,4 +341,7 @@ The components are:
 # The $sp API
 - GlideSPScriptable
 - Helper methods specific for Service Portal
-    ex. canReadRecord() - testswhether a user can read a specific GlideRecord. *User Criteria
+    - canReadRecord() - testswhether a user can read a specific GlideRecord. *User Criteria
+    - getForm() - returns a form
+    - getParameter() - returns specified URL parameter
+    - getPortalRecord() - returns GlideRecord of portal record
