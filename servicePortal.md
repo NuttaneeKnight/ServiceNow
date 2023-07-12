@@ -346,5 +346,7 @@ The components are:
     - getParameter() - returns specified URL parameter
     - getPortalRecord() - returns GlideRecord of portal record
     - getRecordDisplayValues() - Copies display values for the specified fields into the data parameter
-    - getWidget( - Gets a widget by id or sys_is, execute that widget's server script using the provided options, then returns the widget model. )
+    - getWidget() - Gets a widget by id or sys_is, execute that widget's server script using the provided options, then returns the widget model. 
+- Go to developer API documentation to see all the $sp API call
+
 
