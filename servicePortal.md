@@ -349,4 +349,5 @@ The components are:
     - getWidget() - Gets a widget by id or sys_is, execute that widget's server script using the provided options, then returns the widget model. 
 - Go to developer API documentation to see all the $sp API call
 - $sp. is usually the method, go to the documentation for more info
-- $sp.getRecordElements()
+- $sp.getRecordElements(obj, incidentGR, data.fields) - takes 3 params
+
