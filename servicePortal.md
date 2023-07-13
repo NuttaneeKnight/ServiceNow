@@ -359,3 +359,9 @@ The components are:
     - access to the server API
     - access to spUtil
 - Dependency injection
+
+# AngularJS Controller in Service Portal (Similar to react)
+- Service Portal bootstraps AngularJS for us!
+
+# Client Script Example
+- Rating a knowledge article
