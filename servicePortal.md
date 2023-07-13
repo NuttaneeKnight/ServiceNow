@@ -375,6 +375,14 @@ The components are:
 
 ***Client-Side***
 1. Display article
-2. Store star rating
+2. Store star rating (From the click event)
 3. Send star rating to server
+
+# Client-Side APIs
+- server - AJAX utility (call the server sode script to the client side)
+- spUtil - other useful utility methods
+spModal - modal utility
+- i18n - internationaliization utility
+- spAriaUtil - ARIA utility
+
 
