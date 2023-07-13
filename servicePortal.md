@@ -351,3 +351,11 @@ The components are:
 - $sp. is usually the method, go to the documentation for more info
 - $sp.getRecordElements(obj, incidentGR, data.fields) - takes 3 params
 
+# Client-Side Development
+- Power of AngularJS
+- Additional Service Portal functionality 
+    - Handles passing data from server script to client script
+    - Automaticcally creates a directive for each widget
+    - access to the server API
+    - access to spUtil
+- Dependency injection
