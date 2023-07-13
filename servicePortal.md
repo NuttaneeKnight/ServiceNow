@@ -365,3 +365,16 @@ The components are:
 
 # Client Script Example
 - Rating a knowledge article
+
+***Server-Side***
+1. Query kb_knowledge table
+2. Get article data
+3. Store star rating on kb_feedback table
+
+[PASS_TO_CLIENT-SIDE]
+
+***Client-Side***
+1. Display article
+2. Store star rating
+3. Send star rating to server
+
