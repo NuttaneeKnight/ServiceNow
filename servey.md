@@ -8,4 +8,5 @@
 - Assessment : Service Desk Satisfaction Survey
 - Table : incident
 - User field: Caller
+- Trigger Randonly : uncheck it
 - Condition: Assignment group is Network AND State is Resolved
