@@ -388,13 +388,14 @@ spModal - modal utility
 
 
 # Common AngularJS Directives
-- ng-repeat
-- ng-if
-- ng-click
-- ng-model
-- ng-href
+- ng-repeat = repeat or loop through an array and display
+- ng-if = checks if we wanna rnder or not
+- ng-click = trigger with the click events
+- ng-model = attached the variable to the views
+- ng-href 
 - ng-change
 - ng-hide
 - ng-show
 - ng-required
 - ng-disabled
+
