@@ -387,3 +387,14 @@ spModal - modal utility
 
 
 
+# Common AngularJS Directives
+- ng-repeat
+- ng-if
+- ng-click
+- ng-model
+- ng-href
+- ng-change
+- ng-hide
+- ng-show
+- ng-required
+- ng-disabled
