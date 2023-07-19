@@ -411,3 +411,13 @@ spModal - modal utility
     - user
     - widget
     - widget_parameters
+
+    # Advanced Widget Developmeent
+    - Templates
+    - Porviders
+    - Dependencies
+    - Leveraging script includes
+    - Embedding widgets
+    - Communication between widgets
+    - Link function
+    - Record watch
