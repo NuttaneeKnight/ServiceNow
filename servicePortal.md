@@ -399,3 +399,15 @@ spModal - modal utility
 - ng-required
 - ng-disabled
 
+# What's in $scope
+- Properties
+    - c (controller)
+    - data* passed from server script
+    - options* passed from server script
+    - page
+    - portal
+    - theme
+    - user
+    - user
+    - widget
+    - widget_parameters
