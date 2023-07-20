@@ -16,3 +16,8 @@
 
 ***Process Automation Designer (PAD) is Now Platform feature that allows Process Owner to weave together cross-enterprise workflows to create a single unifies process.***
 
+# Flow Designer Components
+1. Flow = is an automated process consisting of a swquence of  actions and a triggerr to initiate. It automates business logic or particular applications or processes, such as updating records, asking for approvals, creating tasks, or sending notifications. 
+2. Subflow = 
+3. Action
+4. Spoke 
