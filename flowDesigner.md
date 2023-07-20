@@ -6,3 +6,6 @@
 - It reduces development costs by providing a library of reusable flow components in the base system created by ServiceNow Developers. 
 - It reduces upgrade costs with upgrade-safe platform logic replacing complex custom scripts
 - It allows you to develop, share, and reuse your custon flow components with other flow designers. 
+- It displays flows as diagrams to help developers see paths and connections to understand and improve flows. 
+
+# Flow Designer vs. Process Automation Designer (PAD)
