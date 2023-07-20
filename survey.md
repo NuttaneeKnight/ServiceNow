@@ -21,6 +21,16 @@
 - Assign = Identify who will receive the survey and when
 - View = Ensure that the survey looks as expected
 
+# Design
 - survey_admin role
 - After the design, the next will tab is the configuration. There you will be able to customize your message to answer you customer. ex. "The safety department appreciates your feedback" End note > Thank you for taking the survey etc.
 - The next tab after configuration, Availability. You can pick who does have the access to the survey. 
+- When it's finished click saved and publish :) 
+
+# Assign
+***There are 3 ways to siign a survey***
+- Assign it manually to each user
+- Schedule it by calendar date or interval
+- Have the system send it based on a trigger condition
+
+
