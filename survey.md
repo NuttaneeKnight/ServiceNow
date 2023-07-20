@@ -35,5 +35,7 @@
 
 - You can use the trigger conditions related list down below to trigger the condition when do you want it to send out. 
 - Users with the admin, survey_admin, or survey reader can view surveys and related information
+- The data of that survey should be on the form
+- For more scores on each question > mnavigate to the related list below under "score caard" that way you will see all the scores and conditions. 
 
 
