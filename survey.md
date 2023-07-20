@@ -34,5 +34,6 @@
 - Have the system send it based on a trigger condition
 
 - You can use the trigger conditions related list down below to trigger the condition when do you want it to send out. 
+- Users with the admin, survey_admin, or survey reader can view surveys and related information
 
 
