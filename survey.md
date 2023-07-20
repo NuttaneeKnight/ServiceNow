@@ -23,3 +23,4 @@
 
 - survey_admin role
 - After the design, the next will tab is the configuration. There you will be able to customize your message to answer you customer. ex. "The safety department appreciates your feedback" End note > Thank you for taking the survey etc.
+- The next tab after configuration, Availability. You can pick who does have the access to the survey. 
