@@ -9,3 +9,7 @@
 - It displays flows as diagrams to help developers see paths and connections to understand and improve flows. 
 
 # Flow Designer vs. Process Automation Designer (PAD)
+- If you are creating something new, always begin with Flow Designer. However, there are still quite a few advantages to using PAD
+    - It enables Process Owner too author cross-enterprise workflows and create a single unifieed process
+    - It provides end-users with a simplifies task-oriented view of your process (called Playbook)
+    - It conneccts multiple flows and actions into end-toend business workflows orgnized in a single interface with lanes and activities. 
