@@ -21,4 +21,5 @@
 - Assign = Identify who will receive the survey and when
 - View = Ensure that the survey looks as expected
 
-
+- survey_admin role
+- After the design, the next will tab is the configuration. There you will be able to customize your message to answer you customer. ex. "The safety department appreciates your feedback" End note > Thank you for taking the survey etc.
