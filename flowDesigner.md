@@ -4,3 +4,5 @@
 - Flow Designer combines multiple platform automation capabilities, configurations, and runtime information, so process owners and developers can create, operate, and troubleshoot flows from a single interface. 
 - It uses natural language descriptions to help non-technical users understand triggers, actions, inputs, and outputs. You do not have to  script to us Flow Designer
 - It reduces development costs by providing a library of reusable flow components in the base system created by ServiceNow Developers. 
+- It reduces upgrade costs with upgrade-safe platform logic replacing complex custom scripts
+- It allows you to develop, share, and reuse your custon flow components with other flow designers. 
