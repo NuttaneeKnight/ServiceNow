@@ -13,3 +13,6 @@
     - It enables Process Owner too author cross-enterprise workflows and create a single unifieed process
     - It provides end-users with a simplifies task-oriented view of your process (called Playbook)
     - It conneccts multiple flows and actions into end-toend business workflows orgnized in a single interface with lanes and activities. 
+
+***Process Automation Designer (PAD) is Now Platform feature that allows Process Owner to weave together cross-enterprise workflows to create a single unifies process.***
+
