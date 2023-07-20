@@ -11,3 +11,6 @@
 - Naviagate to "User Multi-factor Setup" 
 - In the user table, find the user that we are authenticating
 - After the user is found, on the cell editing "Validated" change it from true to false
+
+# How to configure a list layout
+- Click right on the record and go to List layout 
