@@ -33,4 +33,6 @@
 - Schedule it by calendar date or interval
 - Have the system send it based on a trigger condition
 
+- You can use the trigger conditions related list down below to trigger the condition when do you want it to send out. 
+
 
