@@ -10,3 +10,7 @@
 - User field: Caller
 - Trigger Randonly : uncheck it
 - Condition: Assignment group is Network AND State is Resolved
+
+***Surveys are built into the ServiceNow platform and are available on any instance***
+
+- They are a great way to get general customer stisfaction data or feedback on a task activity (request)
