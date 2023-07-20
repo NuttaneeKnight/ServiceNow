@@ -13,4 +13,12 @@
 
 ***Surveys are built into the ServiceNow platform and are available on any instance***
 
-- They are a great way to get general customer stisfaction data or feedback on a task activity (request)
+- They are a great way to get general customer stisfaction data or feedback on a task activity such as when the request is closed
+- You can also create a surveys for non-ServiceNow users.
+
+# Survey process:
+- Design = Identify data to gather
+- Assign = Identify who will receive the survey and when
+- View = Ensure that the survey looks as expected
+
+
