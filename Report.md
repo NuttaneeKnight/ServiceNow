@@ -11,3 +11,10 @@
 - Use Dashboards to share your business data insights with stakeholders.
 - Easieer t visualize the state of your business operations. 
 
+# Report building activities are grouped in four stages:
+1. Identify the data source : Data phase, ServiceNow Data lives in tables. In this step you select the Table which contains the records you wish to report on. 
+2. Select Report Type : Type Phase. What is the objective of you report? 
+    - Pie or Bar : to compare data by attribute
+    - Time Series : to view historical trands over time
+    - Single Score : for manage and executive KPIs
+    - List : for a spreadsheet-style listing of data. 
