@@ -18,3 +18,5 @@
     - Time Series : to view historical trands over time
     - Single Score : for manage and executive KPIs
     - List : for a spreadsheet-style listing of data. 
+3. Configure Data Display : Configure Phase. Fine-tune the data you present by selecting an attribute to compare or trend by. Report on the count of records, or, aggregate the records using Sum, Average, etc. 
+4. Style the chart Apperance : Style phase. Select chart size, colors, legend, presentation, axis style, fonts. little, stc. to polish off the final report look. 
