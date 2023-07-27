@@ -426,5 +426,9 @@ spModal - modal utility
 (Script Include) Action - function getQuery{}
 (Global Style Sheet) Style - .btn {}
 (Directive) HTML - <div></div>
-
 - With those 3 above components you get a service portal.
+
+# Templates
+- Stores HTML
+- Change the way data is displayed
+- Widgets may have 0 to many templates
