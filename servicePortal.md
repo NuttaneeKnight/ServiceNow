@@ -421,3 +421,5 @@ spModal - modal utility
     - Communication between widgets
     - Link function
     - Record watch
+
+# DRY in Action
