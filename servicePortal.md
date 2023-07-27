@@ -472,3 +472,16 @@ Sample code:
         } return value + ' ...';
     })
 })();
+
+# Leveraging Script Includes
+- Calling a Script Include From a Widget
+- Server Script
+    var api = new ScriptInclude();
+    var stuff = api.methodName();
+- Script Include
+    ...
+    methodName : function() {
+        ...
+        return stuff;
+    };
+    ...
