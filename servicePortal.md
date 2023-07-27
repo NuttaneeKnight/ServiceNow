@@ -431,4 +431,7 @@ spModal - modal utility
 # Templates
 - Stores HTML
 - Change the way data is displayed
-- Widgets may have 0 to many templates
+- Widgets may have 0 to many templates, A template can only belong to one widget. 
+
+***In the All Navigator type sp_ng_template.list to see al the list of the temlate***
+
