@@ -485,3 +485,8 @@ Sample code:
         return stuff;
     };
     ...
+# Embding Widgets
+- 3 methods to do so
+    1. HTML template
+    2. Server Script
+    3. Client Script
