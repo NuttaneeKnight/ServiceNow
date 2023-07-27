@@ -435,3 +435,12 @@ spModal - modal utility
 
 ***In the All Navigator type sp_ng_template.list to see al the list of the temlate***
 
+- Navigate to = small_shopping_cart_v2.html
+- Click the Widget information icon
+- Navigate down to the related list and go to "Angular ng-templates", we will see that there are 2 templates. Small and Large
+
+# Angular Providers
+- Shares context between widgets
+- Helps to maintain state
+- Creates reusable components which maybe injected into multiple widgets
+- Provider types: 1. Directive, 2 Factory, 3. Service 
