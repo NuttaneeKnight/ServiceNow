@@ -423,8 +423,8 @@ spModal - modal utility
     - Record watch
 
 # DRY in Action
-Action - function getQuery{}
-Style - .btn {}
-HTML - <div></div>
+(Script Include) Action - function getQuery{}
+(Global Style Sheet) Style - .btn {}
+(Directive) HTML - <div></div>
 
 - With those 3 above components you get a service portal.
