@@ -471,4 +471,4 @@ Sample code:
             }
         } return value + ' ...';
     })
-})
+})();
