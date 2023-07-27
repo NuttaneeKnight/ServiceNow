@@ -444,3 +444,31 @@ spModal - modal utility
 - Helps to maintain state
 - Creates reusable components which maybe injected into multiple widgets
 - Provider types: 1. Directive, 2 Factory, 3. Service 
+
+# Dependencies
+- May Include:
+    JavaScript (UI scripts)
+    CSS (style sheets)
+- 3rd party libraries
+
+Sample code: 
+
+(function () {
+    angular.module('ellipsisFilter', []).filter('ellipsis', function() {
+        return function(value, length) {
+            if (value.length < length) {
+                return value
+            }
+            if (length) {
+                length = parseInt(length);
+                value = value.substr(0, length)
+                var laastSpace = value.lastIndexOf(' ')
+                if (lastSpace != -1) {
+                    if (value.charAt(lastSpace -1) === '.' || value.charAt(lastSpace - 1) == ',') {
+
+                    }
+                }
+            }
+        } return value + ' ...';
+    })
+})
