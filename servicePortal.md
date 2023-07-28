@@ -493,3 +493,6 @@ Sample code:
 
 # Communicating Between Widgets
 - Event => Widget A => Widget B (On broadcast message, do this...)
+- The methods are:
+    $rootScope.$broadcast()
+    $rootScope.$on()
