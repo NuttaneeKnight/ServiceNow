@@ -497,3 +497,9 @@ Sample code:
     - $rootScope.$broadcast() = Takes 2 params 1.name of the event (incident.issue) 2.the data that we want to pass (c.data.newIncident.issue)
 
     - $rootScope.$on() (Another option iis $scope.$on()) = Will explain when to use it. Takes in 2 params 1.name of the event and the 2.name of the function that we want to capture the event
+
+# Linked Functtion
+- Advanced feature that is rrarely needed
+- Used to manipulate the DOM (or add watcher)
+- If you go to the Widget module => navigate into any widget => scroll down and you will find the "Link Function" Down below.
+
