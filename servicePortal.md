@@ -494,5 +494,6 @@ Sample code:
 # Communicating Between Widgets
 - Event => Widget A => Widget B (On broadcast message, do this...)
 - The methods are:
-    $rootScope.$broadcast()
-    $rootScope.$on()
+    - $rootScope.$broadcast() = Takes 2 params 1.name of the event (incident.issue) 2.the data that we want to pass (c.data.newIncident.issue)
+
+    - $rootScope.$on()
