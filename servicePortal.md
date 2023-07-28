@@ -503,3 +503,10 @@ Sample code:
 - Used to manipulate the DOM (or add watcher)
 - If you go to the Widget module => navigate into any widget => scroll down and you will find the "Link Function" Down below.
 
+# Record Watch
+- Respond to table update from server-side
+- Pushes data to widget
+- Near real-time updates 
+- HTTP Long polling (technology) having the client pulled the server requesting information. The server holds the request pened until the new updates 
+- recordWatch() lives in the spUtil
+- spUtil.recordWatch($scope, 'incident', 'active=true')
