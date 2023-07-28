@@ -496,4 +496,4 @@ Sample code:
 - The methods are:
     - $rootScope.$broadcast() = Takes 2 params 1.name of the event (incident.issue) 2.the data that we want to pass (c.data.newIncident.issue)
 
-    - $rootScope.$on()
+    - $rootScope.$on() (Another option iis $scope.$on()) = Will explain when to use it. Takes in 2 params 1.name of the event and the 2.name of the function that we want to capture the event
