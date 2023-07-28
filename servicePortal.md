@@ -513,3 +513,11 @@ Sample code:
 
 # For information on how to import XML records into your instance, checkout this article: https://developer.servicenow.com/app.do#!/document/content/app_store_doc_technical_best_practices_jakarta_import_records_as_xml_data?v=newyork
 
+# Style Location / Theming a Portal
+- Theme 
+    - Theme SCSS variables
+    - Style sheets
+    - JavaScript files
+- Widget styling
+- Page styling
+- Portal SCSS variables
