@@ -528,3 +528,11 @@ Sample code:
 - CSS includes
 - JavaScript includes
 
+# Styling Locations
+- Portal SCSS variables
+- Theme SCSS variables 
+- Style Sheets
+- PAge Styling
+- Widget instance styling
+- Widget STyling
+- Widget element styling
