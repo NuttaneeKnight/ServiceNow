@@ -521,3 +521,10 @@ Sample code:
 - Widget styling
 - Page styling
 - Portal SCSS variables
+
+# Theme Anatomy
+- Header & Footer
+- SCSS variables
+- CSS includes
+- JavaScript includes
+
