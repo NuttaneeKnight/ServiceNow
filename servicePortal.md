@@ -490,3 +490,6 @@ Sample code:
     1. HTML template
     2. Server Script
     3. Client Script
+
+# Communicating Between Widgets
+- Event => Widget A => Widget B (On broadcast message, do this...)
