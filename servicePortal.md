@@ -510,3 +510,6 @@ Sample code:
 - HTTP Long polling (technology) having the client pulled the server requesting information. The server holds the request pened until the new updates 
 - recordWatch() lives in the spUtil
 - spUtil.recordWatch($scope, 'incident', 'active=true')
+
+# For information on how to import XML records into your instance, checkout this article: https://developer.servicenow.com/app.do#!/document/content/app_store_doc_technical_best_practices_jakarta_import_records_as_xml_data?v=newyork
+
