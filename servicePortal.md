@@ -536,3 +536,7 @@ Sample code:
 - Widget instance styling
 - Widget STyling
 - Widget element styling
+
+# Style Specificity
+"Less specific" -> Portal SCSS variables -> Theme SCSS variables -> Style Sheets -> Page styling -> Widget Styling -> Widget intance styling -> Widget element styling -> "More specific"
+
