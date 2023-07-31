@@ -566,3 +566,7 @@ Sample code:
     - Page Route Maps
     - Search & search sources
     - Announcements
+
+# What is a Usage Overview?
+- It s out of the bx Dashboard with reports
+- This report leverages sp_log table
