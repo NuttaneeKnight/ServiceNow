@@ -540,3 +540,10 @@ Sample code:
 # Style Specificity
 "Less specific" -> Portal SCSS variables -> Theme SCSS variables -> Style Sheets -> Page styling -> Widget Styling -> Widget intance styling -> Widget element styling -> "More specific"
 
+# Service Portal SCSS
+- SCSS is a subset of the SASS Specification
+- It supports variables, nesting, mixins, functions, and operators
+- Use variables throughout the portals!
+
+- SCSS variables    -> Style sheets
+                    -> Widget styles
