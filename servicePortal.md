@@ -550,3 +550,10 @@ Sample code:
 # Bootstrap
 - Work with it, not aagainst it
 - Leverage SCSS bootsratp variables
+
+# Applying Styles
+- Best Practices
+    - Be as general as possible
+    - Avoid adding CSS to widgets, widget instances, or pages wen possible
+    - Utilize SCSS vriablees
+    - Organize styling components in seperate style sheets
