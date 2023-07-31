@@ -570,3 +570,9 @@ Sample code:
 # What is a Usage Overview?
 - It s out of the bx Dashboard with reports
 - This report leverages sp_log table
+
+# Logs
+- Stores in sp_log table
+- Stores transactional data
+- Reporting
+ 
