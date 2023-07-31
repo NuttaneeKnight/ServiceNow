@@ -547,3 +547,6 @@ Sample code:
 
 - SCSS variables    -> Style sheets
                     -> Widget styles
+# Bootstrap
+- Work with it, not aagainst it
+- Leverage SCSS bootsratp variables
