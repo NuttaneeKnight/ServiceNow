@@ -557,3 +557,12 @@ Sample code:
     - Avoid adding CSS to widgets, widget instances, or pages wen possible
     - Utilize SCSS vriablees
     - Organize styling components in seperate style sheets
+
+# UsageOverview, Logs, & Properties
+- Additional Features
+    - Usage overview
+    - Logs
+    - Service Portal Properties
+    - Page Route Maps
+    - Search & search sources
+    - Announcements
