@@ -26,3 +26,5 @@ Overall, Change Management in ServiceNow enhances the reliability and stability 
 - Emergency = Unplanned changes necessary to restore service. These changes require CAB authorization only
 # What is CHANGE?
  - The additional, modification or removal of any authorized, planned, or supported service or service component that could have an effect on IT services. 
+
+ 
