@@ -575,4 +575,3 @@ Sample code:
 - Stores in sp_log table
 - Stores transactional data
 - Reporting
- 
