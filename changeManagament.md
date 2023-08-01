@@ -30,4 +30,11 @@ Overall, Change Management in ServiceNow enhances the reliability and stability 
  # What is Change Management
  - Standard proceddurres and practice for managing requests in effective manner in an effort to drastically minimize the risk an impact a change canhave on business operations. 
 
- 
+# Change Management Process
+- Create Change Request
+- Review Change
+- Change Evaluation
+- Change Evaluation
+- Change Approvals
+- Implement 
+- Validate
