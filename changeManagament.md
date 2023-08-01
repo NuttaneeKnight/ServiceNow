@@ -20,3 +20,7 @@ Change Records: Every change is recorded and stored as a Change Record, which se
 Change Risk Assessment: The platform may offer features to assess the risk associated with proposed changes, helping teams prioritize and plan their change implementation.
 
 Overall, Change Management in ServiceNow enhances the reliability and stability of IT services by providing a structured approach to managing changes, minimizing disruptions, and facilitating collaboration among IT teams and stakeholders involved in the change process.
+
+# Change Request
+- Normal = Changes without predefined plans tht require approval and CAB authorization
+- Emergency = Unplanned changes necessary to restore service. These changes require CAB authorization only
