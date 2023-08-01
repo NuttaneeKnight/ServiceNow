@@ -38,3 +38,16 @@ Overall, Change Management in ServiceNow enhances the reliability and stability 
 - Change Approvals
 - Implement 
 - Validate
+Change Management Plugins
+- Change Management Core
+- Collision Detecctor
+- Standard Change Catalog
+- ITSM Roles
+- Change Risj Calculator
+- Bulk CI Changes
+- Business Stakeholder
+- Change Schedule
+- Mass Update CI
+- Change Management State Model
+- Risk Assessment
+- Aproval Policy
