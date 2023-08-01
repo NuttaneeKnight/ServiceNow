@@ -27,4 +27,7 @@ Overall, Change Management in ServiceNow enhances the reliability and stability 
 # What is CHANGE?
  - The additional, modification or removal of any authorized, planned, or supported service or service component that could have an effect on IT services. 
 
+ # What is Change Management
+ - Standard proceddurres and practice for managing requests in effective manner in an effort to drastically minimize the risk an impact a change canhave on business operations. 
+
  
