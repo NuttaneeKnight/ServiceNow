@@ -57,3 +57,14 @@ Change Management Plugins
 - Determent who will be the approvers
 - SLA and TASKs has to be created. 
 - Cheage scedule will be created
+
+# Change Types
+1. Standard
+2. Emergency
+3. Normal 
+
+# Standard 
+- Pre-authorized change
+- Low risk
+- Can be frequently implementedd
+
