@@ -74,3 +74,10 @@ Change Management Plugins
 - Implemented to resolve high priority issues
 - Does not follow complete normal change lifecycle
 - High priority changes
+- Post Change request
+# Normal
+- Follow complete lifecycle of change
+- Planned change which can have impact as well
+- Required complete assessment and approvals
+- Chhange to improve the service
+- Implemented during defined maintaenance window
