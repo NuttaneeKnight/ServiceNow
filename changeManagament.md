@@ -67,4 +67,10 @@ Change Management Plugins
 - Pre-authorized change
 - Low risk
 - Can be frequently implementedd
-
+- CAB Approval not required
+- Can be implemented via defined templates
+# Emergency
+- Change required to be implemented as soon as possible
+- Implemented to resolve high priority issues
+- Does not follow complete normal change lifecycle
+- High priority changes
