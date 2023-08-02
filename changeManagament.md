@@ -51,3 +51,9 @@ Change Management Plugins
 - Change Management State Model
 - Risk Assessment
 - Aproval Policy
+
+# Change Management 
+- Will use Flow for the automation
+- Determent who will be the approvers
+- SLA and TASKs has to be created. 
+- Cheage scedule will be created
