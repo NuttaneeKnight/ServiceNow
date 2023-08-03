@@ -1,4 +1,9 @@
 # Service Portal 
+- Hint String Note: 
+    [2:05 PM] Howie Austin
+
+<hints><entry key='sysparm_processing_hint' value='setfield:request.u_cartpop=district*609b73280f65b500b1c0ee68b1050eb0%5Eschool*c552b44e0f3de600738649bce1050e2c%5Edesc*test%5Econtactname*3253fgfgd%5Econtactphone*2253352352%5EliftGate*No%5Edock*No'/></hints>
+
 - Service Portal is a portal framework that allows administrators to build a mobile-friendly self service experience for users. It interacts with parts of the ServiceNow platform, so users can access specific platform features using Service Portal.
 
 # Why?
