@@ -81,3 +81,11 @@ Change Management Plugins
 - Required complete assessment and approvals
 - Chhange to improve the service
 - Implemented during defined maintaenance window
+
+NORMAL TYPE: Impersonated: LHRIC - Managed Infrastructure, ITIL: dzieminski@LHRIC.ORG, Manager: Robert Patrella
+
+	1. Impersonated ITIL ALL APPROVED without the DOT check off. 
+		PASS
+		FAIL
+		
+STEPS:
