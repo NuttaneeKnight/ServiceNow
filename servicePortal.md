@@ -581,3 +581,5 @@ Sample code:
 - Stores transactional data
 - Reporting
 
+- The logs are great for the reporting stand points. 
+- When the user are looking for the knwledge page that has not been created yet. 
