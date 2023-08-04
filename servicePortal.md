@@ -587,4 +587,4 @@ Sample code:
 # Properties
 - Service Portal Properties
 - There aren't many properties because it is modular by nature. 
-- It's better to define properties in the widget instance
+- It's better to define properties in the widget instance / or records. 
