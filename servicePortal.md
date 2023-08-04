@@ -580,6 +580,7 @@ Sample code:
 - Stores in sp_log table
 - Stores transactional data
 - Reporting
+- ex. $sp.logStat('Custype','table', 'sys_id','what you want to say int that field' )
 
 - The logs are great for the reporting stand points. 
 - When the user are looking for the knwledge page that has not been created yet. 
@@ -588,3 +589,4 @@ Sample code:
 - Service Portal Properties
 - There aren't many properties because it is modular by nature. 
 - It's better to define properties in the widget instance / or records. 
+
