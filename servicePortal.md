@@ -590,3 +590,7 @@ Sample code:
 - There aren't many properties because it is modular by nature. 
 - It's better to define properties in the widget instance / or records. 
 
+# Page Route Maps
+- Redirect the user to a different page
+- Great when working with OOB widgets
+- Server-side routing
