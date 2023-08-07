@@ -1,4 +1,4 @@
-<div id="sc_cat_checkout" ng-class="{'panel panel-default': !c.isNative}" sn-atf-blacklist="IS_SERVICE_CATALOG" ng-keydown="c.onKeyDown($event)">
+{/* <div id="sc_cat_checkout" ng-class="{'panel panel-default': !c.isNative}" sn-atf-blacklist="IS_SERVICE_CATALOG" ng-keydown="c.onKeyDown($event)">
 	<div class="padder-md checkout-modal-header text-base" ng-if="!c.isNative">
 		<h1 class="h3">
 			{{::checkoutPopupTitle}}
@@ -118,4 +118,5 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> */}
+
