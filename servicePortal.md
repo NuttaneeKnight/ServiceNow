@@ -594,3 +594,5 @@ Sample code:
 - Redirect the user to a different page
 - Great when working with OOB widgets
 - Server-side routing
+- * To investigate that the param is the right one or not cntrl+click on the instance page editor to investigate in the portal. The root on the left (sc_landing) is usually where we route on the back end but the end user doesn't know. 
+
