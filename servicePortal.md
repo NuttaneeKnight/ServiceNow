@@ -608,3 +608,14 @@ Sample code:
 - May require plugin if migrating from older release
 - Display and link options
 - Can be in the banner or widget format
+
+# Build Service Poral 
+- Project Scope
+    - HelpNow Portal
+    - Menu
+        - 2 menu items
+    - Theme
+        - 2 style sheets
+        - OOB header
+    - 5 Pages
+
