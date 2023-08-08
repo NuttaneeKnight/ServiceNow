@@ -606,3 +606,5 @@ Sample code:
 # Announcement
 - Broadcast messages to Service Portal users
 - May require plugin if migrating from older release
+- Display and link options
+- Can be in the banner or widget format
