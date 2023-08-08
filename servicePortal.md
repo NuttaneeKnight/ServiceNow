@@ -596,3 +596,9 @@ Sample code:
 - Server-side routing
 - * To investigate that the param is the right one or not cntrl+click on the instance page editor to investigate in the portal. The root on the left (sc_landing) is usually where we route on the back end but the end user doesn't know. 
 
+# Search & Search Sources 
+- OOB search widget leverages search sources
+- A search source is a record that describes the behavior and source of searchable data. A search source defines:
+    - Where search data is retrieved from
+    - Whether search suggestions can populte the search field based on user input
+    - How a search entry displays in the search result page
