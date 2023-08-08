@@ -602,3 +602,7 @@ Sample code:
     - Where search data is retrieved from
     - Whether search suggestions can populte the search field based on user input
     - How a search entry displays in the search result page
+
+# Announcement
+- Broadcast messages to Service Portal users
+- May require plugin if migrating from older release
