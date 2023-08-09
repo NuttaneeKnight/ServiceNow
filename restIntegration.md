@@ -15,8 +15,10 @@
 # REST
 - ServiceNow-REST(HTTP)-OTHER System
 # 5 Basic Building Blocks of REST
-- Endpoints
+- Endpoints = Reference to URI whcih accepts web requests
 - Methods
 - Authentication
 - Content/Body
 - Content Type
+
+

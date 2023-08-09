@@ -619,3 +619,6 @@ Sample code:
         - OOB header
     - 5 Pages
 
+# Pages
+- Homepage[hn_index] - 3 widgets
+- Create an Incident [hn_create_incident] - 3 widgets
