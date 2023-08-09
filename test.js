@@ -120,3 +120,14 @@
 	</div>
 </div> */}
 
+
+
+function cleanPhoneNumber(phoneNumber) { 
+    // Remove all non-digit characters from the input 
+    const cleanedNumber = phoneNumber.replace(/\D/g, ''); 
+    // Format the cleaned number as ###-###-#### 
+    const formattedNumber = cleanedNumber.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3'); 
+    return formattedNumber; } 
+    // Test the function const inputNumber = "123-456-7890"; 
+    const cleanedNumber = cleanPhoneNumber(inputNumber); 
+    console.log(cleanedNumber); // Output: 123-456-7890
