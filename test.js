@@ -127,7 +127,21 @@ function cleanPhoneNumber(phoneNumber) {
     const cleanedNumber = phoneNumber.replace(/\D/g, ''); 
     // Format the cleaned number as ###-###-#### 
     const formattedNumber = cleanedNumber.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3'); 
-    return formattedNumber; } 
-    // Test the function const inputNumber = "123-456-7890"; 
+    return formattedNumber; 
+} 
+    // Test the function 
+    const inputNumber = "123-456-7890"; 
     const cleanedNumber = cleanPhoneNumber(inputNumber); 
     console.log(cleanedNumber); // Output: 123-456-7890
+
+c.cleanPhoneNumber = function() {
+		console.log("Raw Phone Number: " + c.shipToPhoneNumber);
+		var phoneNumber = c.shipToPhoneNumber + "";
+		// Remove all non-digit characters from the input
+		var cleanedNumber = phoneNumber.replace(/\D/g, '');
+		// Format the cleaned number as ###-###-####
+		var formattedNumber = cleanedNumber.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+		console.log("Formatted Phone Number:" + formattedNumber);
+		c.shipToPhoneNumber = formattedNumber;
+}
+	
