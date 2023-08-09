@@ -14,3 +14,9 @@
 
 # REST
 - ServiceNow-REST(HTTP)-OTHER System
+# 5 Basic Building Blocks of REST
+- Endpoints
+- Methods
+- Authentication
+- Content/Body
+- Content Type
