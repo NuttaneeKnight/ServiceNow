@@ -622,3 +622,7 @@ Sample code:
 # Pages
 - Homepage[hn_index] - 3 widgets
 - Create an Incident [hn_create_incident] - 3 widgets
+- My Incidents[hm_my_incidents] - 3 widgets
+- Profile[hn_profile] - 3 widgets
+- Ticket[hn_ticket] - 6 widgets
+

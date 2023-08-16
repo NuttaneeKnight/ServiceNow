@@ -144,4 +144,20 @@ c.cleanPhoneNumber = function() {
 		console.log("Formatted Phone Number:" + formattedNumber);
 		c.shipToPhoneNumber = formattedNumber;
 }
-	
+var checkJEXL = true;
+
+for (var i = 0; i < files.length; i++) {
+    if (checkJEXL && isJEXLExpression(files[i].name)) {
+        warningString += files[i].name + "${JS:gs.getMessage(' is an invalid file name.\n')}";
+    }
+
+    if (files[i].size > allowedSize && allowedSize != 0) {
+        warningString += "${JS:gs.getMessage('File is larger than the maximum file size of attachments.')}";
+        warningString += "\n" + files[i].name + ": "  + getDisplaySize(files[i].size);
+        warningString += " / ";
+        warningString += "${JS:gs.getMessage('Maximum File Size: ')}" + getDisplaySize(allowedSize);
+        warningString += "\n";
+    } if (!isValidFileType(files[i], fileTypes))
+        warningString += files[i].name + "${JS:gs.getMessage(' has a prohibited file extension.')}" + "\n";
+
+}
