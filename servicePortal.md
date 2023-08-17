@@ -637,3 +637,4 @@ Sample code:
 - Click the pencil icon on the icon link: Mane the Title: "Careate a New Incident", Chose "Top Icon" for the templlate, Glypg - Choose +
 - Go ahead and save it. 
 - Now you can go back to that record and hit try it. 
+- To put the hero image in the search, Select container and the penccil, upload the image then select the bckground style to Cover as well. 
