@@ -631,3 +631,6 @@ Sample code:
 - Launch the designer - It can be found on the related links called "Open in Designer"
 - Select the page container and drag and drop to the right
 - Choose the 12
+- Look for the "Hmepage Search" widget and drag and drop it. 
+- Add a new container below and make it 6 and 6 column
+- Find Icon Link Widget and place them to both of the columns
