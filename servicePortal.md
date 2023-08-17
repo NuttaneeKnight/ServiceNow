@@ -635,4 +635,5 @@ Sample code:
 - Add a new container below and make it 6 and 6 column
 - Find Icon Link Widget and place them to both of the columns
 - Click the pencil icon on the icon link: Mane the Title: "Careate a New Incident", Chose "Top Icon" for the templlate, Glypg - Choose +
-
+- Go ahead and save it. 
+- Now you can go back to that record and hit try it. 
