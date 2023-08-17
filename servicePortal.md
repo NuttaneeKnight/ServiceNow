@@ -634,3 +634,4 @@ Sample code:
 - Look for the "Hmepage Search" widget and drag and drop it. 
 - Add a new container below and make it 6 and 6 column
 - Find Icon Link Widget and place them to both of the columns
+- Click the pencil icon on the icon link: Mane the Title: "Careate a New Incident"
