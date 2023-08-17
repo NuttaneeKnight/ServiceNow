@@ -627,3 +627,5 @@ Sample code:
 - Ticket[hn_ticket] - 6 widgets
 
 # The Demo Portal is in page Home, hn_index
+
+- Launch the designer - It can be found on the related links called "Open in Designer"
