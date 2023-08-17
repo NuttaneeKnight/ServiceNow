@@ -629,3 +629,5 @@ Sample code:
 # The Demo Portal is in page Home, hn_index
 
 - Launch the designer - It can be found on the related links called "Open in Designer"
+- Select the page container and drag and drop to the right
+- Choose the 12
