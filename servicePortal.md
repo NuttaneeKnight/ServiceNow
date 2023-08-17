@@ -626,3 +626,4 @@ Sample code:
 - Profile[hn_profile] - 3 widgets
 - Ticket[hn_ticket] - 6 widgets
 
+# The Demo Portal is in page Home, hn_index
