@@ -639,3 +639,4 @@ Sample code:
 - Now you can go back to that record and hit try it. 
 - To put the hero image in the search, Select container and the penccil, upload the image then select the bckground style to Cover as well. 
 - Navigate back to the portal and work into Theme. 
+- Create a new style on CSS Includesin the related list below. 
