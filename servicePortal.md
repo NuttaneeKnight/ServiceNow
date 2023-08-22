@@ -643,3 +643,7 @@ Sample code:
 
 # Create an Incident Page
 - Go to Service Portal Configuration 
+- Go to Designer
+- Click top left "Add a new page"
+- Name the title " Create an Incident" 
+- name the Page ID with hn_create_incident
