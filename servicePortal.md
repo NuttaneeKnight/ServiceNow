@@ -656,3 +656,13 @@ Sample code:
 - Label - Created an incident, Page - hn_create_incident
 - Add a new container on the top
 - add 6 x 6 with breadcrums and typeahead search
+
+# My incident Page 
+- Same process
+- Do the filter and the copy the query and put it in the filter
+
+# Profile page
+- the same process as above
+- Profile, hn_profile
+- follow the same lay out with the user profile widget
+- Go to Page Route Maps
