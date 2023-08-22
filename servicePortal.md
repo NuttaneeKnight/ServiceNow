@@ -647,3 +647,10 @@ Sample code:
 - Click top left "Add a new page"
 - Name the title " Create an Incident" 
 - name the Page ID with hn_create_incident
+- Add a 12 column lay out and add crete an incident on the page
+- Go to Service Portal and Click right to Instance option
+- Put in the PAGE ID to link it. 
+- Go to Service Portal HelpNow 
+- Add that page to the main menu
+- Under Menu Items click New
+- Label - Created an incident, Page - hn_create_incident
