@@ -666,3 +666,9 @@ Sample code:
 - Profile, hn_profile
 - follow the same lay out with the user profile widget
 - Go to Page Route Maps
+- Create NEW
+- HelpNow user_profile to hn_profile 
+- Add HelpNow to SErvice Portal list
+- Route from - user_profile
+- Route to - hn_profile
+- mark as active
