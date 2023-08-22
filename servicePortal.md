@@ -642,3 +642,4 @@ Sample code:
 - Create a new style on CSS Includesin the related list below. 
 
 # Create an Incident Page
+- Go to Service Portal Configuration 
