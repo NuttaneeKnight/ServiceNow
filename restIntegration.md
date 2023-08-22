@@ -22,3 +22,13 @@
 - Content Type
 
 
+# Endpoints
+- Reference tp URI which accepts web requests
+- The address to send the data to
+
+# Methods
+- GET - Get records informations
+- POST
+- PUT
+- PATCH
+- DELETE
