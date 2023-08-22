@@ -672,3 +672,10 @@ Sample code:
 - Route from - user_profile
 - Route to - hn_profile
 - mark as active
+- If we go to the portal and click on the profile it will route us to the Profile Page that we just created. 
+- 
+# Ticket Page
+- Ticket, hn_ticket
+- Same header for the breadcrumbs and typeahead search
+- Drag a new container and do 9 x 3 column
+- Drag ticket conversations and ticket fields to the containers
