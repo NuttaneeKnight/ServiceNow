@@ -654,3 +654,5 @@ Sample code:
 - Add that page to the main menu
 - Under Menu Items click New
 - Label - Created an incident, Page - hn_create_incident
+- Add a new container on the top
+- add 6 x 6 with breadcrums and typeahead search
