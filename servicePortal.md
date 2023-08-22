@@ -678,4 +678,8 @@ Sample code:
 - Ticket, hn_ticket
 - Same header for the breadcrumbs and typeahead search
 - Drag a new container and do 9 x 3 column
-- Drag ticket conversations and ticket fields to the containers
+- Drag ticket conversations and ticket fields to the containers andd the ticket attachment to the bottol of the ticket location
+- Go to My Incidents page and go to the instance options then link the page to the Ticket Page that we just created. 
+- Bottom - Behavior, Link to this page - hn_ticket
+
+# Best Practices & Final Words
