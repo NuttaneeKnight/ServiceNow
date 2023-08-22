@@ -32,3 +32,7 @@
 - PUT
 - PATCH
 - DELETE
+
+- Authentication - Accept only identified users
+- Content Type - JSON/XML
+- Content - Data
