@@ -683,3 +683,11 @@ Sample code:
 - Bottom - Behavior, Link to this page - hn_ticket
 
 # Best Practices & Final Words
+- Research user activity
+- Define style guides up front
+- Utilize wire framing
+- Don't reinvent the wheel, look for the widget first
+- Foolow DRRY principles and stay modular
+- Leverage widget instance options
+- Keep styles as general as possible
+- Always connsiderr an instance to have multiple portals
