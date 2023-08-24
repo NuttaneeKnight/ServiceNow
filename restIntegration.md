@@ -49,3 +49,9 @@
 - HTTP(s) - Request, Response
 - System Two - Auth, Method, Parse, Reply
 - This is called a REST call (controller), Integration
+
+# ServiceNow APIs
+- Table API (Direct Webservices)
+- Import Sets API
+- Scripted API
+
