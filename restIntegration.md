@@ -46,3 +46,5 @@
 
 # The structure
 - System One - End point, Method, Content Type, Content, Authentication
+- HTTP(s) - Request, Response
+- System Two - Auth, Method, Parse, Reply
