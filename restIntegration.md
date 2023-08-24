@@ -36,3 +36,13 @@
 - Authentication - Accept only identified users
 - Content Type - JSON/XML
 - Content - Data
+# Integration Flow
+- System One
+    Endpoint
+    Method
+    Content Type
+    Content
+    Authentication
+
+# The structure
+- System One - End point, Method, Content Type, Content, Authentication
