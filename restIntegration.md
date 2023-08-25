@@ -55,3 +55,7 @@
 - Import Sets API
 - Scripted API
 
+# Table API (Direct Webservices)
+
+- API Exploer - This is the place where we can generate the API calls 
+- You can generate that within the ServiceNow platform
