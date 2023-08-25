@@ -64,4 +64,8 @@
 
 # Authentication 
 - You have t have a user created first to pass the data to your desired instance
- 
+- Create a user under - System Security > User
+- ZS&*FnSIm)#ON=2xtPLvxbytJQN4Qdckik6n%,UQRF{]HVy]?%igm}C%n&-.;=ox:{
+- Add the key role in the related list in the bottom > rest_service
+- Look through Thunder Client for references for the 201
+- INC0010018	
