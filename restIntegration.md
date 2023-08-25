@@ -59,3 +59,5 @@
 
 - API Exploer - This is the place where we can generate the API calls 
 - You can generate that within the ServiceNow platform
+- PUT(modify) / PATCH(update)
+- It will generate the JSON underneath it. 
