@@ -61,3 +61,7 @@
 - You can generate that within the ServiceNow platform
 - PUT(modify) / PATCH(update)
 - It will generate the JSON underneath it. 
+
+# Authentication 
+- You have t have a user created first to pass the data to your desired instance
+ 
