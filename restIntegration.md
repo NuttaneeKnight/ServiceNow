@@ -100,3 +100,7 @@
 - Create a new Basic auth profile
 - Name: Instance 2 User, Username: test_user_2, Password: 123
 - You have to go to the 2nd instance and create that above user in the second instance first as well. 
+- Make sure that the new user has the rest_service type 
+- Save the record and go to the related link in the bottom, you can find test there. 
+- It showed 401 because we did not properly set the user name and the passworde. the aut failed
+- 
