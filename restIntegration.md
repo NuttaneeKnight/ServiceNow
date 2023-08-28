@@ -86,3 +86,8 @@
     - Import Set API (or)
     - Scripted API (or) 
 
+# Demo
+- Go to the First Instnce(SNOW) and navigate to REST Message
+- Best prcetice is to capture everything in the update set. 
+- Go to the local update set and create one. 
+- Name it and make it current and navigate back to create a new REST Message
