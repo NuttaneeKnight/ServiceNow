@@ -80,4 +80,9 @@
     - Trigger - Business Rule/UI Action
 
 - Receive Rest Calls
-    - 
+    - Authentication
+    - Authorization
+    - Table API (or)
+    - Import Set API (or)
+    - Scripted API (or) 
+
