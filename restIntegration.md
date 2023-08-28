@@ -72,3 +72,12 @@
 
 # REST CALLS FROM ServiceNow(send)
 - How to send data within servicenow
+
+- Send Rest Calls
+    - Rest Messages
+    - Rest Message Methods
+    - Authentication
+    - Trigger - Business Rule/UI Action
+
+- Receive Rest Calls
+    - 
