@@ -98,3 +98,5 @@
 - put that endpoint there ex. https://dev90700.service-now.com/api/now/table/{tableName}
 - Set the Authentication type to Basic
 - Create a new Basic auth profile
+- Name: Instance 2 User, Username: test_user_2, Password: 123
+- You have to go to the 2nd instance and create that above user in the second instance first as well. 
