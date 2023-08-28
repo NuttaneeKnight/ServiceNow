@@ -69,3 +69,6 @@
 - Add the key role in the related list in the bottom > rest_service
 - Look through Thunder Client for references for the 201
 - INC0010018	
+
+# REST CALLS FROM ServiceNow(send)
+- How to send data within servicenow
