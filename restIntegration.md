@@ -95,3 +95,6 @@
 - Put the endpoint of the target system 
 - You will need another SNOW instance to get the endpoint 
 - Go to REST API Explorer of the other instance 
+- put that endpoint there ex. https://dev90700.service-now.com/api/now/table/{tableName}
+- Set the Authentication type to Basic
+- Create a new Basic auth profile
