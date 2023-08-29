@@ -103,4 +103,6 @@
 - Make sure that the new user has the rest_service type 
 - Save the record and go to the related link in the bottom, you can find test there. 
 - It showed 401 because we did not properly set the user name and the passworde. the aut failed
-- 
+- This time we do an outbound rest message (POST)
+- follow the same process
+
