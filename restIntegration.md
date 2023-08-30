@@ -106,3 +106,9 @@
 - This time we do an outbound rest message (POST)
 - follow the same process
 
+# Create Business Rule - Trigger REST to Instance 2
+(function executeRule(current, previous /**null when async/) {
+
+    var request = new sn_ws.RESTMessageV2("Instance 2 Incidents", "create_incident");
+    reques
+})
