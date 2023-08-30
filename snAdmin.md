@@ -5,3 +5,10 @@
 - Small Changes in Instance
 - Updateset Migration
 - Instance Health Maintain
+
+# Type of users
+- End user
+- Approval user
+- itil user
+- admin user
+
