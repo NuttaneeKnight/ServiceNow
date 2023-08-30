@@ -110,5 +110,8 @@
 (function executeRule(current, previous /**null when async/) {
 
     var request = new sn_ws.RESTMessageV2("Instance 2 Incidents", "create_incident");
-    reques
-})
+    request.setStringParameterNoEscape()
+    request.setStringParameterNoEscape()
+    request.setStringParameterNoEscape()
+    request.execute();
+})(current, previous)
