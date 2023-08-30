@@ -113,5 +113,5 @@
     request.setStringParameterNoEscape("sd", current.short_description)
     request.setStringParameterNoEscape("desc", current.description)
     request.setStringParameterNoEscape("ctype",current.contact_type)
-    request.execute();
+    var response = request.execute();
 })(current, previous)
