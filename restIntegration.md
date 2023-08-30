@@ -114,4 +114,7 @@
     request.setStringParameterNoEscape("desc", current.description)
     request.setStringParameterNoEscape("ctype",current.contact_type)
     var response = request.execute();
+    var responseBody = response.getBody();
+
+    response.getStatusCode()
 })(current, previous)
