@@ -12,3 +12,9 @@
 - itil user
 - admin user
 
+# System can be used as:
+- Service Portal
+- Native View
+- Integration
+- Email
+
