@@ -116,5 +116,6 @@
     var response = request.execute();
     var responseBody = response.getBody();
 
-    response.getStatusCode()
+    var statusCode = response.getStatusCode()
+    gs.log(will help too)
 })(current, previous)
