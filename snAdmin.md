@@ -23,5 +23,5 @@
 - Group - Roles
 - The child role will be automatically add to the user of that group
 - That role will grant the access to the ACL of the data that we set
-
+- There is also a parent group and child group as well so you can dry your code. It is located in the related list in the bottom, GROUP
 
