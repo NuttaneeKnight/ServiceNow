@@ -24,4 +24,14 @@
 - The child role will be automatically add to the user of that group
 - That role will grant the access to the ACL of the data that we set
 - There is also a parent group and child group as well so you can dry your code. It is located in the related list in the bottom, GROUP
+- Active is true and lockouted is unchecked = User is logged in
 
+# List & Forms
+- Table
+- Record
+- List
+- Form
+- UI Action
+- Context Menu
+- Section
+- Related List
