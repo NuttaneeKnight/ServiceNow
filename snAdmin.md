@@ -18,7 +18,7 @@
 - Integration
 - Email
 
-# Service Catalog
-- We will revisit at the near future
-
+# User, Role & Group
+- ITIL Admin, ITIL, Rle 2, Role 3
+- 
 
