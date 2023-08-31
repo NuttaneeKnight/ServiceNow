@@ -21,5 +21,7 @@
 # User, Role & Group
 - ITIL Admin, ITIL, Rle 2, Role 3
 - Group - Roles
+- The child role will be automatically add to the user of that group
+- That role will grant the access to the ACL of the data that we set
 
 
