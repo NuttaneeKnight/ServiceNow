@@ -120,3 +120,5 @@
     gs.log(will help too)
 })(current, previous)
 
+# Send REST calls from ServiceNow - PUT
+- 
