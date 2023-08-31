@@ -18,3 +18,7 @@
 - Integration
 - Email
 
+# Service Catalog
+- We will revisit at the near future
+
+
