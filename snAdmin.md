@@ -1,3 +1,10 @@
+# 101
+- When you want to use certain module 
+    - Make sure to install plugins
+    - Make sure that they are in the right groups
+    - Make sure that they are in the right type
+    - This is the way to enforce ACL
+
 # Type of Work ServiceNow Admin
 - Monitor Incident
 - User Access and Provisioning
