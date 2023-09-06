@@ -121,4 +121,4 @@
 })(current, previous)
 
 # Send REST calls from ServiceNow - PUT
-- 
+- Go and update business rule
