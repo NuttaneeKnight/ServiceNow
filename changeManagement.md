@@ -15,3 +15,4 @@ Examples: Common examples of normal changes include software updates, minor hard
 Automation: Many organizations use automation to expedite the approval and implementation of normal changes, further reducing the manual effort required.
 
 Normal changes are a valuable concept in change management because they help streamline and simplify the handling of low-risk, repetitive changes, allowing organizations to focus their resources and attention on more complex and critical changes. However, it's essential to define clear criteria for categorizing changes as "normal" and ensure that the predefined processes are followed consistently to maintain the integrity of the change management process.
+
