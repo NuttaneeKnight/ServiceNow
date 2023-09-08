@@ -24,3 +24,10 @@ Normal changes are a valuable concept in change management because they help str
 - Change Conflict
 - Change Approval Policies
 - CAB Workbench
+
+# What is CHANGE?
+- The addition, modification or removal of any authorized, planned, or supported serive or service component that could have an effect on IT services. (Deprecation features that may impact some customers)
+
+# What is CHANGE MANAGEMENT?
+- Standard procedures and practice for managing requests in effective manner in an effort to drastically minimize the risk an impact a change can have on business operations. 
+
