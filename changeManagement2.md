@@ -41,3 +41,16 @@ Normal changes are a valuable concept in change management because they help str
 
 # Change Management Application in ServiceNow
 - Change Management application in ServiceNow provides a systemetic approach to control the life cycle of all changes, facilitating beneficial changes to be made with minimum distrup tion to IT services
+
+#Change Management Plugins
+- Change management core
+- ITSM Roles (Request plugins for the instance)
+- Business StakeholderModel
+- Collision Detector
+- Change Risk Calculator
+- Change Schedule
+- Risk Assessment
+- Standard Change Catalog
+- Bulk CI Changes
+- Mass Update CI
+- Approval Policy
