@@ -9,6 +9,7 @@
     var statusCode = response.getStatusCode();
 
     var respObj = JSON.parse(responseBody);
+    //Do not use current.update inside the business rules. 
     //current.u_client_ticket_reference = respObj.result.sys_id;
     //current.update(); !This will make an infinite loop!
 
