@@ -65,3 +65,9 @@ Normal changes are a valuable concept in change management because they help str
 - Low Risk
 - Can be frequently implemented
 - CAB Approval not required
+- Can be implemented via defined templates
+
+# Emergency Change
+- Change required to be implemented as soon as possible
+- Implemented to resolve high priority issues
+- Does not fllow complete normal change lifecycle
