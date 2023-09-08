@@ -9,7 +9,8 @@
     var statusCode = response.getStatusCode();
 
     var respObj = JSON.parse(responseBody);
-    current.u_client_ticket_reference = respObj.result.sys_id;
+    //current.u_client_ticket_reference = respObj.result.sys_id;
+    //current.update(); !This will make an infinite loop!
 
     
     getSelection.log("Response Body - " +"\nStatus Code - " + statusCode, "Incidents Integration Test");
