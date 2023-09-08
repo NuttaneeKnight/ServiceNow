@@ -9,7 +9,8 @@
     var statusCode = response.getStatusCode();
 
     var respObj = JSON.parse(responseBody);
-    respObj.result.sys_id
+    current.u_client_ticket_reference = respObj.result.sys_id;
 
+    
     getSelection.log("Response Body - " +"\nStatus Code - " + statusCode, "Incidents Integration Test");
 })(current, previous);
