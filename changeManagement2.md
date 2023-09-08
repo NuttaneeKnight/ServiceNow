@@ -31,3 +31,10 @@ Normal changes are a valuable concept in change management because they help str
 # What is CHANGE MANAGEMENT?
 - Standard procedures and practice for managing requests in effective manner in an effort to drastically minimize the risk an impact a change can have on business operations. 
 
+# Change Management Process
+1. Create Change Request
+2. Review Change
+3. Change Evaluation
+4. Change Approvals
+5. Implement
+6. Validate
