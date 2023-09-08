@@ -71,3 +71,13 @@ Normal changes are a valuable concept in change management because they help str
 - Change required to be implemented as soon as possible
 - Implemented to resolve high priority issues
 - Does not fllow complete normal change lifecycle
+- High priority changes (move pass peers and go to CAB, Change Advisory Board)
+- Post Change Request
+
+# Normal Change
+- Follow complete lifecycle of change
+- Planned change which can have impact as well
+- Require complete assesssment and approvals
+- Change to improve service
+Implement during defined maintenance window. 
+
