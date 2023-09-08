@@ -54,3 +54,14 @@ Normal changes are a valuable concept in change management because they help str
 - Bulk CI Changes
 - Mass Update CI
 - Approval Policy
+
+# Change Type
+- Standard
+- Emergency
+- Normal
+
+# Standard Change
+- Pre-authorized change
+- Low Risk
+- Can be frequently implemented
+- CAB Approval not required
