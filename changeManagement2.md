@@ -38,3 +38,6 @@ Normal changes are a valuable concept in change management because they help str
 4. Change Approvals
 5. Implement
 6. Validate
+
+# Change Management Application in ServiceNow
+- Change Management application in ServiceNow provides a systemetic approach to control the life cycle of all changes, facilitating beneficial changes to be made with minimum distrup tion to IT services
