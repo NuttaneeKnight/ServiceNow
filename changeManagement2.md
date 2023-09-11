@@ -79,5 +79,5 @@ Normal changes are a valuable concept in change management because they help str
 - Planned change which can have impact as well
 - Require complete assesssment and approvals
 - Change to improve service
-Implement during defined maintenance window. 
+- Implement during defined maintenance window. 
 
