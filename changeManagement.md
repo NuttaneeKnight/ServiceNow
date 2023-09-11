@@ -92,4 +92,7 @@ Normal changes are a valuable concept in change management because they help str
 - Risk - Risk of change implementation
 - Impact - Impact of change implementation
 - Type - Type of change
-- Conflict -
+- Conflict status - Conflict of change status
+- Conflict last run - When conflict was ran
+- Assignment group - Implementer Group of Change
+- Assignment to - Implementer of Change
