@@ -96,3 +96,10 @@ Normal changes are a valuable concept in change management because they help str
 - Conflict last run - When conflict was ran
 - Assignment group - Implementer Group of Change
 - Assignment to - Implementer of Change
+
+*Planning Details of Change* Located in the bottom of the form 
+- Justification - Why this change needs to be implemented
+- Implementation plan - Detailed plan and steps to implement the change
+- Risk and impact analysis - Detailed risk and impact analysis
+- Backout plan - Rollback plan if business is impact after implementation
+- Test plan - Through validation and test plan
