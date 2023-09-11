@@ -92,4 +92,4 @@ Normal changes are a valuable concept in change management because they help str
 - Risk - Risk of change implementation
 - Impact - Impact of change implementation
 - Type - Type of change
-- 
+- Conflict -
