@@ -129,3 +129,9 @@ Normal changes are a valuable concept in change management because they help str
 - Closed - Change is complete
 - Cancelled 
 
+# Create Change
+- New From from Change Module
+- From a CI
+- Standard Change Catalog
+- Copy an existing change
+
