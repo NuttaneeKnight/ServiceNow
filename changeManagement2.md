@@ -84,4 +84,10 @@ Normal changes are a valuable concept in change management because they help str
 # Change Form and it's Fields
 - Process Flow - New > Assess > Authorize > Scheduled > Implement > Review > Closed > Canceled
 - Number - Number of Change Record
+- Requested by - Reporter of Change
+- Categorry - Category of CI (configuration item)
+- Service - Service of which Change is implemented
+- Configuration item - CI for Change
+- Priority
+- Risk - Risk of change implementation
 
