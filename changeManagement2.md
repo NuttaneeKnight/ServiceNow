@@ -81,3 +81,7 @@ Normal changes are a valuable concept in change management because they help str
 - Change to improve service
 - Implement during defined maintenance window. 
 
+# Change Form and it's Fields
+- Process Flow - New > Assess > Authorize > Scheduled > Implement > Review > Closed > Canceled
+- Number - Number of Change Record
+
