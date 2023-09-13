@@ -138,3 +138,4 @@ Normal changes are a valuable concept in change management because they help str
 - You can create change from the CI, Configuration Item, as well. 
 
 //MACD is the acronym to move, add, change, or delete services in the enterprise communication network. MACD full form is Move, Add, Change or Delete/Disconnection of services (M, A, C, D). MACD management can be a hassle for service providers as it involves manual provisioning and can cause delays in taking new services to market.
+- try to create change by impersonating the itil user on the pdi
