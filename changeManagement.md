@@ -151,3 +151,7 @@ Normal changes are a valuable concept in change management because they help str
 - Restricted change request value - they are dufault but we can add mandatory fields if we want to
 - We can also configure List of Change Request Value fields that must be completed on the "Propose a New Standard Change template" and "Modify a Standard Change Template" record producer as well
 - We can also set up a default values for Change Request value as well to make it a standard template. 
+- Restricted change value is where the user cannot make the change on that fields (Read-only)
+
+# How to Create a Chang eTask
+- Change > Open > New > Create Task that is connected to the change
