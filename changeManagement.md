@@ -145,3 +145,6 @@ Normal changes are a valuable concept in change management because they help str
 # How to configure standard change
 - Go to Change > Administration > Standard Change Properties
 - Navifate to Standard Change Properties
+- Catalog - Select the catalog that you want to prvide
+- What is catalog - service catalog templates
+- Category > Standard changes
