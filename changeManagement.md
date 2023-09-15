@@ -148,3 +148,4 @@ Normal changes are a valuable concept in change management because they help str
 - Catalog - Select the catalog that you want to prvide
 - What is catalog - service catalog templates
 - Category > Standard changes
+- Restricted change request value - they are dufault but we can add mandatory fields if we want to
