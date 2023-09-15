@@ -149,3 +149,5 @@ Normal changes are a valuable concept in change management because they help str
 - What is catalog - service catalog templates
 - Category > Standard changes
 - Restricted change request value - they are dufault but we can add mandatory fields if we want to
+- We can also configure List of Change Request Value fields that must be completed on the "Propose a New Standard Change template" and "Modify a Standard Change Template" record producer as well
+
