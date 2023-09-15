@@ -142,3 +142,6 @@ Normal changes are a valuable concept in change management because they help str
 -Standard change is a preapproved chage there is a template on the pdi but not sure what are we gonna do with our org. 
 
 # Standard Change to Launch next
+# How to configure standard change
+- Go to Change > Administration > Standard Change Properties
+- Navifate to Standard Change Properties
