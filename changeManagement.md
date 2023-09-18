@@ -176,5 +176,11 @@ Normal changes are a valuable concept in change management because they help str
     - Standard - requires only Manager approval
     - Normal - requires full review and approval
     - Emergency - must be introduced as soon as possible
+- How to find who is your approval for change management
+    - Go to the Approval Tabs
+- Creating a standard change proposal
+    - Go to template management
+    - propose, modify and retire
+    - Approving a standard changes are routed to the change manager group. Navigate to "My Approvals" 
 
 
