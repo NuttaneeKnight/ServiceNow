@@ -163,4 +163,14 @@ Normal changes are a valuable concept in change management because they help str
 - Standard - Changes with low risk, low complexity and low impact, or repeated deployment of recurring changes that have been previously approved and deployed. Requires only Manager approval (no CAB or Technical approval)
 - Normal - Changes of moderate to high complexity oor impact; requires technical approval. May require CAB approval, depending on risk and impact. 
 - Emergeency - Unplanned changes necessary to restore service after an outage, when critical time constraints do not allow for all the steps required on a Normal Change. It is incumbent uponn the approving Manager to verify that all necessary testing and review has been completed. Requires Manager Approval; CAB members are notified. 
+- States
+    - New - Save a change request and build out the details. When ready for technical review, click "Request Approval"
+    - Assess - Peer review and technical approoval
+    - Authorize - Change is readdy for CAB approval and schedule confirmation. Once approved, state automatically moves forward
+    - Schedule - The change is waiting for the planned starrt ddate. 
+    - Implement - Implement time! Click "Implement" button to signify actual start time. 
+    - Review - All implementation tasks complete. Perform post-implementation review and documentation
+    - Closed - No further action required
+    - Canceled - A change can be canceled at any time before it is closed. 
+
 
