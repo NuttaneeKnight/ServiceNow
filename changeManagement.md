@@ -158,3 +158,5 @@ Normal changes are a valuable concept in change management because they help str
     - End user - No role (employee, vendor)
     - Itil role - fulfiller (incident, problem task, change tassk, request task)
     - Admin role - (Manage Access, System Development, Delete Records)
+- Change Management is the process responsible for managing all Changes to the production operations environment from inception to completion
+- Change management helps organizationns understand and wor to minimize risks of changes to the IT environment
