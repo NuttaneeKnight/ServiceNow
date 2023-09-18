@@ -172,5 +172,9 @@ Normal changes are a valuable concept in change management because they help str
     - Review - All implementation tasks complete. Perform post-implementation review and documentation
     - Closed - No further action required
     - Canceled - A change can be canceled at any time before it is closed. 
+- Change Workflow Progress
+    - Standard - requires only Manager approval
+    - Normal - requires full review and approval
+    - Emergency - must be introduced as soon as possible
 
 
