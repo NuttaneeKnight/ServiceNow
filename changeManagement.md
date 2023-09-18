@@ -160,3 +160,7 @@ Normal changes are a valuable concept in change management because they help str
     - Admin role - (Manage Access, System Development, Delete Records)
 - Change Management is the process responsible for managing all Changes to the production operations environment from inception to completion
 - Change management helps organizationns understand and wor to minimize risks of changes to the IT environment
+- Standard - Changes with low risk, low complexity and low impact, or repeated deployment of recurring changes that have been previously approved and deployed. Requires only Manager approval (no CAB or Technical approval)
+- Normal - Changes of moderate to high complexity oor impact; requires technical approval. May require CAB approval, depending on risk and impact. 
+- Emergeency - Unplanned changes necessary to restore service after an outage, when critical time constraints do not allow for all the steps required on a Normal Change. It is incumbent uponn the approving Manager to verify that all necessary testing and review has been completed. Requires Manager Approval; CAB members are notified. 
+
