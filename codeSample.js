@@ -34,3 +34,73 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
     }
 
 }
+
+// <!-- Custom code to add Record Number, Opened, Short Description and Closure Notes -->                                  
+
+// <g2:evaluate var="jvar_record"  
+
+// expression="var recordGR='';  
+
+// gs.log(instanceGR.trigger_table + ' ' + instanceGR.trigger_id);  
+
+// var recordGR = new GlideRecord(instanceGR.trigger_table);  
+
+// recordGR.addQuery('sys_id', instanceGR.trigger_id);  
+
+// recordGR.query();    
+
+// " />  
+
+
+
+// <j2:if test="$[typeof recordGR == 'object']">  
+
+//     <j2:if test="$[recordGR.next()]">  
+
+//         <div align="left" style="font-weight: bold;padding-bottom:5px; margin-bottom:0px;">This survey is in regards to: </div>  
+
+//         <table>    
+
+//             <tr>
+
+//                 <td><b>Number:</b>  </td>
+
+//                 <td> $[recordGR.number] </td>
+
+//             </tr>
+
+//         <tr>
+
+//             <td><b>Opened:</b> </td>
+
+//             <td> $[recordGR.getDisplayValue('opened_at')] </td>
+
+//         </tr>  
+
+
+
+//         <tr>    
+
+//             <td><b>Description:</b>  </td>
+
+//             <td> $[recordGR.short_description]  </td>
+
+//         </tr>  
+
+//         <tr>
+
+//             <td><b>Closure Notes:</b> </td>
+
+//             <td> $[recordGR.close_notes] </td>
+
+//             </tr>
+
+//         </table>
+
+//         <br></br>
+
+//     </j2:if>  
+
+// </j2:if>  
+
+// <!-- End Custom code to add Record Number, Opened, Short Description and Closure Notes -->
