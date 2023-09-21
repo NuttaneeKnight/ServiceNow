@@ -31,4 +31,5 @@
 - Run - The recurrence rate of the scheduled email report - String (Daily, Weekly, Monthly, On Demand, etc.)
 - Time - The time at which the scheduled email report should be ran - Time
 - Subject - The subject of the email for the scheduled email report - String
-- 
+- Introductory message - The content of the email for the scheuled email report - HTML
+- Condition - A script containing the condition that must be met for the scheduled email report - Script (plain)
