@@ -21,3 +21,4 @@
 - Box
 - Bar
 - Pivot etc. 
+- You can create a report from the column of the group by list view Click right on the column header > Pie or etc. 
