@@ -33,3 +33,4 @@
 - Subject - The subject of the email for the scheduled email report - String
 - Introductory message - The content of the email for the scheuled email report - HTML
 - Condition - A script containing the condition that must be met for the scheduled email report - Script (plain)
+- Type - The type of the attachment for the scheduled email report - String (PDF, Excel, CSV, PNG etc. )
