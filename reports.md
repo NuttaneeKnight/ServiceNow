@@ -22,3 +22,8 @@
 - Bar
 - Pivot etc. 
 - You can create a report from the column of the group by list view Click right on the column header > Pie or etc. 
+
+# Scheduled Email ofReport [sysauto_report] extends Scheduled Job
+- Report - The report being scheduled for email - Reference (Sys ID of a record in the Report table)
+- Users - The users to whom the scheduled email report should be sent - List of References (Sys IDs of records in the User Table)
+- Groups The groups to which the scheduled email report should be sent - List of References (Sys IDs of records in the User Table)
