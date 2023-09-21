@@ -27,3 +27,8 @@
 - Report - The report being scheduled for email - Reference (Sys ID of a record in the Report table)
 - Users - The users to whom the scheduled email report should be sent - List of References (Sys IDs of records in the User Table)
 - Groups The groups to which the scheduled email report should be sent - List of References (Sys IDs of records in the User Table)
+- Email addresses - The hard-coded email addresses to which the scheduled email report should be sent - String
+- Run - The recurrence rate of the scheduled email report - String (Daily, Weekly, Monthly, On Demand, etc.)
+- Time - The time at which the scheduled email report should be ran - Time
+- Subject - The subject of the email for the scheduled email report - String
+- 
