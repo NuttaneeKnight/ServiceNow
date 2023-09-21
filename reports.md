@@ -16,3 +16,8 @@
 - Filter - The filter to be applied for the report data - Conditions (String)
 - Type - The type of report (visualization) - String
 
+# Report Types
+- List
+- Box
+- Bar
+- Pivot etc. 
