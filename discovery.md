@@ -9,3 +9,8 @@ The CMDB is a set of database tables that provides a logical model of your compa
     - Hardware Devices (Computers, Servers, Routers, etc.)
     - Applications (Databases, VM's, Web Servers, Apps.)
 - Discovery identifies an sets relationships between Applications and Hardware ( and Applications and Applications)
+- Discovery is agent-less, meaning no software needs installed on the discovery devices. 
+- Discovery is not included as part of the ServiceNow base system
+- Discovery is one of ServiceNow's largest application bundles
+    - Discovery Home, Discovery Dashboard, Schedule, Credentials, MID Servers, Discovery Definitions, Range Sets, Behaviors, Probes, Sensors, Port Probes, Classifications, etc. 
+- 
