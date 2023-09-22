@@ -19,3 +19,5 @@ The CMDB is a set of database tables that provides a logical model of your compa
 - Communicating with Sevicenow server on port 443
 - Communicate through ECC (external communication channel)
 - Mid server only makes the outbound calls not the other way around
+- MID then send the ECC Queue (pinging it)
+- Place the output record and scan to find the data via input record. 
