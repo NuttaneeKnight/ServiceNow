@@ -13,4 +13,9 @@ The CMDB is a set of database tables that provides a logical model of your compa
 - Discovery is not included as part of the ServiceNow base system
 - Discovery is one of ServiceNow's largest application bundles
     - Discovery Home, Discovery Dashboard, Schedule, Credentials, MID Servers, Discovery Definitions, Range Sets, Behaviors, Probes, Sensors, Port Probes, Classifications, etc. 
-- 
+
+# How Discovery works (Discovery Architecture)
+- First install Discover Server or MID Server
+- Communicating with Sevicenow server on port 443
+- Communicate through ECC (external communication channel)
+- Mid server only makes the outbound calls not the other way around
