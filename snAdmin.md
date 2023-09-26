@@ -53,3 +53,11 @@
 - Change you want to keep in every instance
 - All the changes which can change the baseline and cn give impact
 - Changes needs to be tested in Lower Instance before moving to Production.
+
+# Items captured in Update Sets
+- Form configurations
+- Related List Configuration
+- Business Rules
+- Client Scripts
+- UI Policy
+- UI Actions
