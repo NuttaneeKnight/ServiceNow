@@ -74,3 +74,13 @@
 - CMDB Records
 - Sysem Properties
 - etc. 
+
+# Update Sets Planning Process
+- Same version Instance
+- Correct Update Set is Selected 
+- Instance is cloned
+- Identify Path for update Set Movement
+- Plan when to commit Update Sets in Prod
+- Clear naming convention
+- Preview and Commit
+- Review before moving
