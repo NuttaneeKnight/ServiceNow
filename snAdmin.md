@@ -84,3 +84,7 @@
 - Clear naming convention
 - Preview and Commit
 - Review before moving
+
+# System Update Set Tables
+- Update Set [sys_update_set]
+- Customer Update [sys_update_xml]
