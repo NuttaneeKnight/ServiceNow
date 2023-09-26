@@ -61,3 +61,15 @@
 - Client Scripts
 - UI Policy
 - UI Actions
+- Notifications 
+- Script Inclues
+- UI Page
+- etc.
+
+# Items Not Captured in Spdate Sets
+- Task Records
+- Users
+- Groups
+- Scheduled Jobs
+- CMDB Records
+
