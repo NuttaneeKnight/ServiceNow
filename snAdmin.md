@@ -88,3 +88,7 @@
 # System Update Set Tables
 - Update Set [sys_update_set]
 - Customer Update [sys_update_xml]
+
+# Import Update Sets
+- Go to "Retrieve" Update sets table
+- Scroll all the way down for the related list to import the xml updatesets. 
