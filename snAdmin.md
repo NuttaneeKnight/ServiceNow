@@ -43,4 +43,5 @@
 - Section
 - Related List
 
-# How to Import Sets in ServiceNow
+# Exporting and Importing Records via XML
+- Click right and import on the record you want to imporrt, the same goes for update sets
