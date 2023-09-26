@@ -21,3 +21,5 @@ The CMDB is a set of database tables that provides a logical model of your compa
 - Mid server only makes the outbound calls not the other way around
 - MID then send the ECC Queue (pinging it)
 - Place the output record and scan to find the data via input record. 
+- Can have more than 1 MID server
+- 
