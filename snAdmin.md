@@ -45,3 +45,6 @@
 
 # Exporting and Importing Records via XML
 - Click right and import on the record you want to imporrt, the same goes for update sets
+
+# Update Sets
+- What is an Update Set? An update set is a group of configuration changes that can be moved from one instance to another. This feature allows administrators to group a series of changes into a names set and then move them as a unit to other systems for testing or deployment. 
