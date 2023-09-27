@@ -122,3 +122,16 @@
 
 # Send REST calls from ServiceNow - PUT
 - Go and update business rule
+
+# Recap
+- Send Rest Calls
+    - Rest messages
+    - Rest Message Methods
+    - Authentication
+    - Trigger - Business Rule/UI Action
+- Receive Rest Calls
+    - Authentication
+    - Authorization
+    - Table API (or)
+    - Import Set API (or)
+    - Scripted API (or)
