@@ -10,3 +10,9 @@
 - Don't resolve the incident if chhild tasks are opened.
 - Show Assignment group values as per the assignment groups
 - Push the field value on change of other field value. 
+
+# When you should not do scripting
+- Make field read-only
+- Hide a field when form loads
+- Set the value of a field when Assignment group changes
+
