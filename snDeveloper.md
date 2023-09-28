@@ -34,4 +34,9 @@
 - UI Contect Menus
 - Validation Scripts
 
+# Glide Class Overview
+- ServiceNow provides JavaScript classes exposed by Glide
+- You can work with table using scripts with the help of these API
+- You can perform database operations with these Glide API
+
 
