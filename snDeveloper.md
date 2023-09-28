@@ -49,3 +49,11 @@
 - GlideDateTime
 - GlideElement
 
+# Client-side Glide Class
+- GlideAjax
+- GlideDialog Window
+- GlideForm
+- GlideList2
+- GlideMenu
+- GlideUser
+
