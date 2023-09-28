@@ -72,3 +72,8 @@
 - It has features like syntax coloring, keyword search, autoomatic closure of braces, cde assistance
 - Script macros can be used in the editor
 
+# Syntax Coloring
+- Green is note
+- Purple - js commands
+- Blue - string value
+
