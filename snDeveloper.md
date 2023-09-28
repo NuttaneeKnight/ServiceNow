@@ -21,7 +21,9 @@
 - JavaScript is written in this script editor
 
 # Types of scripting
-- Client Side
-- Server Side
-- Mid Server
+- Client Side - (UI, showing hiding)
+- Server Side - (fetch data CRUD) 
+- Mid Server - (HTTPS SOAP, integrate with other application)
+
+
 
