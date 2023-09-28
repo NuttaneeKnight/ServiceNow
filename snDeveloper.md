@@ -67,3 +67,8 @@
 - Emil Notifications
 - After Business rule with order more than 1000
 
+# Syntax Editor
+- ServiceNow provides support to write JavaScript in Syntax editor
+- It has features like syntax coloring, keyword search, autoomatic closure of braces, cde assistance
+- Script macros can be used in the editor
+
