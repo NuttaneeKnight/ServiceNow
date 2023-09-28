@@ -77,3 +77,6 @@
 - Purple - js commands
 - Blue - string value
 
+# Syntax Editor Macros
+- Macros provides shortcut for commonly used scripts
+- It can be inserted in Script editor with a text saved in Macros
