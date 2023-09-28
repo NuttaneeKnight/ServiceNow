@@ -19,3 +19,8 @@
 # Where  to script in ServiceNow?
 - ServiceNow provides script editor which can be added a feild on any form and script can be written in the field
 - JavaScript is written in this script editor
+
+# Types of scripting
+- Client Side
+- Server Side
+- Mid Server
