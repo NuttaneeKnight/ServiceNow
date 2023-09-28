@@ -57,3 +57,13 @@
 - GlideMenu
 - GlideUser
 
+# Script Execution Engine
+- Before Business Rule with order less than 1000
+- Before Engine (Approvals, Data Policy, Field Normalization, Workflow)
+- Before Business rule with order more than 1000
+- Databaase operation (Insert, Update, Delete)
+- After Business Rule with order less than 1000
+- After Engines (Table notifications engine, Update Sync Engine)
+- Emil Notifications
+- After Business rule with order more than 1000
+
