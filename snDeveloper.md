@@ -16,3 +16,6 @@
 - Hide a field when form loads
 - Set the value of a field when Assignment group changes
 
+# Where  to script in ServiceNow?
+- ServiceNow provides script editor which can be added a feild on any form and script can be written in the field
+- JavaScript is written in this script editor
