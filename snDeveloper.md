@@ -38,5 +38,14 @@
 - ServiceNow provides JavaScript classes exposed by Glide
 - You can work with table using scripts with the help of these API
 - You can perform database operations with these Glide API
+- There are 2 Glide Classes
+    1. Server Side Glide Classes
+    2. Client Side Glide Classes
 
+# Server-side Glide Class
+- GlideRecord
+- GlideSystem
+- GlideAggregate
+- GlideDateTime
+- GlideElement
 
