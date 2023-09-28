@@ -25,5 +25,13 @@
 - Server Side - (fetch data CRUD) 
 - Mid Server - (HTTPS SOAP, integrate with other application)
 
+# Client Side Scripting
+- Ajax Client Scripts
+- Service Catalog UI Policy
+- UI Policy
+- Client Scripts
+- UI Actions
+- UI Contect Menus
+- Validation Scripts
 
 
