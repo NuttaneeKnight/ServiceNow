@@ -80,4 +80,5 @@
 # Syntax Editor Macros
 - Macros provides shortcut for commonly used scripts
 - It can be inserted in Script editor with a text saved in Macros
-- All > Mocro (Syntax Editor Macros)
+- All > Mocro (Syntax Editor Macros) - This will show the list of all the syntax shortcuts ex. type vargr and click tab will give you the boiler plate
+
