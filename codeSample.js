@@ -35,31 +35,29 @@
 
 // }
 
-// // <!-- Custom code to add Record Number, Opened, Short Description and Closure Notes -->                                  
+// // <!-- Custom code to add Record Number, Opened, Short Description and Closure Notes -->
 
-// // <g2:evaluate var="jvar_record"  
+// // <g2:evaluate var="jvar_record"
 
-// // expression="var recordGR='';  
+// // expression="var recordGR='';
 
-// // gs.log(instanceGR.trigger_table + ' ' + instanceGR.trigger_id);  
+// // gs.log(instanceGR.trigger_table + ' ' + instanceGR.trigger_id);
 
-// // var recordGR = new GlideRecord(instanceGR.trigger_table);  
+// // var recordGR = new GlideRecord(instanceGR.trigger_table);
 
-// // recordGR.addQuery('sys_id', instanceGR.trigger_id);  
+// // recordGR.addQuery('sys_id', instanceGR.trigger_id);
 
-// // recordGR.query();    
+// // recordGR.query();
 
-// // " />  
+// // " />
 
+// // <j2:if test="$[typeof recordGR == 'object']">
 
+// //     <j2:if test="$[recordGR.next()]">
 
-// // <j2:if test="$[typeof recordGR == 'object']">  
+// //         <div align="left" style="font-weight: bold;padding-bottom:5px; margin-bottom:0px;">This survey is in regards to: </div>
 
-// //     <j2:if test="$[recordGR.next()]">  
-
-// //         <div align="left" style="font-weight: bold;padding-bottom:5px; margin-bottom:0px;">This survey is in regards to: </div>  
-
-// //         <table>    
+// //         <table>
 
 // //             <tr>
 
@@ -75,17 +73,15 @@
 
 // //             <td> $[recordGR.getDisplayValue('opened_at')] </td>
 
-// //         </tr>  
+// //         </tr>
 
-
-
-// //         <tr>    
+// //         <tr>
 
 // //             <td><b>Description:</b>  </td>
 
 // //             <td> $[recordGR.short_description]  </td>
 
-// //         </tr>  
+// //         </tr>
 
 // //         <tr>
 
@@ -99,9 +95,9 @@
 
 // //         <br></br>
 
-// //     </j2:if>  
+// //     </j2:if>
 
-// // </j2:if>  
+// // </j2:if>
 
 // // <!-- End Custom code to add Record Number, Opened, Short Description and Closure Notes -->
 
@@ -117,35 +113,43 @@
 // single date
 var current = new GlideRecord("sc_req_item");
 
-if (current.get("be1088b71bad711024a5fd1b1e4bcb84")){
-    gs.info(current.getDisplayValue());
-    gs.info(current.variables.is_this_a_list_of_dates_or_recurring_dates);
-    gs.info(current.variables.start_date + " " +  current.variables.start_time);
-    createEventTasks(current.variables.start_date, current.variables.start_time)
+if (current.get("be1088b71bad711024a5fd1b1e4bcb84")) {
+  gs.info(current.getDisplayValue());
+  gs.info(current.variables.is_this_a_list_of_dates_or_recurring_dates);
+  gs.info(current.variables.start_date + " " + current.variables.start_time);
+  createEventTasks(current.variables.start_date, current.variables.start_time);
 }
 
 function createEventTasks(date, time) {
-    var task = new GlideRecord('sc_task')
-    
-    task.initialize()
-    task.request_item.setValue(current.sys_id)
-    task.parent.setValue(current.sys_id)
-    task.cat_item.setValue('32317fbf1b1ee150f3738622dd4bcb78')
+  var task = new GlideRecord("sc_task");
 
-    task.setDisplayValue("assignment_group", current.variables.wf_task_1_assignment_group + '');
-    task.setDisplayValue("assigned_to", current.variables.wf_task_1_assigned_to + '');
-    task.short_description = current.variables.wf_task_1_short_description;
+  task.initialize();
+  task.request_item.setValue(current.sys_id);
+  task.parent.setValue(current.sys_id);
+  task.cat_item.setValue("32317fbf1b1ee150f3738622dd4bcb78");
 
-    var desc = current.variables.wf_task_1_description;
+  task.setDisplayValue(
+    "assignment_group",
+    current.variables.wf_task_1_assignment_group + ""
+  );
+  task.setDisplayValue(
+    "assigned_to",
+    current.variables.wf_task_1_assigned_to + ""
+  );
+  task.short_description = current.variables.wf_task_1_short_description;
 
-    if(desc == ""){
-	    task.description = "Please complete the appropriate steps to fulfill this request: " + current.variables.wf_task_1_short_description ;
-    } else {
-	    task.description = desc;
-    }
+  var desc = current.variables.wf_task_1_description;
 
-    task.description += '\n\"Date: "' + date + ' time: ' + time
-    task.insert()
+  if (desc == "") {
+    task.description =
+      "Please complete the appropriate steps to fulfill this request: " +
+      current.variables.wf_task_1_short_description;
+  } else {
+    task.description = desc;
+  }
+
+  task.description += '\n"Date: "' + date + " time: " + time;
+  task.insert();
 }
 
 // recurring dates
@@ -187,8 +191,6 @@ function createEventTasks(date, time) {
     task.parent.setValue(current.sys_id)
     task.cat_item.setValue('32317fbf1b1ee150f3738622dd4bcb78')
 
-    //cat_item display_value="Event Setup">32317fbf1b1ee150f3738622dd4bcb78
-
     task.setDisplayValue("assignment_group", current.variables.wf_task_1_assignment_group + '');
     task.setDisplayValue("assigned_to", current.variables.wf_task_1_assigned_to + '');
     task.short_description = current.variables.wf_task_1_short_description;
@@ -204,3 +206,4 @@ function createEventTasks(date, time) {
     task.description += '\n\"Date: "' + date + ' time: ' + time
     task.insert()
 }
+
