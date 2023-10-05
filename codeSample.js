@@ -339,3 +339,99 @@ function createEventTasks(date, time) {
 }
 
 
+//workflow
+var eventType = current.variables.is_this_a_list_of_dates_or_recurring_dates
+// Check what type of event, Single date, Multi-dates or Recurring dates. 
+if (eventType == 'Singledate') {
+    createEventTasks(current.variables.start_date, current.variables.start_time)
+
+} else if (eventType == 'Multipledates') {
+    var mrvsDate = JSON.parse(current.variables.event_dates)
+
+    for (var day = 0; day < mrvsDate.length; day++) {
+        createEventTasks(mrvsDate[day].what_is_the_date_and_time_of_the_event, mrvsDate[day].start_time_mrvs)
+    }
+} else { // recurring dates
+    var dayOfFirstOccurence = current.variables.day_of_first_occurence
+    var startTime = current.variables.start_time_recurring
+    var daysOfTheWeek = [
+        current.variables.monday,
+        current.variables.tuesday,
+        current.variables.wednesday,
+        current.variables.thursday,
+        current.variables.friday,
+        false,
+        false,
+    ]
+
+    var numberOfOccurences = current.variables.number_of_occurences
+    var datesArray = [];
+
+    var gd = new GlideDate()
+    gd.setValue(dayOfFirstOccurence)
+
+    var dayOfTheWeek = gd.getDayOfWeekUTC()
+    datesArray.push(gd.getValue());
+
+    var count = 0
+    while (datesArray.length < numberOfOccurences) {
+        gd.addDays(1)
+        if (daysOfTheWeek[dayOfTheWeek - 1] == "true") {
+            datesArray.push(gd.getValue())
+        }
+        if (count > 30) break
+        count++
+    }
+    for (var day = 0; day < datesArray.length; day++) {
+        createEventTasks(datesArray[day], startTime)
+    }
+}
+/**
+ * Generating a task according to the date and time parameter. 
+ * @param {string} date - Date of the event
+ * @param {string} time - Time of the event
+ */
+function createEventTasks(date, time) {
+    var task = new GlideRecord('sc_task')
+    // Catalog Item Event Setup
+    var eventSetupCatItem = 'fbff3ba71bad711024a5fd1b1e4bcb58'
+
+    task.initialize()
+    task.request_item.setValue(current.sys_id)
+    //task.parent.setValue(current.sys_id)
+    //task.cat_item.setValue(eventSetupCatItem)
+
+    // Short description based on catalog variables. 
+    task.setDisplayValue("assignment_group", current.variables.wf_task_1_assignment_group + '');
+    task.setDisplayValue("assigned_to", current.variables.wf_task_1_assigned_to + '');
+    task.short_description = current.variables.wf_task_1_short_description + " " + date
+
+    var desc = current.variables.wf_task_1_description;
+    // Build and populate the description of the catalog task. 
+    if (desc == "") {
+        task.description = "Please complete the appropriate steps to fulfill this request: " + current.variables.wf_task_1_short_description;
+    } else {
+        task.description = desc;
+    }
+
+    task.description += '\n\Date: ' + date + ' Time: ' + time
+    task.insert()
+} //end of createEventTasks()
+
+//task flow
+ifScript();
+
+function ifScript() {
+    var t = new GlideRecord('sc_task');
+    //t.addNotNullQuery('order');
+    t.addQuery('request_item', current.sys_id);
+    t.addQuery('active', true);
+    t.query();
+
+    if (t.hasNext()) {
+        answer = false;
+    } else {
+        //Continue
+        answer = true;
+    }
+}
