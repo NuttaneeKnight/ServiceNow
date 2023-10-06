@@ -39,94 +39,109 @@
 // 		//  console.log(my_g_form.getValue("company") );
 // }
 
-var debugEnable = gs.getProperty('lhric.wf.event_setup_debug') || 'false'
-var eventType = current.variables.is_this_a_list_of_dates_or_recurring_dates
-	// Check what type of event, Single date, Multi-dates or Recurring dates. 
-	if (eventType == 'Singledate') {
-		createEventTasks(current.variables.start_date, current.variables.start_time)
+var debugEnable = gs.getProperty("lhric.wf.event_setup_debug") || "false";
+var eventType = current.variables.is_this_a_list_of_dates_or_recurring_dates;
+// Check what type of event, Single date, Multi-dates or Recurring dates.
+if (eventType == "Singledate") {
+  createEventTasks(current.variables.start_date, current.variables.start_time);
+} else if (eventType == "Multipledates") {
+  var mrvsDate = JSON.parse(current.variables.event_dates);
 
-	} else if (eventType == 'Multipledates') {
-		var mrvsDate = JSON.parse(current.variables.event_dates)
+  for (var day = 0; day < mrvsDate.length; day++) {
+    createEventTasks(
+      mrvsDate[day].what_is_the_date_and_time_of_the_event,
+      mrvsDate[day].start_time_mrvs
+    );
+  }
+} else {
+  // recurring dates
+  var dayOfFirstOccurence = current.variables.day_of_first_occurence;
+  var startTime = current.variables.start_time_recurring;
+  var daysOfTheWeek = [
+    current.variables.monday,
+    current.variables.tuesday,
+    current.variables.wednesday,
+    current.variables.thursday,
+    current.variables.friday,
+    false,
+    false,
+  ];
 
-		for (var day = 0; day < mrvsDate.length; day++) {
-			createEventTasks(mrvsDate[day].what_is_the_date_and_time_of_the_event, mrvsDate[day].start_time_mrvs)
-		}
-	} else { // recurring dates
-		var dayOfFirstOccurence = current.variables.day_of_first_occurence
-		var startTime = current.variables.start_time_recurring
-		var daysOfTheWeek = [
-			current.variables.monday,
-			current.variables.tuesday,
-			current.variables.wednesday,
-			current.variables.thursday,
-			current.variables.friday,
-			false,
-			false,
-		]
+  var numberOfOccurences = current.variables.number_of_occurences;
+  var datesArray = [];
 
-		var numberOfOccurences = current.variables.number_of_occurences
-		var datesArray = [];
+  var gd = new GlideDate();
+  gd.setValue(dayOfFirstOccurence);
 
-		var gd = new GlideDate()
-		gd.setValue(dayOfFirstOccurence)
+  var dayOfTheWeek = gd.getDayOfWeekUTC();
+  if (daysOfTheWeek[dayOfTheWeek - 1] == "true") {
+    datesArray.push(gd.getValue());
+  }
 
-		var dayOfTheWeek = gd.getDayOfWeekUTC()
-		if (daysOfTheWeek[dayOfTheWeek - 1] == "true") {
-			datesArray.push(gd.getValue())
-		}
+  var count = 0;
+  while (datesArray.length < numberOfOccurences) {
+    gd.addDays(1);
+    dayOfTheWeek = gd.getDayOfWeekUTC();
+    if (daysOfTheWeek[dayOfTheWeek - 1] == "true") {
+      datesArray.push(gd.getValue());
+    }
+    if (count > 300) break;
+    count++;
+  }
+  for (var day = 0; day < datesArray.length; day++) {
+    createEventTasks(datesArray[day], startTime);
+  }
+}
+/**
+ * Generating a task according to the date and time parameter.
+ * @param {string} date - Date of the event
+ * @param {string} time - Time of the event
+ */
+function createEventTasks(date, time) {
+  var task = new GlideRecord("sc_task");
+  // Catalog Item Event Setup
+  var eventSetupCatItem = "fbff3ba71bad711024a5fd1b1e4bcb58";
 
-		var count = 0
-		while (datesArray.length < numberOfOccurences) {
-			gd.addDays(1)
-			dayOfTheWeek = gd.getDayOfWeekUTC()
-			if (daysOfTheWeek[dayOfTheWeek - 1] == "true") {
-				datesArray.push(gd.getValue())
-			}
-			if (count > 300) break
-			count++
-		}
-		for (var day = 0; day < datesArray.length; day++) {
-			createEventTasks(datesArray[day], startTime)
-		}
-	}
-	/**
-	 * Generating a task according to the date and time parameter. 
-	 * @param {string} date - Date of the event
-	 * @param {string} time - Time of the event
-	 */
-	function createEventTasks(date, time) {
-		var task = new GlideRecord('sc_task')
-		// Catalog Item Event Setup
-		var eventSetupCatItem = 'fbff3ba71bad711024a5fd1b1e4bcb58'
+  task.initialize();
+  task.request_item.setValue(current.sys_id);
+  //task.parent.setValue(current.sys_id)
+  //task.cat_item.setValue(eventSetupCatItem)
 
-		task.initialize()
-		task.request_item.setValue(current.sys_id)
-		//task.parent.setValue(current.sys_id)
-		//task.cat_item.setValue(eventSetupCatItem)
+  // Short description based on catalog variables.
+  task.setDisplayValue(
+    "assignment_group",
+    current.variables.wf_task_1_assignment_group + ""
+  );
+  task.setDisplayValue(
+    "assigned_to",
+    current.variables.wf_task_1_assigned_to + ""
+  );
+  task.short_description =
+    current.variables.wf_task_1_short_description + " " + date;
 
-		// Short description based on catalog variables. 
-		task.setDisplayValue("assignment_group", current.variables.wf_task_1_assignment_group + '');
-		task.setDisplayValue("assigned_to", current.variables.wf_task_1_assigned_to + '');
-		task.short_description = current.variables.wf_task_1_short_description + " " + date
-		
-		task.due_date = date;
-		
-		var desc = current.variables.wf_task_1_description;
-		// Build and populate the description of the catalog task. 
-		if (desc == "") {
-			task.description = "Please complete the appropriate steps to fulfill this request: " + current.variables.wf_task_1_short_description;
-		} else {
-			task.description = desc;
-		}
-	debug('Task created with short description' + task.short_description, debugEnable)
-		task.description += '\n\Date: ' + date + ' Time: ' + time
-		task.insert()
-// 		var grTask = task.insert()
-// 		gs.eventQueue('Howie & Nuttanee rule!', grTask, current.requested_by, task.description)
-	} //end of createEventTasks()
+  task.due_date = date;
+
+  var desc = current.variables.wf_task_1_description;
+  // Build and populate the description of the catalog task.
+  if (desc == "") {
+    task.description =
+      "Please complete the appropriate steps to fulfill this request: " +
+      current.variables.wf_task_1_short_description;
+  } else {
+    task.description = desc;
+  }
+  debug(
+    "Task created with short description" + task.short_description,
+    debugEnable
+  );
+  task.description += "\nDate: " + date + " Time: " + time;
+  task.insert();
+  // 		var grTask = task.insert()
+  // 		gs.eventQueue('Howie & Nuttanee rule!', grTask, current.requested_by, task.description)
+} //end of createEventTasks()
 
 function debug(message, isEnable) {
-	if (isEnable == 'true') {
-		gs.info("Event Setup Task Generation: " + message)
-	}
+  if (isEnable == "true") {
+    gs.info("Event Setup Task Generation: " + message);
+  }
 }
