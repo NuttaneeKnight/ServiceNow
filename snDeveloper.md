@@ -87,5 +87,8 @@
     - Show an alert when form loads
     - Validate form data
     - Show/hide choices of fields
+    - Hide/show section
+    - Set a value on the form
+    - confirmation on submit
 
 //37.40
