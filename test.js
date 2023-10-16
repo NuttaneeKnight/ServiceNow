@@ -145,3 +145,34 @@ function debug(message, isEnable) {
     gs.info("Event Setup Task Generation: " + message);
   }
 }
+
+[3:31 PM] Howie Austin
+
+var startDate = new Date('10/17/2023')
+
+	var endDate = new Date('10/24/2023')
+
+	var curDate = new Date('10/17/2023')
+
+ 
+
+	var count = 0
+
+	while (curDate < endDate) {
+
+		if (count > 30) {
+
+			break
+
+		}
+
+		curDate.setDate(curDate.getDate() + 1)
+
+		count++
+
+		console.log(endDate - curDate)
+
+	} 
+
+
+	console.log(endDate - startDate)
