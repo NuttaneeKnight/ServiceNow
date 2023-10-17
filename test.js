@@ -291,9 +291,10 @@ calculate_number_of_occurrences = function() {
  var curDate = new Date(day_of_first_occurence);
  var milliDay = 1000*60*60*24;
 
- var count = 0
+ //var count = 0
  while (curDate <= endDate) {
-   if (count > 30) {
+   if (totalNumber > 30) {
+     g_form.addErrorMessage("Maximum 30 occurences exceeded. Final day is " + curDate)
      break;
    }
    if (curDate.getDay()==1 && monday){
