@@ -177,24 +177,87 @@
 
 // 	console.log(endDate - startDate)
 
-var startDate = new Date('10/17/2023')
-	var endDate = new Date('10/24/2023')
-	var curDate = new Date('10/17/2023')
+function onLoad() {
+  //Type appropriate comment here, and begin script below
+  
+}
 
-	var count = 0
-	while (curDate < endDate) {
-		if (count > 30) {
-			break
-		}
-    //console.log(curDate)
-		curDate.setDate(curDate.getDay() + 1)
-    curDate += 1000*60*60*24
-    //curDate = curDate[Symbol.toPrimitive]('number')
-    //console.log(curDate[Symbol.toPrimitive]('number'))
-    
-		count++
-		//console.log(endDate - curDate)
-	} 
+calculate_number_of_occurrences = function() {
+ console.log("STARTING CALCULATION!")
+ var totalNumber = 0;
+ var day_of_first_occurence = g_form.getValue('day_of_first_occurence');
+ var day_of_last_occurence = g_form.getValue('day_of_last_occurence');
+ var monday = g_form.getValue('monday') == "true";
+ var tuesday = g_form.getValue('tuesday') == "true";
+ var wednesday = g_form.getValue('wednesday') == "true";
+ var thursday = g_form.getValue('thursday') == "true";
+ var friday = g_form.getValue('friday') == "true";
+ var saturday = g_form.getValue('saturday') == "true";
+ var sunday = g_form.getValue('sunday') == "true";
+ 
+ var daysCount = arrayCount([monday, tuesday, wednesday, thursday, friday, saturday, sunday]);
+ console.log("daysCount: " + daysCount)
+ if (day_of_first_occurence == '' || day_of_last_occurence == '' || daysCount == 0) {
+   return;
+ }
+ 
+ var startDate = new Date(day_of_first_occurence);
+ var endDate = new Date(day_of_last_occurence);
+ var curDate = new Date(day_of_first_occurence);
+ var milliDay = 1000*60*60*24;
 
-	//console.log(endDate - startDate)
-  //console.log(count)
+ var count = 0
+ while (curDate < endDate) {
+   if (count > 30) {
+     break;
+   }
+   if (curDate.getDay()==1 && monday){
+     console.log("MONDAY!!!")
+     totalNumber++;
+   }else if (curDate.getDay()==2 && tuesday){
+     console.log("TUESDAY!!!")
+     totalNumber++;
+   }else if (curDate.getDay()==3 && wednesday){
+     console.log("wednesday!!!")
+     totalNumber++;
+   }else if (curDate.getDay()==4 && thursday){
+     console.log("THURSDAY!!!")
+     totalNumber++;
+   }else if (curDate.getDay()==5 && friday){
+     console.log("FRIDAY!!!")
+     totalNumber++;
+   }else if (curDate.getDay()==6 && saturday){
+     console.log("SATURDAY!!!")
+     totalNumber++;
+   }else if (curDate.getDay()==7 && sunday){
+     console.log("SUNDAY!!!")
+     totalNumber++;
+   }
+   console.log(count + ": " + (endDate - curDate)/milliDay + " Days to check")
+
+   
+   curDate.setDate(curDate.getDate() + 1);
+     //curDate += 1000*60*60*24
+     //curDate = curDate[Symbol.toPrimitive]('number')
+   count++
+   console.log((endDate - curDate)/ milliDay)
+   console.log("totalNumber " +totalNumber)
+   console.log("daysCount " +daysCount)
+ } 
+ 
+ console.log(endDate - startDate)
+
+
+ g_form.setValue('number_of_occurences', totalNumber);
+
+
+}
+   arrayCount = function(arr) {
+   var result = [];
+   for(var i = 0; i < arr.length; i++) {
+     if (arr[i] === true) {
+       result.push(arr[i]);
+     }
+   }
+   return result.length;
+    }
