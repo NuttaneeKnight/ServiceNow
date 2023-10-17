@@ -186,9 +186,14 @@ var startDate = new Date('10/17/2023')
 		if (count > 30) {
 			break
 		}
-		curDate.setDate(curDate.getDate() + 1)
+    console.log(curDate)
+		curDate.setDate(curDate.getDay() + 1)
+    //curDate = curDate[Symbol.toPrimitive]('number')
+    //console.log(curDate[Symbol.toPrimitive]('number'))
+    
 		count++
-		console.log(endDate - curDate)
+		//console.log(endDate - curDate)
 	} 
 
 	console.log(endDate - startDate)
+  console.log(count)
