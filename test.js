@@ -207,7 +207,7 @@ calculate_number_of_occurrences = function() {
  var milliDay = 1000*60*60*24;
 
  var count = 0
- while (curDate < endDate) {
+ while (curDate <= endDate) {
    if (count > 30) {
      break;
    }
