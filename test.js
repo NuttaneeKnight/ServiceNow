@@ -434,3 +434,8 @@ arrayCount = function(arr) {
 	}
 	return result.length;
 }
+
+
+/*
+This is a new version of documenting the codes
+*/ 
