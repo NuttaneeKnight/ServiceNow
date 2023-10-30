@@ -440,4 +440,10 @@
 This is a new version of documenting the codes
 */ 
 
-// Fixed Script sample
+//\/ Fixed Script sample - Task clean up
+
+var grTask = new GlideRecord('sc_task')
+
+//\/ Getting the encoded list query
+grTask.addEncodedQuery('u_district_idISEMPTY^active=true^request_itemISEMPTY')
+
