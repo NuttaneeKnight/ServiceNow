@@ -444,7 +444,7 @@ This is a new version of documenting the codes
 
 var grTask = new GlideRecord('sc_task')
 
-//\/ Getting the encoded list query
+//\/|<  Getting the encoded list query
 grTask.addEncodedQuery('u_district_idISEMPTY^active=true^request_itemISEMPTY')
 grTask.setLimit(5);
 grTask.query();
