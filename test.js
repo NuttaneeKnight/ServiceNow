@@ -262,180 +262,182 @@
 //    return result.length;
 //     }
 
-function onLoad() {
-  //Type appropriate comment here, and begin script below
+// function onLoad() {
+//   //Type appropriate comment here, and begin script below
   
-}
+// }
 
-calculate_number_of_occurrences = function() {
- console.log("STARTING CALCULATION!")
- var totalNumber = 0;
- var day_of_first_occurence = g_form.getValue('day_of_first_occurence');
- var day_of_last_occurence = g_form.getValue('day_of_last_occurence');
- var monday = g_form.getValue('monday') == "true";
- var tuesday = g_form.getValue('tuesday') == "true";
- var wednesday = g_form.getValue('wednesday') == "true";
- var thursday = g_form.getValue('thursday') == "true";
- var friday = g_form.getValue('friday') == "true";
- var saturday = g_form.getValue('saturday') == "true";
- var sunday = g_form.getValue('sunday') == "true";
+// calculate_number_of_occurrences = function() {
+//  console.log("STARTING CALCULATION!")
+//  var totalNumber = 0;
+//  var day_of_first_occurence = g_form.getValue('day_of_first_occurence');
+//  var day_of_last_occurence = g_form.getValue('day_of_last_occurence');
+//  var monday = g_form.getValue('monday') == "true";
+//  var tuesday = g_form.getValue('tuesday') == "true";
+//  var wednesday = g_form.getValue('wednesday') == "true";
+//  var thursday = g_form.getValue('thursday') == "true";
+//  var friday = g_form.getValue('friday') == "true";
+//  var saturday = g_form.getValue('saturday') == "true";
+//  var sunday = g_form.getValue('sunday') == "true";
  
- var daysCount = arrayCount([monday, tuesday, wednesday, thursday, friday, saturday, sunday]);
- console.log("daysCount: " + daysCount)
- if (day_of_first_occurence == '' || day_of_last_occurence == '' || daysCount == 0) {
-   return;
- }
+//  var daysCount = arrayCount([monday, tuesday, wednesday, thursday, friday, saturday, sunday]);
+//  console.log("daysCount: " + daysCount)
+//  if (day_of_first_occurence == '' || day_of_last_occurence == '' || daysCount == 0) {
+//    return;
+//  }
  
- var startDate = new Date(day_of_first_occurence);
- var endDate = new Date(day_of_last_occurence);
- var curDate = new Date(day_of_first_occurence);
- var milliDay = 1000*60*60*24;
+//  var startDate = new Date(day_of_first_occurence);
+//  var endDate = new Date(day_of_last_occurence);
+//  var curDate = new Date(day_of_first_occurence);
+//  var milliDay = 1000*60*60*24;
 
- //var count = 0
- while (curDate <= endDate) {
-   if (totalNumber > 30) {
-     g_form.addErrorMessage("Maximum 30 occurences exceeded. Final day is " + curDate)
-     break;
-   }
-   if (curDate.getDay()==1 && monday){
-     console.log("MONDAY!!!")
-     totalNumber++;
-   }else if (curDate.getDay()==2 && tuesday){
-     console.log("TUESDAY!!!")
-     totalNumber++;
-   }else if (curDate.getDay()==3 && wednesday){
-     console.log("wednesday!!!")
-     totalNumber++;
-   }else if (curDate.getDay()==4 && thursday){
-     console.log("THURSDAY!!!")
-     totalNumber++;
-   }else if (curDate.getDay()==5 && friday){
-     console.log("FRIDAY!!!")
-     totalNumber++;
-   }else if (curDate.getDay()==6 && saturday){
-     console.log("SATURDAY!!!")
-     totalNumber++;
-   }else if (curDate.getDay()==7 && sunday){
-     console.log("SUNDAY!!!")
-     totalNumber++;
-   }
-   console.log(count + ": " + (endDate - curDate)/milliDay + " Days to check")
+//  //var count = 0
+//  while (curDate <= endDate) {
+//    if (totalNumber > 30) {
+//      g_form.addErrorMessage("Maximum 30 occurences exceeded. Final day is " + curDate)
+//      break;
+//    }
+//    if (curDate.getDay()==1 && monday){
+//      console.log("MONDAY!!!")
+//      totalNumber++;
+//    }else if (curDate.getDay()==2 && tuesday){
+//      console.log("TUESDAY!!!")
+//      totalNumber++;
+//    }else if (curDate.getDay()==3 && wednesday){
+//      console.log("wednesday!!!")
+//      totalNumber++;
+//    }else if (curDate.getDay()==4 && thursday){
+//      console.log("THURSDAY!!!")
+//      totalNumber++;
+//    }else if (curDate.getDay()==5 && friday){
+//      console.log("FRIDAY!!!")
+//      totalNumber++;
+//    }else if (curDate.getDay()==6 && saturday){
+//      console.log("SATURDAY!!!")
+//      totalNumber++;
+//    }else if (curDate.getDay()==7 && sunday){
+//      console.log("SUNDAY!!!")
+//      totalNumber++;
+//    }
+//    console.log(count + ": " + (endDate - curDate)/milliDay + " Days to check")
 
-   //curDate.setDate(curDate.getDate() + 1)
+//    //curDate.setDate(curDate.getDate() + 1)
    
-   curDate.setDate(curDate.getDate() + 1)
-     //curDate += 1000*60*60*24
-     //curDate = curDate[Symbol.toPrimitive]('number')
-   count++
-   console.log("Days remaining:" + (endDate - curDate)/ milliDay)
-   console.log("totalNumber " +totalNumber)
-   console.log("daysCount " +daysCount)
- } 
+//    curDate.setDate(curDate.getDate() + 1)
+//      //curDate += 1000*60*60*24
+//      //curDate = curDate[Symbol.toPrimitive]('number')
+//    count++
+//    console.log("Days remaining:" + (endDate - curDate)/ milliDay)
+//    console.log("totalNumber " +totalNumber)
+//    console.log("daysCount " +daysCount)
+//  } 
  
- console.log(endDate - startDate)
+//  console.log(endDate - startDate)
 
 
- g_form.setValue('number_of_occurences', totalNumber);
+//  g_form.setValue('number_of_occurences', totalNumber);
 
 
-}
-   arrayCount = function(arr) {
-   var result = [];
-   for(var i = 0; i < arr.length; i++) {
-     if (arr[i] === true) {
-       result.push(arr[i]);
-     }
-   }
-   return result.length;
-    }
+// }
+//    arrayCount = function(arr) {
+//    var result = [];
+//    for(var i = 0; i < arr.length; i++) {
+//      if (arr[i] === true) {
+//        result.push(arr[i]);
+//      }
+//    }
+//    return result.length;
+//     }
 
 
 
-// Revisted with documentation
-function onLoad() {
-}
+// // Revisted with documentation
+// function onLoad() {
+// }
 
-// the function has to be declared this format only. 
-calculate_number_of_occurrences = function() {
-	//console.log("STARTING CALCULATION!")
-	var totalNumber = 0;
-	var day_of_first_occurence = g_form.getValue('day_of_first_occurence');
-	var day_of_last_occurence = g_form.getValue('day_of_last_occurence');
-	// days of the week has a boolean value (select box) 
-	var monday = g_form.getValue('monday') == "true";
-	var tuesday = g_form.getValue('tuesday') == "true";
-	var wednesday = g_form.getValue('wednesday') == "true";
-	var thursday = g_form.getValue('thursday') == "true";
-	var friday = g_form.getValue('friday') == "true";
-	var saturday = g_form.getValue('saturday') == "true";
-	var sunday = g_form.getValue('sunday') == "true";
+// // the function has to be declared this format only. 
+// calculate_number_of_occurrences = function() {
+// 	//console.log("STARTING CALCULATION!")
+// 	var totalNumber = 0;
+// 	var day_of_first_occurence = g_form.getValue('day_of_first_occurence');
+// 	var day_of_last_occurence = g_form.getValue('day_of_last_occurence');
+// 	// days of the week has a boolean value (select box) 
+// 	var monday = g_form.getValue('monday') == "true";
+// 	var tuesday = g_form.getValue('tuesday') == "true";
+// 	var wednesday = g_form.getValue('wednesday') == "true";
+// 	var thursday = g_form.getValue('thursday') == "true";
+// 	var friday = g_form.getValue('friday') == "true";
+// 	var saturday = g_form.getValue('saturday') == "true";
+// 	var sunday = g_form.getValue('sunday') == "true";
 	
-	// daysCount uses arrayCount function below to get the number of occurrences.
-	var daysCount = arrayCount([monday, tuesday, wednesday, thursday, friday, saturday, sunday]);
-	//console.log("daysCount: " + daysCount)
-	if (day_of_first_occurence == '' || day_of_last_occurence == '' || daysCount == 0) {
-		return;
-	}
+// 	// daysCount uses arrayCount function below to get the number of occurrences.
+// 	var daysCount = arrayCount([monday, tuesday, wednesday, thursday, friday, saturday, sunday]);
+// 	//console.log("daysCount: " + daysCount)
+// 	if (day_of_first_occurence == '' || day_of_last_occurence == '' || daysCount == 0) {
+// 		return;
+// 	}
 	
-	var startDate = new Date(day_of_first_occurence);
-	var endDate = new Date(day_of_last_occurence);
-	var curDate = new Date(day_of_first_occurence);
-	var milliDay = 1000*60*60*24;
-	if(endDate < startDate) {
-		g_form.showFieldMsg('day_of_last_occurence','End date should be after start date.','error');
-	}
+// 	var startDate = new Date(day_of_first_occurence);
+// 	var endDate = new Date(day_of_last_occurence);
+// 	var curDate = new Date(day_of_first_occurence);
+// 	var milliDay = 1000*60*60*24;
+// 	if(endDate < startDate) {
+// 		g_form.showFieldMsg('day_of_last_occurence','End date should be after start date.','error');
+// 	}
 
-	var lastDay = new Date();
-	while (curDate <= endDate) {
-		// the day of the week is selected totalNumber increments by 1
-		// This is for the logic below that we limit the number of occurences to be below 30
-		if (curDate.getDay()==1 && monday){
-			totalNumber++;
-		}else if (curDate.getDay()==2 && tuesday){
-			totalNumber++;
-		}else if (curDate.getDay()==3 && wednesday){
-			totalNumber++;
-		}else if (curDate.getDay()==4 && thursday){
-			totalNumber++;
-		}else if (curDate.getDay()==5 && friday){
-			totalNumber++;
-		}else if (curDate.getDay()==6 && saturday){
-			totalNumber++;
-		}else if (curDate.getDay()==7 && sunday){
-			totalNumber++;
-		}
+// 	var lastDay = new Date();
+// 	while (curDate <= endDate) {
+// 		// the day of the week is selected totalNumber increments by 1
+// 		// This is for the logic below that we limit the number of occurences to be below 30
+// 		if (curDate.getDay()==1 && monday){
+// 			totalNumber++;
+// 		}else if (curDate.getDay()==2 && tuesday){
+// 			totalNumber++;
+// 		}else if (curDate.getDay()==3 && wednesday){
+// 			totalNumber++;
+// 		}else if (curDate.getDay()==4 && thursday){
+// 			totalNumber++;
+// 		}else if (curDate.getDay()==5 && friday){
+// 			totalNumber++;
+// 		}else if (curDate.getDay()==6 && saturday){
+// 			totalNumber++;
+// 		}else if (curDate.getDay()==7 && sunday){
+// 			totalNumber++;
+// 		}
 
-		// the filter to ensure that the number of occurences is below 30
-		if (totalNumber > 30) {
-			g_form.addErrorMessage("Maximum 30 occurences exceeded. Final day must be before " + lastDay)
-			break;
-		} else if (totalNumber == 30){
-			// setting the curDate to last day so that the user can select the last day. 
-			lastDay = curDate
-		}
-		// clear the error message
-		g_form.clearMessages();
+// 		// the filter to ensure that the number of occurences is below 30
+// 		if (totalNumber > 30) {
+// 			g_form.addErrorMessage("Maximum 30 occurences exceeded. Final day must be before " + lastDay)
+// 			break;
+// 		} else if (totalNumber == 30){
+// 			// setting the curDate to last day so that the user can select the last day. 
+// 			lastDay = curDate
+// 		}
+// 		// clear the error message
+// 		g_form.clearMessages();
 		
-		curDate.setDate(curDate.getDate() + 1)	
-	} 
-	// setting the totalNumber into number_of_occurences field. 
-	g_form.setValue('number_of_occurences', totalNumber);
-};
+// 		curDate.setDate(curDate.getDate() + 1)	
+// 	} 
+// 	// setting the totalNumber into number_of_occurences field. 
+// 	g_form.setValue('number_of_occurences', totalNumber);
+// };
 
-/**
- * function to count the number of true (from the arrayCount) options in an array.
- */
-arrayCount = function(arr) {
-	var result = [];
-	for(var i = 0; i < arr.length; i++) {
-		if (arr[i] === true) {
-			result.push(arr[i]);
-		}
-	}
-	return result.length;
-}
+// /**
+//  * function to count the number of true (from the arrayCount) options in an array.
+//  */
+// arrayCount = function(arr) {
+// 	var result = [];
+// 	for(var i = 0; i < arr.length; i++) {
+// 		if (arr[i] === true) {
+// 			result.push(arr[i]);
+// 		}
+// 	}
+// 	return result.length;
+// }
 
 
 /*
 This is a new version of documenting the codes
 */ 
+
+// Fixed Script sample
