@@ -446,4 +446,17 @@ var grTask = new GlideRecord('sc_task')
 
 //\/ Getting the encoded list query
 grTask.addEncodedQuery('u_district_idISEMPTY^active=true^request_itemISEMPTY')
+grTask.setLimit(5);
+grTask.query();
+getSelection.print('There were: ' + grTask.getRowCount() + " record found by this filter");
 
+while (grTask.next()) {
+	grTask.setWorkflow(false) //\/ Preventing biz rile from unning on the GlideRecord
+	grTask.active = false //\/ If business rues are excluded, be sure to update key fields manually
+	grTask.state = 3 //\/ state is closed complete (3)
+
+	grTask.autoSysFields(false) //\/ prevents sys_fields from being updated on the Gliderecord
+	grTask.closed_at = grTask.sys_updated_on //\/ Set the closed at field to match the last updated on
+
+	grTask.update(); 
+}
