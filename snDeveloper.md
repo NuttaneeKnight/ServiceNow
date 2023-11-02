@@ -106,4 +106,13 @@ What are we going to learn
 - UI Context Menus
 - Validations Scripts
 
+# Client-Side Glide Class
+- GlideAjax
+- GlideDialog Window
+- GlideForm
+- GlideList2
+- GlideMenu
+- GlideUser
+
+
 //38.50
