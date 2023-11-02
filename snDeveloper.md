@@ -141,4 +141,11 @@ What are we going to learn
 - The object which is used to access GlideForm methods is g_form
 - It is used only in Client
 - Syntax - g_form.<GlideFormMethod>(<Parameter>)
+
+# GlideDialogWindow
+- GlideDialogWindoow is used for displaying a dialog in the current window and frame
+- It is used only in Client
+
+# Practical Lab and Use Cases
+
 //43.21
