@@ -91,4 +91,9 @@
     - Set a value on the form
     - confirmation on submit
 
+What are we going to learn
+- What is client side scripting
+- Where to use Client side scripting
+- Client side API and Methods
+- Use cases of Client side scripting
 //37.23
