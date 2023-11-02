@@ -106,7 +106,7 @@ What are we going to learn
 - UI Context Menus
 - Validations Scripts
 
-# Client-Side Glide Class
+# Client-Side Glide Class - Provided by ServiceNow
 - GlideAjax
 - GlideDialog Window
 - GlideForm
