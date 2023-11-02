@@ -82,6 +82,12 @@
 - It can be inserted in Script editor with a text saved in Macros
 - All > Mocro (Syntax Editor Macros) - This will show the list of all the syntax shortcuts ex. type vargr and click tab will give you the boiler plate
 
+What are we going to learn
+- What is client side scripting
+- Where to use Client side scripting
+- Client side API and Methods
+- Use cases of Client side scripting
+
 # Client Side Scripting
 - Client-side scripting execute within a user's browser and are used to manage forms and form fields. Following are examples:
     - Show an alert when form loads
@@ -91,9 +97,13 @@
     - Set a value on the form
     - confirmation on submit
 
-What are we going to learn
-- What is client side scripting
-- Where to use Client side scripting
-- Client side API and Methods
-- Use cases of Client side scripting
-//37.23
+# Where to use Client Side Scripting
+- Ajax Client Scripts
+- UI Policy
+- Service Catalog UI Policy
+- Client Scripts
+- UI Actions
+- UI Context Menus
+- Validations Scripts
+
+//38.50
