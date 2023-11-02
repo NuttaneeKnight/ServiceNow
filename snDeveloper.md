@@ -114,5 +114,13 @@ What are we going to learn
 - GlideMenu
 - GlideUser
 
-
+# Client Side API
+- GlideAjax
+- GlideDialogWindow
+- GlideList2
+- GlideFlow
+- GlideUser
+- GlideForm
+- GlideModal
+- GlideDocumentV3
 //38.50
