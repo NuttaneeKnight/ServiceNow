@@ -123,4 +123,11 @@ What are we going to learn
 - GlideForm
 - GlideModal
 - GlideDocumentV3
-//38.50
+
+# Glide User
+- GlideUser is used to get information about the logged in user
+- The object which is used to access GlideUser methods is g_user
+- It is used only in Client
+- Syntax - g_user.<GlideUserMethod()>
+
+//42.15
