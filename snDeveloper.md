@@ -130,4 +130,11 @@ What are we going to learn
 - It is used only in Client
 - Syntax - g_user.<GlideUserMethod()>
 
-//42.15
+# GlideAjx
+- GlideAjax is used to call server side code from Client
+- GlideAjax instance called with GlideAjax constructor
+- It is used client Scripting
+- Syntax - var ga = new GlideAjax(,Script Include)
+
+
+//43.21
