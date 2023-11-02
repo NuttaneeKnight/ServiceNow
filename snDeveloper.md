@@ -124,17 +124,21 @@ What are we going to learn
 - GlideModal
 - GlideDocumentV3
 
-# Glide User
+# GlideUser
 - GlideUser is used to get information about the logged in user
 - The object which is used to access GlideUser methods is g_user
 - It is used only in Client
 - Syntax - g_user.<GlideUserMethod()>
 
-# GlideAjx
+# GlideAjax
 - GlideAjax is used to call server side code from Client
 - GlideAjax instance called with GlideAjax constructor
 - It is used client Scripting
 - Syntax - var ga = new GlideAjax(,Script Include)
 
-
+# GlideForm
+- GlideForm is used to customize forms and perform some activities on form
+- The object which is used to access GlideForm methods is g_form
+- It is used only in Client
+- Syntax - g_form.<GlideFormMethod>(<Parameter>)
 //43.21
