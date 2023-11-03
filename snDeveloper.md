@@ -148,8 +148,9 @@ What are we going to learn
 
 # Practical Lab and Use Cases
 - Ex. Go to Incident > Open
-- In the list view column clight right > Configure > Client Script
-- 
-//45.56
+- In the list view column clight right > Configure > Client Script > New 
+- Inside the script you can call the object function by g_form. > The methods for g_form will show up
+
+//48.24
 
 /login_with_sso.do?glide_sso_id=ab186cf01b92b550f3738622dd4bcb96
