@@ -147,7 +147,9 @@ What are we going to learn
 - It is used only in Client
 
 # Practical Lab and Use Cases
-
-//43.21
+- Ex. Go to Incident > Open
+- In the list view column clight right > Configure > Client Script
+- 
+//45.56
 
 /login_with_sso.do?glide_sso_id=ab186cf01b92b550f3738622dd4bcb96
