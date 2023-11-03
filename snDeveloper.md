@@ -152,6 +152,10 @@ What are we going to learn
 - Inside the script you can call the object function by g_form. > The methods for g_form will show up
 - Go into any open incident records and it should throw the client script taht we set. 
 
-//50.55
+# Use Case
+- To show a pop up on an incident form, when any one changes the priority to be high
+
+
+//54.24
 
 /login_with_sso.do?glide_sso_id=ab186cf01b92b550f3738622dd4bcb96
