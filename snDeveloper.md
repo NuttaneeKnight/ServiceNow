@@ -150,7 +150,8 @@ What are we going to learn
 - Ex. Go to Incident > Open
 - In the list view column clight right > Configure > Client Script > New 
 - Inside the script you can call the object function by g_form. > The methods for g_form will show up
+- Go into any open incident records and it should throw the client script taht we set. 
 
-//48.24
+//50.55
 
 /login_with_sso.do?glide_sso_id=ab186cf01b92b550f3738622dd4bcb96
