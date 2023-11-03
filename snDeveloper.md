@@ -153,9 +153,12 @@ What are we going to learn
 - Go into any open incident records and it should throw the client script taht we set. 
 
 # Use Case
-- To show a pop up on an incident form, when any one changes the priority to be high
+- To show a pop up on an incident form, when any one changes the priority to be high that it will become critical
+- Created a new client script for a pop up that alert the user that they are changing the state to priority one. 
+- The name is Show Alert on P1
 
 
-//54.24
+
+//57.04
 
 /login_with_sso.do?glide_sso_id=ab186cf01b92b550f3738622dd4bcb96
