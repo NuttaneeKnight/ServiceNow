@@ -71,4 +71,5 @@ This data seems to represent various attributes associated with a user, such as 
 
 # To set up Azure
 - Set up Oauth
-- Rest Message
+- Rest Message > Graph API
+
