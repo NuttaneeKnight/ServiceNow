@@ -68,3 +68,7 @@ Name: source
 Value: CN=test, test,OU=CTM Users,OU=CTM,OU=test,OU=test,DC=test,DC=org
 
 This data seems to represent various attributes associated with a user, such as their contact information, job title, department, etc. This kind of information is often exchanged in SAML assertions during authentication and authorization processes. Keep in mind that the exact attributes and their names may vary depending on the specific identity and access management system being used.
+
+# To set up Azure
+- Set up Oauth
+- Rest Message
