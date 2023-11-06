@@ -154,8 +154,6 @@
 
 // 	var curDate = new Date('10/17/2023')
 
- 
-
 // 	var count = 0
 
 // 	while (curDate < endDate) {
@@ -172,14 +170,13 @@
 
 // 		console.log(endDate - curDate)
 
-// 	} 
-
+// 	}
 
 // 	console.log(endDate - startDate)
 
 // function onLoad() {
 //   //Type appropriate comment here, and begin script below
-  
+
 // }
 
 // calculate_number_of_occurrences = function() {
@@ -194,13 +191,13 @@
 //  var friday = g_form.getValue('friday') == "true";
 //  var saturday = g_form.getValue('saturday') == "true";
 //  var sunday = g_form.getValue('sunday') == "true";
- 
+
 //  var daysCount = arrayCount([monday, tuesday, wednesday, thursday, friday, saturday, sunday]);
 //  console.log("daysCount: " + daysCount)
 //  if (day_of_first_occurence == '' || day_of_last_occurence == '' || daysCount == 0) {
 //    return;
 //  }
- 
+
 //  var startDate = new Date(day_of_first_occurence);
 //  var endDate = new Date(day_of_last_occurence);
 //  var curDate = new Date(day_of_first_occurence);
@@ -235,7 +232,6 @@
 //    }
 //    console.log(count + ": " + (endDate - curDate)/milliDay + " Days to check")
 
-   
 //    curDate.setDate(curDate.getDate() + 1);
 //      //curDate += 1000*60*60*24
 //      //curDate = curDate[Symbol.toPrimitive]('number')
@@ -243,13 +239,11 @@
 //    console.log((endDate - curDate)/ milliDay)
 //    console.log("totalNumber " +totalNumber)
 //    console.log("daysCount " +daysCount)
-//  } 
- 
+//  }
+
 //  console.log(endDate - startDate)
 
-
 //  g_form.setValue('number_of_occurences', totalNumber);
-
 
 // }
 //    arrayCount = function(arr) {
@@ -264,7 +258,7 @@
 
 // function onLoad() {
 //   //Type appropriate comment here, and begin script below
-  
+
 // }
 
 // calculate_number_of_occurrences = function() {
@@ -279,13 +273,13 @@
 //  var friday = g_form.getValue('friday') == "true";
 //  var saturday = g_form.getValue('saturday') == "true";
 //  var sunday = g_form.getValue('sunday') == "true";
- 
+
 //  var daysCount = arrayCount([monday, tuesday, wednesday, thursday, friday, saturday, sunday]);
 //  console.log("daysCount: " + daysCount)
 //  if (day_of_first_occurence == '' || day_of_last_occurence == '' || daysCount == 0) {
 //    return;
 //  }
- 
+
 //  var startDate = new Date(day_of_first_occurence);
 //  var endDate = new Date(day_of_last_occurence);
 //  var curDate = new Date(day_of_first_occurence);
@@ -322,7 +316,7 @@
 //    console.log(count + ": " + (endDate - curDate)/milliDay + " Days to check")
 
 //    //curDate.setDate(curDate.getDate() + 1)
-   
+
 //    curDate.setDate(curDate.getDate() + 1)
 //      //curDate += 1000*60*60*24
 //      //curDate = curDate[Symbol.toPrimitive]('number')
@@ -330,13 +324,11 @@
 //    console.log("Days remaining:" + (endDate - curDate)/ milliDay)
 //    console.log("totalNumber " +totalNumber)
 //    console.log("daysCount " +daysCount)
-//  } 
- 
+//  }
+
 //  console.log(endDate - startDate)
 
-
 //  g_form.setValue('number_of_occurences', totalNumber);
-
 
 // }
 //    arrayCount = function(arr) {
@@ -349,19 +341,17 @@
 //    return result.length;
 //     }
 
-
-
 // // Revisted with documentation
 // function onLoad() {
 // }
 
-// // the function has to be declared this format only. 
+// // the function has to be declared this format only.
 // calculate_number_of_occurrences = function() {
 // 	//console.log("STARTING CALCULATION!")
 // 	var totalNumber = 0;
 // 	var day_of_first_occurence = g_form.getValue('day_of_first_occurence');
 // 	var day_of_last_occurence = g_form.getValue('day_of_last_occurence');
-// 	// days of the week has a boolean value (select box) 
+// 	// days of the week has a boolean value (select box)
 // 	var monday = g_form.getValue('monday') == "true";
 // 	var tuesday = g_form.getValue('tuesday') == "true";
 // 	var wednesday = g_form.getValue('wednesday') == "true";
@@ -369,14 +359,14 @@
 // 	var friday = g_form.getValue('friday') == "true";
 // 	var saturday = g_form.getValue('saturday') == "true";
 // 	var sunday = g_form.getValue('sunday') == "true";
-	
+
 // 	// daysCount uses arrayCount function below to get the number of occurrences.
 // 	var daysCount = arrayCount([monday, tuesday, wednesday, thursday, friday, saturday, sunday]);
 // 	//console.log("daysCount: " + daysCount)
 // 	if (day_of_first_occurence == '' || day_of_last_occurence == '' || daysCount == 0) {
 // 		return;
 // 	}
-	
+
 // 	var startDate = new Date(day_of_first_occurence);
 // 	var endDate = new Date(day_of_last_occurence);
 // 	var curDate = new Date(day_of_first_occurence);
@@ -410,15 +400,15 @@
 // 			g_form.addErrorMessage("Maximum 30 occurences exceeded. Final day must be before " + lastDay)
 // 			break;
 // 		} else if (totalNumber == 30){
-// 			// setting the curDate to last day so that the user can select the last day. 
+// 			// setting the curDate to last day so that the user can select the last day.
 // 			lastDay = curDate
 // 		}
 // 		// clear the error message
 // 		g_form.clearMessages();
-		
-// 		curDate.setDate(curDate.getDate() + 1)	
-// 	} 
-// 	// setting the totalNumber into number_of_occurences field. 
+
+// 		curDate.setDate(curDate.getDate() + 1)
+// 	}
+// 	// setting the totalNumber into number_of_occurences field.
 // 	g_form.setValue('number_of_occurences', totalNumber);
 // };
 
@@ -435,28 +425,44 @@
 // 	return result.length;
 // }
 
-
 /*
 This is a new version of documenting the codes
-*/ 
+*/
 
 //\/ Fixed Script sample - Task clean up
 
-var grTask = new GlideRecord('sc_task')
+var grTask = new GlideRecord("sc_task");
 
 //\/|<  Getting the encoded list query
-grTask.addEncodedQuery('u_district_idISEMPTY^active=true^request_itemISEMPTY')
+grTask.addEncodedQuery("u_district_idISEMPTY^active=true^request_itemISEMPTY");
 grTask.setLimit(5);
 grTask.query();
-getSelection.print('There were: ' + grTask.getRowCount() + " record found by this filter");
+getSelection.print(
+  "There were: " + grTask.getRowCount() + " record found by this filter"
+);
 
 while (grTask.next()) {
-	grTask.setWorkflow(false) //\/ Preventing biz rile from unning on the GlideRecord
-	grTask.active = false //\/ If business rues are excluded, be sure to update key fields manually
-	grTask.state = 3 //\/ state is closed complete (3)
+  grTask.setWorkflow(false); //\/ Preventing biz rile from unning on the GlideRecord
+  grTask.active = false; //\/ If business rues are excluded, be sure to update key fields manually
+  grTask.state = 3; //\/ state is closed complete (3)
 
-	grTask.autoSysFields(false) //\/ prevents sys_fields from being updated on the Gliderecord
-	grTask.closed_at = grTask.sys_updated_on //\/ Set the closed at field to match the last updated on
+  grTask.autoSysFields(false); //\/ prevents sys_fields from being updated on the Gliderecord
+  grTask.closed_at = grTask.sys_updated_on; //\/ Set the closed at field to match the last updated on
 
-	grTask.update(); 
+  grTask.update();
 }
+
+//\/ |<
+// Related List Conditions come in with the new Report Designer which you can enable in Istanbul and is enabled by default in Jakarta.   In Helsinki, you have to do a little more work.
+// You can try a one-liner in the report.   This should give you all the users who have the itil role: [Note this must be in one line or it will not work.]
+
+javascript: var users = [];
+var gra = new GlideAggregate("sys_user_has_role");
+gra.addQuery("active", "=", true);
+gra.addQuery("role.name", "=", "itil");
+gra.groupBy("user");
+gra.query();
+while (gra.next()) {
+  users.push(gra.getValue("user"));
+}
+users;
