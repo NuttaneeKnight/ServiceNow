@@ -226,6 +226,14 @@ alert('You are going to create P1 incident');
 * Transform Maps
 * Workflow
 
-//1.02
+# Server-side Glide Class
+* GlideRecord
+* GlideSystem
+* GlideAggregate
+* GlideDateTime
+* GlideElement
+
+
+//1:04:46
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
