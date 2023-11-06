@@ -233,7 +233,12 @@ alert('You are going to create P1 incident');
 * GlideDateTime
 * GlideElement
 
+# GlideRecord
+* GlideRecord is used for database operations
+* It is used only in server side
+* Syntax - create instance of GlideRecord class
+  var gr = new GlideRecord(<TableName>)
 
-//1:04:46
+//1:05:36
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
