@@ -203,6 +203,13 @@ alert('You are going to create P1 incident');
 
 }
 
-//57.04
+# Server Side Scripting
+
+* What is Server Side Scripting
+* Where to use Server Side scripting
+* Server Side API and Methods
+* Use Cases of Server Side Scripting
+
+//1.01
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
