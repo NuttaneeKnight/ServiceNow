@@ -239,6 +239,7 @@ alert('You are going to create P1 incident');
 * Syntax - create instance of GlideRecord class
   var gr = new GlideRecord(<TableName>)
 
-//1:05:36
+
+//1:07:18
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
