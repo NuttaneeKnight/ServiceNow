@@ -180,6 +180,8 @@ What are we going to learn
 * To show a pop up on an incident form, when any one changes the priority to be high that it will become critical
 * Created a new client script for a pop up that alert the user that they are changing the state to priority one.
 * The name is Show Alert on P1
+* Type is on change
+* Field name is Priority
 
 //57.04
 
