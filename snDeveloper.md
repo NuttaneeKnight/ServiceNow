@@ -218,6 +218,14 @@ alert('You are going to create P1 incident');
   * Valadiate the role of logged in user
   * Generate events
   * Send email
-//1.01
+
+# Where to use Server Side Scripting
+* Access Control
+* Business Rules
+* Script Include
+* Transform Maps
+* Workflow
+
+//1.02
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
