@@ -178,10 +178,30 @@ What are we going to learn
 # Use Case
 
 * To show a pop up on an incident form, when any one changes the priority to be high that it will become critical
+
 * Created a new client script for a pop up that alert the user that they are changing the state to priority one.
+
 * The name is Show Alert on P1
+
 * Type is on change
+
 * Field name is Priority
+
+* Example
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+if (isLoading || newValue === '') {
+return;
+}
+
+//Type appropriate comment here, and begin script below
+//var a = g\_form.getValue('priority');
+
+if(newValue == '1') {
+alert('You are going to create P1 incident');
+}
+
+}
 
 //57.04
 
