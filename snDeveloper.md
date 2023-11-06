@@ -210,6 +210,14 @@ alert('You are going to create P1 incident');
 * Server Side API and Methods
 * Use Cases of Server Side Scripting
 
+# What is Server Side Scripting
+* Server-side scripts execute on server and database.
+* Following examples:
+  * Update a field when record is inserted
+  * Setting a value on a field when parent is updated
+  * Valadiate the role of logged in user
+  * Generate events
+  * Send email
 //1.01
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
