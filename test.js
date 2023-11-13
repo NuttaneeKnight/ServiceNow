@@ -466,3 +466,25 @@ while (gra.next()) {
   users.push(gra.getValue("user"));
 }
 users;
+
+/* THE BELOW SCRIPT WILL OUTPUT A LIST OF RITMS AND THEIR DETAILS */
+ 
+//First, we need to locate our current user's approvals (the parm1 variable contains the current approver)
+var app = new GlideRecord('sysapproval_approver');              //create a query to retrieve open approvals
+app.addQuery('state', 'requested');                                       //only retrieve approvals that are pending
+app.addQuery('source_table', 'sc_req_item');
+app.addQuery('approver',event.parm1);                               //only find approvals for the current approver
+app.query();
+while(app.next()){
+    //now that we have an approval for that user, we are going to look up the tickets they need to approve and print out the data
+    //var req = new GlideRecord('sc_request');                   //find the first related approval and print info
+    template.print('<table><tr><td font face="arial" >');
+    template.print('Request: ' + app.sysapproval.number + '.<br>');
+    template.print('District: ' + app.sysapproval.u_district_id.u_district_name + '.<br>');
+    template.print('School: ' + app.sysapproval.u_school_id.name + '.<br>');
+    template.print('Requested For: ' + app.sysapproval.request.requested_for.name + '.<br>');
+    var url = "nav_to.do?uri=sysapproval_approver.do?sys_id=" + app.sys_id;
+    var link = gs.getProperty('glide.servlet.uri') + url;
+    template.print('<a href="' + link +'">Click to open the Approval</a>');
+    template.print('</td></tr><table>');
+}
