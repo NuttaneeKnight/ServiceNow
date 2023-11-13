@@ -488,3 +488,17 @@ while(app.next()){
     template.print('<a href="' + link +'">Click to open the Approval</a>');
     template.print('</td></tr><table>');
 }
+
+var urlString = "https://lhricdev.service-now.com/lhricsp?sys_id=f15b3c511b15f110f3738622dd4bcbe1&view=sp&id=sc_req_item&table=sc_req_item"
+ 
+gs.info(urlString);
+ 
+gs.info(encodeURI(urlString))
+ 
+var arrStr = urlString.split("com/")
+gs.info(arrStr[1])
+var arrStr2 = arrStr[1].split('?');
+gs.info(arrStr2[0])
+ 
+var endURL = arrStr[0]+ "com/howie.do?" + arrStr2[1]
+gs.info(endURL)
