@@ -502,3 +502,19 @@ gs.info(arrStr2[0])
  
 var endURL = arrStr[0]+ "com/howie.do?" + arrStr2[1]
 gs.info(endURL)
+
+//
+// Send notifications to the user's manager
+//
+function get5RecentRecords() {
+  var list = [];
+  var task = new GlideRecord('task');
+  task.addQuery('active', true);
+  task.orderByDesc('sys_updated_on');
+  task.setLimit(5);
+  task.query();
+  while (task.next()) {
+  list.push(task);
+  }
+  return list;
+}
