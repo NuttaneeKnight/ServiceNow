@@ -141,3 +141,7 @@
 - Why import set API
     - Control over incoming Data
     
+# Why Scripted API?
+- Control over incoming Dat
+- Control over Response Data
+
