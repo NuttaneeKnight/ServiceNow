@@ -431,90 +431,90 @@ This is a new version of documenting the codes
 
 //\/ Fixed Script sample - Task clean up
 
-var grTask = new GlideRecord("sc_task");
+// var grTask = new GlideRecord("sc_task");
 
-//\/|<  Getting the encoded list query
-grTask.addEncodedQuery("u_district_idISEMPTY^active=true^request_itemISEMPTY");
-grTask.setLimit(5);
-grTask.query();
-getSelection.print(
-  "There were: " + grTask.getRowCount() + " record found by this filter"
-);
+// //\/|<  Getting the encoded list query
+// grTask.addEncodedQuery("u_district_idISEMPTY^active=true^request_itemISEMPTY");
+// grTask.setLimit(5);
+// grTask.query();
+// getSelection.print(
+//   "There were: " + grTask.getRowCount() + " record found by this filter"
+// );
 
-while (grTask.next()) {
-  grTask.setWorkflow(false); //\/ Preventing biz rile from unning on the GlideRecord
-  grTask.active = false; //\/ If business rues are excluded, be sure to update key fields manually
-  grTask.state = 3; //\/ state is closed complete (3)
+// while (grTask.next()) {
+//   grTask.setWorkflow(false); //\/ Preventing biz rile from unning on the GlideRecord
+//   grTask.active = false; //\/ If business rues are excluded, be sure to update key fields manually
+//   grTask.state = 3; //\/ state is closed complete (3)
 
-  grTask.autoSysFields(false); //\/ prevents sys_fields from being updated on the Gliderecord
-  grTask.closed_at = grTask.sys_updated_on; //\/ Set the closed at field to match the last updated on
+//   grTask.autoSysFields(false); //\/ prevents sys_fields from being updated on the Gliderecord
+//   grTask.closed_at = grTask.sys_updated_on; //\/ Set the closed at field to match the last updated on
 
-  grTask.update();
-}
+//   grTask.update();
+// }
 
-//\/ |<
-// Related List Conditions come in with the new Report Designer which you can enable in Istanbul and is enabled by default in Jakarta.   In Helsinki, you have to do a little more work.
-// You can try a one-liner in the report.   This should give you all the users who have the itil role: [Note this must be in one line or it will not work.]
+// //\/ |<
+// // Related List Conditions come in with the new Report Designer which you can enable in Istanbul and is enabled by default in Jakarta.   In Helsinki, you have to do a little more work.
+// // You can try a one-liner in the report.   This should give you all the users who have the itil role: [Note this must be in one line or it will not work.]
 
-javascript: var users = [];
-var gra = new GlideAggregate("sys_user_has_role");
-gra.addQuery("active", "=", true);
-gra.addQuery("role.name", "=", "itil");
-gra.groupBy("user");
-gra.query();
-while (gra.next()) {
-  users.push(gra.getValue("user"));
-}
-users;
+// javascript: var users = [];
+// var gra = new GlideAggregate("sys_user_has_role");
+// gra.addQuery("active", "=", true);
+// gra.addQuery("role.name", "=", "itil");
+// gra.groupBy("user");
+// gra.query();
+// while (gra.next()) {
+//   users.push(gra.getValue("user"));
+// }
+// users;
 
-/* THE BELOW SCRIPT WILL OUTPUT A LIST OF RITMS AND THEIR DETAILS */
+// /* THE BELOW SCRIPT WILL OUTPUT A LIST OF RITMS AND THEIR DETAILS */
  
-//First, we need to locate our current user's approvals (the parm1 variable contains the current approver)
-var app = new GlideRecord('sysapproval_approver');              //create a query to retrieve open approvals
-app.addQuery('state', 'requested');                                       //only retrieve approvals that are pending
-app.addQuery('source_table', 'sc_req_item');
-app.addQuery('approver',event.parm1);                               //only find approvals for the current approver
-app.query();
-while(app.next()){
-    //now that we have an approval for that user, we are going to look up the tickets they need to approve and print out the data
-    //var req = new GlideRecord('sc_request');                   //find the first related approval and print info
-    template.print('<table><tr><td font face="arial" >');
-    template.print('Request: ' + app.sysapproval.number + '.<br>');
-    template.print('District: ' + app.sysapproval.u_district_id.u_district_name + '.<br>');
-    template.print('School: ' + app.sysapproval.u_school_id.name + '.<br>');
-    template.print('Requested For: ' + app.sysapproval.request.requested_for.name + '.<br>');
-    var url = "nav_to.do?uri=sysapproval_approver.do?sys_id=" + app.sys_id;
-    var link = gs.getProperty('glide.servlet.uri') + url;
-    template.print('<a href="' + link +'">Click to open the Approval</a>');
-    template.print('</td></tr><table>');
-}
+// //First, we need to locate our current user's approvals (the parm1 variable contains the current approver)
+// var app = new GlideRecord('sysapproval_approver');              //create a query to retrieve open approvals
+// app.addQuery('state', 'requested');                                       //only retrieve approvals that are pending
+// app.addQuery('source_table', 'sc_req_item');
+// app.addQuery('approver',event.parm1);                               //only find approvals for the current approver
+// app.query();
+// while(app.next()){
+//     //now that we have an approval for that user, we are going to look up the tickets they need to approve and print out the data
+//     //var req = new GlideRecord('sc_request');                   //find the first related approval and print info
+//     template.print('<table><tr><td font face="arial" >');
+//     template.print('Request: ' + app.sysapproval.number + '.<br>');
+//     template.print('District: ' + app.sysapproval.u_district_id.u_district_name + '.<br>');
+//     template.print('School: ' + app.sysapproval.u_school_id.name + '.<br>');
+//     template.print('Requested For: ' + app.sysapproval.request.requested_for.name + '.<br>');
+//     var url = "nav_to.do?uri=sysapproval_approver.do?sys_id=" + app.sys_id;
+//     var link = gs.getProperty('glide.servlet.uri') + url;
+//     template.print('<a href="' + link +'">Click to open the Approval</a>');
+//     template.print('</td></tr><table>');
+// }
 
-var urlString = "https://lhricdev.service-now.com/lhricsp?sys_id=f15b3c511b15f110f3738622dd4bcbe1&view=sp&id=sc_req_item&table=sc_req_item"
+// var urlString = "https://lhricdev.service-now.com/lhricsp?sys_id=f15b3c511b15f110f3738622dd4bcbe1&view=sp&id=sc_req_item&table=sc_req_item"
  
-gs.info(urlString);
+// gs.info(urlString);
  
-gs.info(encodeURI(urlString))
+// gs.info(encodeURI(urlString))
  
-var arrStr = urlString.split("com/")
-gs.info(arrStr[1])
-var arrStr2 = arrStr[1].split('?');
-gs.info(arrStr2[0])
+// var arrStr = urlString.split("com/")
+// gs.info(arrStr[1])
+// var arrStr2 = arrStr[1].split('?');
+// gs.info(arrStr2[0])
  
-var endURL = arrStr[0]+ "com/howie.do?" + arrStr2[1]
-gs.info(endURL)
+// var endURL = arrStr[0]+ "com/howie.do?" + arrStr2[1]
+// gs.info(endURL)
 
-//
-// Send notifications to the user's manager
-//
-function get5RecentRecords() {
-  var list = [];
-  var task = new GlideRecord('task');
-  task.addQuery('active', true);
-  task.orderByDesc('sys_updated_on');
-  task.setLimit(5);
-  task.query();
-  while (task.next()) {
-  list.push(task);
-  }
-  return list;
-}
+// //
+// // Send notifications to the user's manager
+// //
+// function get5RecentRecords() {
+//   var list = [];
+//   var task = new GlideRecord('task');
+//   task.addQuery('active', true);
+//   task.orderByDesc('sys_updated_on');
+//   task.setLimit(5);
+//   task.query();
+//   while (task.next()) {
+//   list.push(task);
+//   }
+//   return list;
+// }
