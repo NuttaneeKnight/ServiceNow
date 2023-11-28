@@ -240,198 +240,299 @@
 // }
 
 
-var current = new GlideRecord("sc_req_item");
+// var current = new GlideRecord("sc_req_item");
 
-if (current.get("61408cb71bad711024a5fd1b1e4bcb1f")){
-    gs.info(current.getDisplayValue());
-    gs.info(current.variables.is_this_a_list_of_dates_or_recurring_dates);
-    var eventType = current.variables.is_this_a_list_of_dates_or_recurring_dates
-    if (eventType == 'Singledate') {
-        createEventTasks(current.variables.start_date, current.variables.start_time)
-        gs.info(current.variables.start_date + " " +  current.variables.start_time);
-    } else if (eventType == 'Multipledates'){
-    var mrvsDate = JSON.parse(current.variables.event_dates)
-    gs.info(mrvsDate)
-    for (var day = 0; day < mrvsDate.length; day++) {
-            createEventTasks(mrvsDate[day].what_is_the_date_and_time_of_the_event,mrvsDate[day].start_time_mrvs)
-            gs.info(mrvsDate[day])
-        }
-    } else {
-        var dayOfFirstOccurence = current.variables.day_of_first_occurence
-        var startTime = current.variables.start_time_recurring
-        var daysOfTheWeek = [
-            current.variables.monday,
-            current.variables.tuesday,
-            current.variables.wednesday, 
-            current.variables.thursday,  
-            current.variables.friday,
-            false,
-            false,      
-        ]
+// if (current.get("61408cb71bad711024a5fd1b1e4bcb1f")){
+//     gs.info(current.getDisplayValue());
+//     gs.info(current.variables.is_this_a_list_of_dates_or_recurring_dates);
+//     var eventType = current.variables.is_this_a_list_of_dates_or_recurring_dates
+//     if (eventType == 'Singledate') {
+//         createEventTasks(current.variables.start_date, current.variables.start_time)
+//         gs.info(current.variables.start_date + " " +  current.variables.start_time);
+//     } else if (eventType == 'Multipledates'){
+//     var mrvsDate = JSON.parse(current.variables.event_dates)
+//     gs.info(mrvsDate)
+//     for (var day = 0; day < mrvsDate.length; day++) {
+//             createEventTasks(mrvsDate[day].what_is_the_date_and_time_of_the_event,mrvsDate[day].start_time_mrvs)
+//             gs.info(mrvsDate[day])
+//         }
+//     } else {
+//         var dayOfFirstOccurence = current.variables.day_of_first_occurence
+//         var startTime = current.variables.start_time_recurring
+//         var daysOfTheWeek = [
+//             current.variables.monday,
+//             current.variables.tuesday,
+//             current.variables.wednesday, 
+//             current.variables.thursday,  
+//             current.variables.friday,
+//             false,
+//             false,      
+//         ]
 
-        var numberOfOccurences = current.variables.number_of_occurences
+//         var numberOfOccurences = current.variables.number_of_occurences
 
-        var datesArray = [];
+//         var datesArray = [];
 
-        var gd = new GlideDate()
-        gd.setValue(dayOfFirstOccurence)
-        gs.info(gd.getDayOfWeekUTC())
+//         var gd = new GlideDate()
+//         gd.setValue(dayOfFirstOccurence)
+//         gs.info(gd.getDayOfWeekUTC())
 
-        var dayOfTheWeek = gd.getDayOfWeekUTC()
+//         var dayOfTheWeek = gd.getDayOfWeekUTC()
 
-        datesArray.push(gd.getValue());
+//         datesArray.push(gd.getValue());
 
-        var count = 0
+//         var count = 0
 
-        while (datesArray.length < numberOfOccurences) {
-            gd.addDays(1)
-            gs.info(gd.getValue() + " " + gd.getDayOfWeekUTC() + " " + daysOfTheWeek[dayOfTheWeek-1])
-            dayOfTheWeek = gd.getDayOfWeekUTC()
+//         while (datesArray.length < numberOfOccurences) {
+//             gd.addDays(1)
+//             gs.info(gd.getValue() + " " + gd.getDayOfWeekUTC() + " " + daysOfTheWeek[dayOfTheWeek-1])
+//             dayOfTheWeek = gd.getDayOfWeekUTC()
 
-            if (daysOfTheWeek[dayOfTheWeek-1] == "true" ) {
-                datesArray.push(gd.getValue())
-            } 
-
-
-            // increment date 
-            // check for days of the week
-            // add to array if there's a match
-            // 
-            if (count > 30) break 
-            count++
-
-        }
+//             if (daysOfTheWeek[dayOfTheWeek-1] == "true" ) {
+//                 datesArray.push(gd.getValue())
+//             } 
 
 
-        gs.info(datesArray)
+//             // increment date 
+//             // check for days of the week
+//             // add to array if there's a match
+//             // 
+//             if (count > 30) break 
+//             count++
 
-        for (var day = 0; day < datesArray.length; day++) {
-            createEventTasks(datesArray[day],startTime)
+//         }
 
-        }
 
-    }
+//         gs.info(datesArray)
 
-}
+//         for (var day = 0; day < datesArray.length; day++) {
+//             createEventTasks(datesArray[day],startTime)
 
-function createEventTasks(date, time) {
-    var task = new GlideRecord('sc_task')
+//         }
+
+//     }
+
+// }
+
+// function createEventTasks(date, time) {
+//     var task = new GlideRecord('sc_task')
     
-    task.initialize()
-    task.request_item.setValue(current.sys_id)
-    task.parent.setValue(current.sys_id)
-    task.cat_item.setValue('fbff3ba71bad711024a5fd1b1e4bcb58')
+//     task.initialize()
+//     task.request_item.setValue(current.sys_id)
+//     task.parent.setValue(current.sys_id)
+//     task.cat_item.setValue('fbff3ba71bad711024a5fd1b1e4bcb58')
 
-    task.setDisplayValue("assignment_group", current.variables.wf_task_1_assignment_group + '');
-    task.setDisplayValue("assigned_to", current.variables.wf_task_1_assigned_to + '');
-    task.short_description = current.variables.wf_task_1_short_description + " " + date
+//     task.setDisplayValue("assignment_group", current.variables.wf_task_1_assignment_group + '');
+//     task.setDisplayValue("assigned_to", current.variables.wf_task_1_assigned_to + '');
+//     task.short_description = current.variables.wf_task_1_short_description + " " + date
 
-    var desc = current.variables.wf_task_1_description;
+//     var desc = current.variables.wf_task_1_description;
 
-    if(desc == ""){
-	    task.description = "Please complete the appropriate steps to fulfill this request: " + current.variables.wf_task_1_short_description ;
-    } else {
-	    task.description = desc;
-    }
+//     if(desc == ""){
+// 	    task.description = "Please complete the appropriate steps to fulfill this request: " + current.variables.wf_task_1_short_description ;
+//     } else {
+// 	    task.description = desc;
+//     }
 
-    task.description += '\n\Date: ' + date + ' Time: ' + time
-    task.insert()
+//     task.description += '\n\Date: ' + date + ' Time: ' + time
+//     task.insert()
+// }
+
+
+// //workflow
+// var eventType = current.variables.is_this_a_list_of_dates_or_recurring_dates
+// // Check what type of event, Single date, Multi-dates or Recurring dates. 
+// if (eventType == 'Singledate') {
+//     createEventTasks(current.variables.start_date, current.variables.start_time)
+
+// } else if (eventType == 'Multipledates') {
+//     var mrvsDate = JSON.parse(current.variables.event_dates)
+
+//     for (var day = 0; day < mrvsDate.length; day++) {
+//         createEventTasks(mrvsDate[day].what_is_the_date_and_time_of_the_event, mrvsDate[day].start_time_mrvs)
+//     }
+// } else { // recurring dates
+//     var dayOfFirstOccurence = current.variables.day_of_first_occurence
+//     var startTime = current.variables.start_time_recurring
+//     var daysOfTheWeek = [
+//         current.variables.monday,
+//         current.variables.tuesday,
+//         current.variables.wednesday,
+//         current.variables.thursday,
+//         current.variables.friday,
+//         false,
+//         false,
+//     ]
+
+//     var numberOfOccurences = current.variables.number_of_occurences
+//     var datesArray = [];
+
+//     var gd = new GlideDate()
+//     gd.setValue(dayOfFirstOccurence)
+
+//     var dayOfTheWeek = gd.getDayOfWeekUTC()
+//     datesArray.push(gd.getValue());
+
+//     var count = 0
+//     while (datesArray.length < numberOfOccurences) {
+//         gd.addDays(1)
+//         if (daysOfTheWeek[dayOfTheWeek - 1] == "true") {
+//             datesArray.push(gd.getValue())
+//         }
+//         if (count > 30) break
+//         count++
+//     }
+//     for (var day = 0; day < datesArray.length; day++) {
+//         createEventTasks(datesArray[day], startTime)
+//     }
+// }
+// /**
+//  * Generating a task according to the date and time parameter. 
+//  * @param {string} date - Date of the event
+//  * @param {string} time - Time of the event
+//  */
+// function createEventTasks(date, time) {
+//     var task = new GlideRecord('sc_task')
+//     // Catalog Item Event Setup
+//     var eventSetupCatItem = 'fbff3ba71bad711024a5fd1b1e4bcb58'
+
+//     task.initialize()
+//     task.request_item.setValue(current.sys_id)
+//     //task.parent.setValue(current.sys_id)
+//     //task.cat_item.setValue(eventSetupCatItem)
+
+//     // Short description based on catalog variables. 
+//     task.setDisplayValue("assignment_group", current.variables.wf_task_1_assignment_group + '');
+//     task.setDisplayValue("assigned_to", current.variables.wf_task_1_assigned_to + '');
+//     task.short_description = current.variables.wf_task_1_short_description + " " + date
+
+//     var desc = current.variables.wf_task_1_description;
+//     // Build and populate the description of the catalog task. 
+//     if (desc == "") {
+//         task.description = "Please complete the appropriate steps to fulfill this request: " + current.variables.wf_task_1_short_description;
+//     } else {
+//         task.description = desc;
+//     }
+
+//     task.description += '\n\Date: ' + date + ' Time: ' + time
+//     task.insert()
+// } //end of createEventTasks()
+
+// //task flow
+// ifScript();
+
+// function ifScript() {
+//     var t = new GlideRecord('sc_task');
+//     //t.addNotNullQuery('order');
+//     t.addQuery('request_item', current.sys_id);
+//     t.addQuery('active', true);
+//     t.query();
+
+//     if (t.hasNext()) {
+//         answer = false;
+//     } else {
+//         //Continue
+//         answer = true;
+//     }
+// }
+
+var mrvsRFS = [];
+mrvsRFS = JSON.parse(current.variables.manage_codes);
+
+mrvsRFS.sort(compareFn);
+
+for (var i = 0; i < mrvsRFS.length; i++) {
+	if (mrvsRFS[i].service_or_subservice_code == "service") { // service code
+		var grRFS = new GlideRecord("u_service");
+		
+		if (mrvsRFS[i].code_not_found == "true") {
+			// then add the code to the service table
+			grRFS.initialize();
+			
+			grRFS.u_service = mrvsRFS[i].add_code;
+			var serviceArr = mrvsRFS[i].add_code.split('.');
+			var coserID = getCoserFromCode(serviceArr[0]);
+			grRFS.u_coser = coserID;
+			
+			grRFS.u_service_owner = mrvsRFS[i].service_owner;
+			grRFS.u_wincap_updater = "c6d696091b6678906d6b0dc1604bcbc5"; // Lori Franco
+			
+			grRFS.u_subservices = "Yes";
+			grRFS.u_active = true;
+			grRFS.u_description = mrvsRFS[i].description;
+			
+			grRFS.insert();
+		} else { // if code found
+			if (grRFS.get(mrvsRFS[i].service_code)) {
+				grRFS.u_service_owner = mrvsRFS[i].service_owner;
+				
+				if (grRFS.u_wincap_updater == "" || grRFS.u_wincap_updater == null) {
+					grRFS.u_wincap_updater = "c6d696091b6678906d6b0dc1604bcbc5"; // Lori Franco
+				}
+				
+				grRFS.u_active = mrvsRFS[i].active;
+				grRFS.u_description = mrvsRFS[i].description;
+				grRFS.update();
+			}
+		}
+	} else { // subservice code
+		var grRFS2 = new GlideRecord("u_subservice");
+		if (mrvsRFS[i].code_not_found == "true") {
+			// then add the code to the subservice table
+			grRFS2.initialize();
+			
+			grRFS2.u_ss = mrvsRFS[i].add_code;
+			var subserviceArr = mrvsRFS[i].add_code.split('.');
+            var service = subserviceArr[0] + "." + subserviceArr[1] + "";
+			var serviceID = getServiceFromCode(service);
+			grRFS2.u_service = serviceID;
+			
+			grRFS2.u_cost_type = mrvsRFS[i].cost_type;
+			grRFS2.u_active = true;
+			grRFS2.u_description = mrvsRFS[i].description;
+			
+			grRFS2.insert();
+		} else { // if code found
+			if (grRFS2.get(mrvsRFS[i].subservice_code)) {
+				var subserviceArr = mrvsRFS[i].add_code.split('.');
+				var service = subserviceArr[0] + "." + subserviceArr[1] + "";
+				var serviceID = getServiceFromCode(service);
+				grRFS2.u_service = serviceID;
+				
+				grRFS2.u_cost_type = mrvsRFS[i].cost_type;
+				grRFS2.u_active = mrvsRFS[i].active;
+				grRFS2.u_description = mrvsRFS[i].description;
+
+				grRFS2.update();
+			}
+		}
+	}
 }
 
-
-//workflow
-var eventType = current.variables.is_this_a_list_of_dates_or_recurring_dates
-// Check what type of event, Single date, Multi-dates or Recurring dates. 
-if (eventType == 'Singledate') {
-    createEventTasks(current.variables.start_date, current.variables.start_time)
-
-} else if (eventType == 'Multipledates') {
-    var mrvsDate = JSON.parse(current.variables.event_dates)
-
-    for (var day = 0; day < mrvsDate.length; day++) {
-        createEventTasks(mrvsDate[day].what_is_the_date_and_time_of_the_event, mrvsDate[day].start_time_mrvs)
-    }
-} else { // recurring dates
-    var dayOfFirstOccurence = current.variables.day_of_first_occurence
-    var startTime = current.variables.start_time_recurring
-    var daysOfTheWeek = [
-        current.variables.monday,
-        current.variables.tuesday,
-        current.variables.wednesday,
-        current.variables.thursday,
-        current.variables.friday,
-        false,
-        false,
-    ]
-
-    var numberOfOccurences = current.variables.number_of_occurences
-    var datesArray = [];
-
-    var gd = new GlideDate()
-    gd.setValue(dayOfFirstOccurence)
-
-    var dayOfTheWeek = gd.getDayOfWeekUTC()
-    datesArray.push(gd.getValue());
-
-    var count = 0
-    while (datesArray.length < numberOfOccurences) {
-        gd.addDays(1)
-        if (daysOfTheWeek[dayOfTheWeek - 1] == "true") {
-            datesArray.push(gd.getValue())
-        }
-        if (count > 30) break
-        count++
-    }
-    for (var day = 0; day < datesArray.length; day++) {
-        createEventTasks(datesArray[day], startTime)
-    }
+function getCoserFromCode(code) {
+	var coser = new GlideRecord('u_coser');
+	coser.addQuery("u_code", "CONTAINS", code);
+	coser.query();
+	if (coser.next()) {
+		return coser.getUniqueValue();
+	}
 }
-/**
- * Generating a task according to the date and time parameter. 
- * @param {string} date - Date of the event
- * @param {string} time - Time of the event
- */
-function createEventTasks(date, time) {
-    var task = new GlideRecord('sc_task')
-    // Catalog Item Event Setup
-    var eventSetupCatItem = 'fbff3ba71bad711024a5fd1b1e4bcb58'
 
-    task.initialize()
-    task.request_item.setValue(current.sys_id)
-    //task.parent.setValue(current.sys_id)
-    //task.cat_item.setValue(eventSetupCatItem)
+function getServiceFromCode(code) {
+	var service = new GlideRecord('u_service');
+	service.addQuery("u_service", "CONTAINS", code);
+	service.query();
+	if (service.next()) {
+		return service.getUniqueValue();
+	}
+}
 
-    // Short description based on catalog variables. 
-    task.setDisplayValue("assignment_group", current.variables.wf_task_1_assignment_group + '');
-    task.setDisplayValue("assigned_to", current.variables.wf_task_1_assigned_to + '');
-    task.short_description = current.variables.wf_task_1_short_description + " " + date
-
-    var desc = current.variables.wf_task_1_description;
-    // Build and populate the description of the catalog task. 
-    if (desc == "") {
-        task.description = "Please complete the appropriate steps to fulfill this request: " + current.variables.wf_task_1_short_description;
-    } else {
-        task.description = desc;
-    }
-
-    task.description += '\n\Date: ' + date + ' Time: ' + time
-    task.insert()
-} //end of createEventTasks()
-
-//task flow
-ifScript();
-
-function ifScript() {
-    var t = new GlideRecord('sc_task');
-    //t.addNotNullQuery('order');
-    t.addQuery('request_item', current.sys_id);
-    t.addQuery('active', true);
-    t.query();
-
-    if (t.hasNext()) {
-        answer = false;
-    } else {
-        //Continue
-        answer = true;
-    }
+function compareFn(a, b) {
+  if (a.service_or_subservice_code == "service" && b.service_or_subservice_code == "subservice") {
+    return -1;
+  } else if (a.service_or_subservice_code == "subservice" && b.service_or_subservice_code == "service") {
+    return 1;
+  }
+  // a must be equal to b
+  return 0;
 }
