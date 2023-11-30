@@ -239,6 +239,11 @@ alert('You are going to create P1 incident');
 * Syntax - create instance of GlideRecord class
   var gr = new GlideRecord(<TableName>)
 
+# GlideSystem
+- GlideSystem is used to get information about system and current logged in user
+- it is referred by a variable "gs"
+- Syntax- gs.<GlideSystemMethod>()
+
 
 //1:07:18
 
