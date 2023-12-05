@@ -536,3 +536,6 @@ function compareFn(a, b) {
   // a must be equal to b
   return 0;
 }
+
+Catalog Client Script "Set WF Variables onSubmit":
+function onSubmit() {	var addOrRemove = g_form.getValue("add_or_remove");	var deactivateUser = g_form.getValue("deactivate_user_account");		if (addOrRemove == "add") { // add VPN user account		// TASK 2		g_form.setValue("wf_task_2_assignment_group", "LHRIC - Service Desk");		g_form.setValue("wf_task_2_short_description", "Add new user in OKTA");		//TASK 3		g_form.setValue("wf_task_3_assignment_group", "LHRIC - Managed WAN");		g_form.setValue("wf_task_3_short_description", "Add the user to the appropriate permission groups");	} else if (addOrRemove == "remove") { // remove VPN user account		// TASK 2		g_form.setValue("wf_task_2_assignment_group", "LHRIC - Managed WAN");		g_form.setValue("wf_task_2_short_description", "Remove the user from the appropriate permission groups");				// deactivate user account		if (deactivateUser == "Yes") {			//TASK 3			g_form.setValue("wf_task_3_assignment_group", "LHRIC - Managed WAN");			g_form.setValue("wf_task_3_short_description", "Remove the user from the appropriate permission groups");		}	}}

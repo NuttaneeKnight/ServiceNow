@@ -245,6 +245,6 @@ alert('You are going to create P1 incident');
 - Syntax- gs.<GlideSystemMethod>()
 
 
-//1:07:18
+//1:07:21
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
