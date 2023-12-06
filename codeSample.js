@@ -563,3 +563,5 @@ function onSubmit() {
 		}
 	}
 }
+
+var currentUser = gs.getUser(); gs.info(currentUser.getFirstName()); // print the first name of the logged in uservar newUser = currentUser.getUserByID('62826bf03710200044e0bfc8bcbe5df1'); // fetch Abel Tuter user using sys_id from sys_user recordgs.info(newUser.getFirstName()); // print the first name of the Abel Tuter user
