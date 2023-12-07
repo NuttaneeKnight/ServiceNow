@@ -245,6 +245,12 @@ alert('You are going to create P1 incident');
 - Syntax- gs.<GlideSystemMethod>()
 
 
+# GlideAggregate
+- GlideAggregate is used to perform aggregation operation on the database
+- It is extension of GlideRecord class
+- Provides database aggregation (COUNT, SUM, MIN, MAX, AVG) queries
+- Syntax - var agg = new GlideAggregate('incident)
+
 //1:07:21
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
