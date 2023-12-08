@@ -251,6 +251,14 @@ alert('You are going to create P1 incident');
 - Provides database aggregation (COUNT, SUM, MIN, MAX, AVG) queries
 - Syntax - var agg = new GlideAggregate('incident)
 
-//1:07:21
+# Practical Lab and Use Cases
+
+# Fix script sample (server since we are scripting directly in the record)
+- Fix Script
+
+var gr = new GlideRecord('incident')
+gr.addActiveQuery() // this will pull all active incidents
+
+//1:12:21
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
