@@ -290,7 +290,13 @@ while(gr.next){
 - Used when something needs to be changed on the form while it is loading
 - onLoad() function will be automatically populated in the script field when onload type is selected on the form
 
+# onChange
+- Script will run when value of any field is updated or changed
+- Used to perform some operation as per the field changed 
+- on Change() function will be automatically populated in the script field when onChange type is selected on the form
+- Has parameters - control, oldValue, newValue, isLoading, isTemplate
 
-//1:28:21
+
+//1:31:21
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
