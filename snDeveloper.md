@@ -255,10 +255,15 @@ alert('You are going to create P1 incident');
 
 # Fix script sample (server since we are scripting directly in the record)
 - Fix Script
-
 var gr = new GlideRecord('incident')
 gr.addActiveQuery() // this will pull all active incidents
+gr.setLimit(5) // set the limit on how many incidents to log, only takes integers
+gr.query()
+while(gr.next){
+  gs.log('The incident nember is ' + gr.number)
+} // This will log all active incidents
 
-//1:12:21
+
+//1:15:21
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
