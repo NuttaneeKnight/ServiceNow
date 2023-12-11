@@ -264,6 +264,25 @@ while(gr.next){
 } // This will log all active incidents
 
 
-//1:15:21
+# Client Scripts
+- What is Client Script?
+- When to use Client Script?
+- Client Script form overview
+- Use Cases of Client Script
+
+# Client Script
+- Client is used to manage forms and form fields in real time
+- It is excuted on browser
+
+# When to use Client Script
+- Show the alert when form loads
+- Show message when a field value changes
+- Change a fiels value when another field changes on the form
+- Hide/Show choices of a field
+- Hide/Show a section
+
+
+
+//1:19:21
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
