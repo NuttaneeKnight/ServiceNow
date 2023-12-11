@@ -281,8 +281,16 @@ while(gr.next){
 - Hide/Show choices of a field
 - Hide/Show a section
 
+# Client Script Form
+- System Definition > Client Scripts
+- Name of your organization as a prefix for naming convention
+
+# onLoad
+- Script will run when form loads and before control is given the user
+- Used when something needs to be changed on the form while it is loading
+- onLoad() function will be automatically populated in the script field when onload type is selected on the form
 
 
-//1:19:21
+//1:28:21
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
