@@ -296,6 +296,11 @@ while(gr.next){
 - on Change() function will be automatically populated in the script field when onChange type is selected on the form
 - Has parameters - control, oldValue, newValue, isLoading, isTemplate
 
+# onSubmit
+- Script will run when form is submitted or saved
+- Used to perform validations before form is saved
+- onSubmit() function will be automatically populated in the script field when onSubmit type is selected on the form
+
 
 //1:31:21
 
