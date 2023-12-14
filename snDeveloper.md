@@ -301,6 +301,10 @@ while(gr.next){
 - Used to perform validations before form is saved
 - onSubmit() function will be automatically populated in the script field when onSubmit type is selected on the form
 
+# onCellEdit
+- Script will run when a field value changes on a list
+- onCellEdit() function will be automatically populated in the script when onCellEdit type is selected on the form
+- Has parameter - sysIDs, table, oldValues, newValue, callback
 
 //1:31:21
 
