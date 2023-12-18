@@ -281,7 +281,7 @@ while(gr.next){
 - Hide/Show choices of a field
 - Hide/Show a section
 
-# Client Script Form
+# Client Script Form >> Go to "Client Scripts"
 - System Definition > Client Scripts
 - Name of your organization as a prefix for naming convention
 
@@ -308,9 +308,10 @@ while(gr.next){
 
 * New client-scripts are run in strict mode, with direct DOM access disabled. Access to jQuery, prototype and the window object are likewise disabled. To disable this on a per-script basis, configure this form and add the "Isolate script" field. To disable this feature for all new globally-scoped client-side scripts set the system property "glide.script.block.client.globals" to false.
 
+# Use case: Set the value of caller field with current logged in user when form loads
 
 
-//1:35:21
+//1:37:21
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
 template.print ( 'Attachment: <a href="/sys_attachment.do?sys_id=' + now_GR. sys_id + '">' + now_GR. file_name + '</a>\n ' ) ;
