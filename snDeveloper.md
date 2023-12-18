@@ -306,6 +306,8 @@ while(gr.next){
 - onCellEdit() function will be automatically populated in the script when onCellEdit type is selected on the form
 - Has parameter - sysIDs, table, oldValues, newValue, callback
 
+* New client-scripts are run in strict mode, with direct DOM access disabled. Access to jQuery, prototype and the window object are likewise disabled. To disable this on a per-script basis, configure this form and add the "Isolate script" field. To disable this feature for all new globally-scoped client-side scripts set the system property "glide.script.block.client.globals" to false.
+
 
 
 //1:35:21
