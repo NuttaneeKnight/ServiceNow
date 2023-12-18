@@ -312,14 +312,15 @@ while(gr.next){
 - Go to Client Scripts and create an onLoad() >> Set Caller 
 
 function onLoad() {
-   //Type appropriate comment here, and begin script below
+   //If the form is a new record
+   if(g_form.isNewRecord()) {
 
    // capture the current login user sys_id
    var user = g_user.userID;
 
    // 1st parameter is the name of the field, second is the value that we will push to the field
    g_form.setValue('caller_id', user); // setting the field value
-   
+   }
 }
 
 
