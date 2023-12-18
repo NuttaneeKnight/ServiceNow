@@ -309,10 +309,21 @@ while(gr.next){
 * New client-scripts are run in strict mode, with direct DOM access disabled. Access to jQuery, prototype and the window object are likewise disabled. To disable this on a per-script basis, configure this form and add the "Isolate script" field. To disable this feature for all new globally-scoped client-side scripts set the system property "glide.script.block.client.globals" to false.
 
 # Use case: Set the value of caller field with current logged in user when form loads
-- Go to Client Scripts and create an onLoad
+- Go to Client Scripts and create an onLoad() >> Set Caller 
+
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+
+   // capture the current login user sys_id
+   var user = g_user.userID;
+
+   // 1st parameter is the name of the field, second is the value that we will push to the field
+   g_form.setValue('caller_id', user); // setting the field value
+   
+}
 
 
-//1:37:21
+//1:41:21
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
 template.print ( 'Attachment: <a href="/sys_attachment.do?sys_id=' + now_GR. sys_id + '">' + now_GR. file_name + '</a>\n ' ) ;
