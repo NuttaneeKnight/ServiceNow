@@ -336,7 +336,13 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
     }
 }
 
-# Set an aler on submission of incident
+# Set an alert on submission of incident
+
+function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   alert()
+}
+
 
 //1:54:21
 
