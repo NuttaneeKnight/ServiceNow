@@ -349,6 +349,20 @@ function onSubmit() {
 
 # Glide Form (g_form)
 - addDecoration() > On incident Form - Show user icon when contact firld is filled in
+- https://dev90700.service-now.com/connect_action_icon_classes.do
+
+- make sure to set the field to caller
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    //Type appropriate comment here, and begin script below
+    if (newValue != ' ') {
+        g_form.addDecoration('caller_id', 'icon-user-selected')
+    }
+}
 //1:58:21
 
 
