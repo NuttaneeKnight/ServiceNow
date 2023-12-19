@@ -336,8 +336,9 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
     }
 }
 
+# Set an aler on submission of incident
 
-//1:52:21
+//1:54:21
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
 template.print ( 'Attachment: <a href="/sys_attachment.do?sys_id=' + now_GR. sys_id + '">' + now_GR. file_name + '</a>\n ' ) ;
