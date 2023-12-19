@@ -325,6 +325,16 @@ function onLoad() {
 
 # Use case: Show an alert to the user when priority of the incident changes to P1
 
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    //Type appropriate comment here, and begin script below
+    if (newValue == '1') {
+        alert('You are going to submit P1 incident, the current priority of Incident is ' + oldValue);
+    }
+}
 
 
 //1:52:21
