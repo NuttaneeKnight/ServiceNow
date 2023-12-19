@@ -340,7 +340,7 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 
 function onSubmit() {
    //Type appropriate comment here, and begin script below
-   alert()
+   alert() // submit and save are the same thing
 }
 
 
