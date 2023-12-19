@@ -346,6 +346,9 @@ function onSubmit() {
 # Common API and methods Used in Client Scripts
 - Glide Form and its method
 - Glide User and its method
+
+# Glide Form (g_form)
+- addDecoration() > On incident Form - Show user icon when contact firld is filled in
 //1:58:21
 
 
