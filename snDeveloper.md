@@ -344,7 +344,10 @@ function onSubmit() {
 }
 
 # Common API and methods Used in Client Scripts
-//1:57:21
+- Glide Form and its method
+- Glide User and its method
+//1:58:21
+
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
 template.print ( 'Attachment: <a href="/sys_attachment.do?sys_id=' + now_GR. sys_id + '">' + now_GR. file_name + '</a>\n ' ) ;
