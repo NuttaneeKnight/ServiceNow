@@ -366,7 +366,25 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 
 - addErrorMessage() > On incident Forrm - Show alert message to user when Priority is set to P1
 
-//2:04:21
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+	//var incPriority = g_form.getValue()
+	if (newValue == '1') {
+		g_form.addErrorMessage('You are going to create P1 incident')
+	}
+
+    //Type appropriate comment here, and begin script below
+    // if (newValue != ' ') {
+    //     g_form.addDecoration('caller_id', 'icon-user-selected')
+    // }
+
+}
+
+
+//2:07:21
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
