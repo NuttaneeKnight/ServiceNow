@@ -413,7 +413,7 @@ function onLoad() {
 }
 
 - enableAttachments()
-
+- flash() - on incident form - if priority is P! then flash should be visible on priority field
 
 //2:18:21 ณัฐฐณี
 
