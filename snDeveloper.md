@@ -384,8 +384,14 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 }
 
 - addinfoMessage()
-- assOption() > On incident form - add a choice to contact type field
-//2:07:21
+- addOption() > On incident form - add a choice to contact type field
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+   g_form.addOption('contact_type', 'portal', 'Portal');
+}
+
+
+//2:11:21 ณัฐฐณี
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
