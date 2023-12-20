@@ -420,6 +420,10 @@ function onLoad() {
 - getAvtionName()
 - getBooleanValue() - on incident form if the knowledge check box s checked, show an info message
 - getControl() - on incident form - change color of incident number text in blue when form loads
+function onLoad() {
+  var a = g_form.getControl('short_description');
+  a.style.color = 'red';
+}
 
 //2:18:21 ณัฐฐณี
 
