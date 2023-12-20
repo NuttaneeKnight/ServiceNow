@@ -384,6 +384,7 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 }
 
 - addinfoMessage()
+- assOption() > On incident form - add a choice to contact type field
 //2:07:21
 
 
