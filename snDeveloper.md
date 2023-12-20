@@ -396,8 +396,10 @@ function onLoad() {
    //g_form.addOption('contact_type', 'portal', 'Portal');
 
    g_form.clearValue('short_description')
-}
-- 
+} // it won't be deleted until you click save
+
+- disableAttachments() - on incident form - disable attachment when incident is resolved
+
 
 
 
