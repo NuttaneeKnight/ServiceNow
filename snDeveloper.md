@@ -414,6 +414,9 @@ function onLoad() {
 
 - enableAttachments()
 - flash() - on incident form - if priority is P! then flash should be visible on priority field
+function onLoad() {
+   g_form.flash('priority', 'blue', 5);
+}
 
 //2:18:21 ณัฐฐณี
 
