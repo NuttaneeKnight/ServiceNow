@@ -424,6 +424,10 @@ function onLoad() {
   var a = g_form.getControl('short_description');
   a.style.color = 'red';
 }
+- getDecimalValue()
+- getIntValue()
+- getLableOf() - on incident form - show alert with printing the label
+
 
 //2:18:21 ณัฐฐณี
 
