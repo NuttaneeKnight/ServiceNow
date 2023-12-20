@@ -427,6 +427,11 @@ function onLoad() {
 - getDecimalValue()
 - getIntValue()
 - getLableOf() - on incident form - show alert with printing the label
+function onLoad() {
+ alert(g_form.getLabelOf('short_description'))
+}
+
+- getReference() - onincident form - show alert if the caller is VIP
 
 
 //2:18:21 ณัฐฐณี
