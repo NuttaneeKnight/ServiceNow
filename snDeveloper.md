@@ -390,7 +390,14 @@ function onLoad() {
    g_form.addOption('contact_type', 'portal', 'Portal');
 }
 - clearOptions() - on incident form - remove all choices from state field for new form
-- clearValue() - on incident form - remove test from short description
+- clearValue() - on incident form - remove text from short description
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+   //g_form.addOption('contact_type', 'portal', 'Portal');
+
+   g_form.clearValue('short_description')
+}
+- 
 
 
 
