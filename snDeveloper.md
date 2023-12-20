@@ -445,7 +445,9 @@ function onLoad() {
 - getSectionNames()
 - getSections()
 - getTableName()
-
+- getUniqueValue()
+- getValue() - on incident forrm - show aleert message when piority is P1
+- 
 
 //2:32:21 ณัฐฐณี
 
