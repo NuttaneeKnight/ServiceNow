@@ -432,6 +432,16 @@ function onLoad() {
 }
 
 - getReference() - onincident form - show alert if the caller is VIP
+function onLoad() {
+	var caller = g_form.getReference('caller_id', alertCaller)
+
+	function alertCaller(caller) {
+		if (caller.vip == ' true') {
+			alert('Hey, the caller of this iincident is VIP user')
+		}
+	}
+}
+
 
 
 //2:18:21 ณัฐฐณี
