@@ -417,6 +417,9 @@ function onLoad() {
 function onLoad() {
    g_form.flash('priority', 'blue', 5);
 }
+- getAvtionName()
+- getBooleanValue() - on incident form if the knowledge check box s checked, show an info message
+
 
 //2:18:21 ณัฐฐณี
 
