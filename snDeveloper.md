@@ -399,7 +399,18 @@ function onLoad() {
 } // it won't be deleted until you click save
 
 - disableAttachments() - on incident form - disable attachment when incident is resolved
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+   //g_form.addOption('contact_type', 'portal', 'Portal');
 
+   //g_form.clearValue('short_description')
+
+   // this is when the state is resolved('6') the user cannot add any attachment
+   var sstate = g_form,getValue('state')
+   if (state == '6') {
+	g_form.disableAttachments();
+   }
+}
 
 
 
