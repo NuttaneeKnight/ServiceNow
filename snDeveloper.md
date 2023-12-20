@@ -389,6 +389,8 @@ function onLoad() {
    //Type appropriate comment here, and begin script below
    g_form.addOption('contact_type', 'portal', 'Portal');
 }
+- clearOptions() - on incident form - remove all choices from state field for new form
+
 
 
 //2:11:21 ณัฐฐณี
