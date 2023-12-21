@@ -459,8 +459,9 @@ function onLoad() {
 g_form.hideRelatedLists()
 
 - isLiveUpdating()
-
-//2:35:21 ณัฐฐณี
+- isMandatory() - boolean checking if it is or not true or false
+- 
+//2:38:21 ณัฐฐณี
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
