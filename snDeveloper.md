@@ -461,9 +461,12 @@ g_form.hideRelatedLists()
 - isLiveUpdating()
 - isMandatory() - boolean checking if it is or not true or false
 - isNewRecord() - on incident form - state field should be read only f record is new 
+- isSectionVisible() - check if it is visible or not one param the name of that section
+- removeDecoration()
+- removeOption() - on incident form - remove closed option for the ITIL users
+- 
 
-
-//2:38:21 ณัฐฐณี
+//2:40:21 ณัฐฐณี
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
