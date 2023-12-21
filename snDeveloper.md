@@ -460,7 +460,9 @@ g_form.hideRelatedLists()
 
 - isLiveUpdating()
 - isMandatory() - boolean checking if it is or not true or false
-- 
+- isNewRecord() - on incident form - state field should be read only f record is new 
+
+
 //2:38:21 ณัฐฐณี
 
 
