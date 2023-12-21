@@ -464,7 +464,9 @@ g_form.hideRelatedLists()
 - isSectionVisible() - check if it is visible or not one param the name of that section
 - removeDecoration()
 - removeOption() - on incident form - remove closed option for the ITIL users
-- 
+- save()
+- setDisabled()
+- setDisplay() 
 
 //2:40:21 ณัฐฐณี
 
