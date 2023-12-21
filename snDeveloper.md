@@ -455,6 +455,11 @@ function onLoad() {
 	}
 }
 
+- hideRelatedList() - On incident form - show affected CI relaated list when CI is not empty
+g_form.hideRelatedLists()
+
+- isLiveUpdating()
+
 //2:35:21 ณัฐฐณี
 
 
