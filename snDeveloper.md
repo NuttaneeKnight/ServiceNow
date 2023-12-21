@@ -447,9 +447,15 @@ function onLoad() {
 - getTableName()
 - getUniqueValue()
 - getValue() - on incident forrm - show aleert message when piority is P1
-- 
+function onLoad() {
+	var a = g_form.getValue('priority');
 
-//2:32:21 ณัฐฐณี
+	if (a == '1') {
+		g_form.addErrorMessage('This is P1')
+	}
+}
+
+//2:35:21 ณัฐฐณี
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
