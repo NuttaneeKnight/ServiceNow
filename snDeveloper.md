@@ -467,8 +467,11 @@ g_form.hideRelatedLists()
 - save()
 - setDisabled()
 - setDisplay() 
+- setLabelOf() on incident form - change the lable of assignee
+- setMandatory() - on incident form - when form is not the CI should be mandatory
 
-//2:40:21 ณัฐฐณี
+
+//2:42:21 ณัฐฐณี
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
