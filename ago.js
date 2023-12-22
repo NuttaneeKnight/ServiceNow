@@ -18,7 +18,7 @@ function addUpTo(n) {
 
 // check performance
 var t1 = performance.now()
-addUpto(10000000000)
+addUpTo(10000000000)
 var t2 = performance.now()
 console.log(`Time Elasped: ${(t2 - t1) / 1000} seconds.`)
 
