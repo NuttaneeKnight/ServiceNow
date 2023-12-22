@@ -471,7 +471,13 @@ g_form.hideRelatedLists()
 - setMandatory() - on incident form - when form is not the CI should be mandatory
 - setReadOnly() - on incident form - state field should be read only when form is new
 - setSectionDisplay()
-- 
+- setValue() on incident form - set the value of current logged in user in caller field
+
+function onLoad() {
+	var user = g_user.userID;
+	g_form.setValue('caller_id', user);
+}
+-
 
 //2:44:21 ณัฐฐณี
 
