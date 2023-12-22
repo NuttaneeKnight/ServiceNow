@@ -469,9 +469,11 @@ g_form.hideRelatedLists()
 - setDisplay() 
 - setLabelOf() on incident form - change the lable of assignee
 - setMandatory() - on incident form - when form is not the CI should be mandatory
+- setReadOnly() - on incident form - state field should be read only when form is new
+- setSectionDisplay()
+- 
 
-
-//2:42:21 ณัฐฐณี
+//2:44:21 ณัฐฐณี
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
