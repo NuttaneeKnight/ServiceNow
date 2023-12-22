@@ -477,9 +477,11 @@ function onLoad() {
 	var user = g_user.userID;
 	g_form.setValue('caller_id', user);
 }
--
+- showErrorBox()
+- showFieldMsg()
+- showRelatedList()
 
-//2:44:21 ณัฐฐณี
+//2:48:21 ณัฐฐณี
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
