@@ -539,8 +539,26 @@ function onLoad() {
 - try{}, catch()
 
 
-//3:19:21 ณัฐฐณี
+# UI Policy
+
+
+
+
+
+
+
+
+
+
+
+
+//3:39:21 ณัฐฐณี
+
+
+
+
+
+
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
-template.print ( 'Attachment: <a href="/sys_attachment.do?sys_id=' + now_GR. sys_id + '">' + now_GR. file_name + '</a>\n ' ) ;
