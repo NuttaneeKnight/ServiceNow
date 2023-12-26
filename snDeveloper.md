@@ -524,7 +524,11 @@ function onLoad() {
    
 }
 
+# Debug Client Scripts
 
+# How to write a JS Log
+- jslog() method
+- field watcher
 
 
 
