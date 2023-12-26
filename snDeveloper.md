@@ -529,10 +529,17 @@ function onLoad() {
 # How to write a JS Log
 - jslog() method
 - field watcher
+- response time indicator
+
+function onLoad() {
+   jslog('This is an example of client script debug') ;
+ 
+}
 
 
 
-//3:07:21 ณัฐฐณี
+
+//3:19:21 ณัฐฐณี
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
