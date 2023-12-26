@@ -558,10 +558,13 @@ function onLoad() {
 - Scripting in UI Policy enable a developer to create complex conditions and execute advanced behavior
 - Any behavior addition to configurable functionality needs scripting
 
+# OOB UI Policy
+- ServiceNow has developed OOB UI policies which are the baseline UI policies
 
 //3:43:21 ณัฐฐณี
 
 
+Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
 
 
 
