@@ -506,7 +506,23 @@ function onLoad() {
    alert('The value of a variable is ' + a);   
    }
 }
-//2:54:21 ณัฐฐณี
+
+- g_user.hasRoleExactly()
+function onLoad() {
+   var a = g_user.hasRoleExactly('knowledge')
+   if (a === true) {
+
+   alert('The value of a variable is ' + a);   
+   }
+}
+
+
+
+
+
+
+
+//3:01:21 ณัฐฐณี
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
