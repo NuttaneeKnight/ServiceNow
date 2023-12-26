@@ -536,7 +536,7 @@ function onLoad() {
  
 }
 
-
+- try{}, catch()
 
 
 //3:19:21 ณัฐฐณี
