@@ -491,8 +491,22 @@ function onLoad() {
    
 }
 
+- g_user.getFullName()
+function onLoad() {
+   var a = g_user.getFullName();
 
-//2:51:21 ณัฐฐณี
+   alert('The first name of user is ' + a);   
+}
+
+- g_user.hasRole()
+function onLoad() {
+   var a = g_user.hasRole('itil')
+   if (a === true) {
+
+   alert('The value of a variable is ' + a);   
+   }
+}
+//2:54:21 ณัฐฐณี
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
