@@ -483,6 +483,13 @@ function onLoad() {
 - submit()
 
 # Glide User Method
+- g_user.firstName
+function onLoad() {
+   var a = g_user.firstName
+
+   alert('The first name of user is ' + a)
+   
+}
 
 
 //2:51:21 ณัฐฐณี
