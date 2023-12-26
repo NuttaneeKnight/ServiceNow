@@ -516,13 +516,19 @@ function onLoad() {
    }
 }
 
+- g_user.userID;
+function onLoad() {
+   var a = g_user.userID;
+
+   alert('Sys ID of current user is ' + a);   
+   
+}
 
 
 
 
 
-
-//3:01:21 ณัฐฐณี
+//3:07:21 ณัฐฐณี
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
