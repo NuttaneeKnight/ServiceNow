@@ -551,17 +551,15 @@ function onLoad() {
 - No scripting is required
 - Advanced changes required scripting
 
+# Hot to locate UI Policy?
+- System UI >> UI Policies
+
+# Scripting in UI Policy
+- Scripting in UI Policy enable a developer to create complex conditions and execute advanced behavior
+- Any behavior addition to configurable functionality needs scripting
 
 
-
-
-
-
-
-
-
-
-//3:39:21 ณัฐฐณี
+//3:43:21 ณัฐฐณี
 
 
 
