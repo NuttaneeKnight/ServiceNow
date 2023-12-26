@@ -480,8 +480,10 @@ function onLoad() {
 - showErrorBox()
 - showFieldMsg()
 - showRelatedList()
+- submit()
 
-//2:48:21 ณัฐฐณี
+
+//2:51:21 ณัฐฐณี
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
