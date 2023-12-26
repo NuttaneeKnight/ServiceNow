@@ -544,7 +544,12 @@ function onLoad() {
 - Scripting in UI Policy
 - Creating UI Policy
 
-
+# What is UI Policy
+- UI policy is used to change the behavior of information on the form
+- Runs at Client side
+- It's primarily used to make fields Read-Only, Visible and Mandatory on the form
+- No scripting is required
+- Advanced changes required scripting
 
 
 
