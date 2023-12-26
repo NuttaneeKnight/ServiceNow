@@ -482,6 +482,8 @@ function onLoad() {
 - showRelatedList()
 - submit()
 
+# Glide User Method
+
 
 //2:51:21 ณัฐฐณี
 
