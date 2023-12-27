@@ -612,7 +612,7 @@ function onCondition() {
 - "Set state to in Progress"
 - "Abort deletion if parent isn't empty"
 
-//4:45:21 ณัฐฐณี
+//4:50:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
