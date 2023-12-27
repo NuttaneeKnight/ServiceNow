@@ -607,11 +607,11 @@ function onCondition() {
 - gs
 
 # Create BR with scripting and w/o scripting
+- go to "Auto Populate Description if empty" for demo
 
 
 
-
-//4:21:21 ณัฐฐณี
+//4:26:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
