@@ -561,7 +561,10 @@ function onLoad() {
 # OOB UI Policy
 - ServiceNow has developed OOB UI policies which are the baseline UI policies
 
-//3:43:21 ณัฐฐณี
+
+
+
+//3:46:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
