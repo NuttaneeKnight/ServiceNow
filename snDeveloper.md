@@ -591,12 +591,20 @@ function onCondition() {
 # When to run Business Rules - When 
 - After, After BR execute when form is submitted and record is updated in the database
 - Before, Before BR execute when form is submitted but before record is updated in the database
-- Async
-- Display
+- Async, AsyncBR runs after records are inserted, modified or queried
+- Display, Display BR runs when dat is read from the database and before presenting to the user
+
+# When to Run BR - What Operation
+- insert
+- update
+- Delete
+- Query
 
 
 
-//4:10:21 ณัฐฐณี
+
+
+//4:17:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
