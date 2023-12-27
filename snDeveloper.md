@@ -575,7 +575,19 @@ function onCondition() {
 - Runs on server side
 - Runs with all the ways where record is accessed like List, Form or web Services. 
 
-//3:55:21 ณัฐฐณี
+# System Definition >> Business Rules
+
+# Advanced Scripting
+(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);
+
+
+
+
+//3:57:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
