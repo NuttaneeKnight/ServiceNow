@@ -611,8 +611,10 @@ function onCondition() {
 - go to "Abort if description is empty"
 - "Set state to in Progress"
 - "Abort deletion if parent isn't empty"
+- Query "Limit the incident query for non admins"
 
-//4:50:21 ณัฐฐณี
+
+//4:52:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
