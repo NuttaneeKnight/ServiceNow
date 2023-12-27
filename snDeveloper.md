@@ -609,9 +609,9 @@ function onCondition() {
 # Create BR with scripting and w/o scripting
 - go to "Auto Populate Description if empty" for demo
 - go to "Abort if description is empty"
+- "Set state to in Progress"
 
-
-//4:30:21 ณัฐฐณี
+//4:40:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
