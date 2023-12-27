@@ -561,7 +561,7 @@ function onLoad() {
 # OOB UI Policy
 - ServiceNow has developed OOB UI policies which are the baseline UI policies
 
-
+- Go to UI Policy Action to set the mandatory action
 
 
 //3:46:21 ณัฐฐณี
