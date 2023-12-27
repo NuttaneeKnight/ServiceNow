@@ -570,6 +570,10 @@ function onCondition() {
 }
 
 # Business Rules
+- Server side script that runs when record is displayed, inserted, updated or deleted or when table is queried
+- Used to change value in the fields when specific condition is met
+- Runs on server side
+- Runs with all the ways where record is accessed like List, Form or web Services. 
 
 //3:55:21 ณัฐฐณี
 
