@@ -562,6 +562,12 @@ function onLoad() {
 - ServiceNow has developed OOB UI policies which are the baseline UI policies
 
 - Go to UI Policy Action to set the mandatory action
+- Script in UI Policy
+function onCondition() {
+	g_form.addInfoMessage('You are going to make P1 Incident');
+
+	alert(g_user.getFullName());
+}
 
 
 //3:46:21 ณัฐฐณี
