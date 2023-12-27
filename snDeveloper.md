@@ -610,8 +610,9 @@ function onCondition() {
 - go to "Auto Populate Description if empty" for demo
 - go to "Abort if description is empty"
 - "Set state to in Progress"
+- "Abort deletion if parent isn't empty"
 
-//4:40:21 ณัฐฐณี
+//4:45:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
