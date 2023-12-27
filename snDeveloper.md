@@ -600,11 +600,18 @@ function onCondition() {
 - Delete
 - Query
 
+# Global Variables of BR
+- current
+- previous
+- g_scratchpad
+- gs
+
+# Create BR with scripting and w/o scripting
 
 
 
 
-//4:17:21 ณัฐฐณี
+//4:21:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
