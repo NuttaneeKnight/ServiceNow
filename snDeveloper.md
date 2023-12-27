@@ -588,6 +588,13 @@ function onCondition() {
 - When to run >> What action needs to be taken >> Stack
 - Trigger >> Action >> Action Taken
 
+# When to run Business Rules - When 
+- After, After BR execute when form is submitted and record is updated in the database
+- Before, Before BR execute when form is submitted but before record is updated in the database
+- Async
+- Display
+
+
 
 //4:10:21 ณัฐฐณี
 
