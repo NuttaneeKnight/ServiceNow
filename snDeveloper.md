@@ -584,10 +584,12 @@ function onCondition() {
 
 })(current, previous);
 
+# How Business Rules Work
+- When to run >> What action needs to be taken >> Stack
+- Trigger >> Action >> Action Taken
 
 
-
-//3:57:21 ณัฐฐณี
+//4:10:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
