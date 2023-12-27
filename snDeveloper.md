@@ -569,8 +569,9 @@ function onCondition() {
 	alert(g_user.getFullName());
 }
 
+# Business Rules
 
-//3:46:21 ณัฐฐณี
+//3:55:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
