@@ -615,7 +615,11 @@ function onCondition() {
 
 
 # Business Rules with Advanced Scripting
-//5:00:21 ณัฐฐณี
+
+- Business Rules - Scenarios: Create 5 standard tasks when you create story
+
+
+//5:01:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
