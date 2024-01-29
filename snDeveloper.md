@@ -630,3 +630,20 @@ Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,D
 
 
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
+var current = new GlideRecord("u_rfs");
+current.addEncodedQuery('sys_created_onONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()');
+current.query();
+while (current.next()){//.get("60c781ed877731d0e66fa9bd3fbb35cb")){
+    gs.info(current.getDisplayValue());
+    gs.info(current.u_code)
+    var rfsCode = new GlideRecord('u_rfs_codes');
+    rfsCode.addEncodedQuery('u_rfs_parent='+current.sys_id);
+    rfsCode.addQuery('u_sub_service', current.u_code.getValue());
+    rfsCode.query();
+    if(rfsCode.next()){
+       //gs.info("All good here");
+     //   gs.info(rfsCode.u_sub_service)
+       
+    } else {
+        gs.info("We got a problem")
+    }
