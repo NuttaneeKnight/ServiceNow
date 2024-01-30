@@ -628,7 +628,7 @@ Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,D
 
 
 
-
+// https://dev210032.service-now.com/$spd.do#/sp/editor/my_page_1/
 /login\_with\_sso.do?glide\_sso\_id=ab186cf01b92b550f3738622dd4bcb96
 var current = new GlideRecord("u_rfs");
 current.addEncodedQuery('sys_created_onONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()');
@@ -647,3 +647,10 @@ while (current.next()){//.get("60c781ed877731d0e66fa9bd3fbb35cb")){
     } else {
         gs.info("We got a problem")
     }
+
+getRegionalSenior: function (district) {
+        var district_rec = new GlideRecord('u_district');
+        district_rec.get(district);
+        return district_rec.u_regional_senior;
+    },
+
