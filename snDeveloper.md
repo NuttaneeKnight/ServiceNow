@@ -619,6 +619,7 @@ function onCondition() {
 - Business Rules - Scenarios: Create 5 standard tasks when you create story (scrum tasks)
 
 
+
 //5:01:21 ณัฐฐณี
 
 
