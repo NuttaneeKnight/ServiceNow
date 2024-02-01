@@ -618,6 +618,9 @@ function onCondition() {
 
 - Business Rules - Scenarios: Create 5 standard tasks when you create story (scrum tasks)
 
+- To configure, Go to Stories table > Right click the header > Congigure > Business Rules
+
+
 
 
 //5:01:21 ณัฐฐณี
