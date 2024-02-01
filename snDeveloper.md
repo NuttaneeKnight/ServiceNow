@@ -636,10 +636,10 @@ function onCondition() {
 })(current, previous);
 
 - Scenarios: Close Request Item if Catalog Task is closed
+- Go to All > Service Catalog > Openn Records > Items
+- Has to wrie a business rule in a catalog task to make this happen
 
-
-
-//ณัฐฐณี 5:11:21 
+//ณัฐฐณี 5:14:21 
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
