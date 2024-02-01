@@ -629,7 +629,7 @@ function onCondition() {
         var gr = new GlideRecord('rm_scrum_task');
         gr.initialize();
         gr.type = type;
-        gr.short_description = 'Analysis';
+        gr.short_description = 'Scrum Task ' + type;
         gr.parent = current.sys_id;
         gr.insert();
     }
@@ -638,8 +638,7 @@ function onCondition() {
 
 
 
-
-//5:09:21 ณัฐฐณี
+//ณัฐฐณี 5:11:21 
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
