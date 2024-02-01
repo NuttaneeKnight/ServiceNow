@@ -635,6 +635,7 @@ function onCondition() {
     }
 })(current, previous);
 
+- Scenarios: Close Request Item if Catalog Task is closed
 
 
 
