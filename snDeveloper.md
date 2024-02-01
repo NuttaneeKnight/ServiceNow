@@ -617,13 +617,29 @@ function onCondition() {
 # Business Rules with Advanced Scripting
 
 - Business Rules - Scenarios: Create 5 standard tasks when you create story (scrum tasks)
+- To configure, Go to Stories table > Right click the header > Congigure > Business Rules > New
+- https://dev210032.service-now.com/now/nav/ui/classic/params/target/sys_script.do%3Fsys_id%3D1cd356de47400210afd7e481e36d4339%26sysparm_view%3D%26sysparm_domain%3Dnull%26sysparm_domain_scope%3Dnull
 
-- To configure, Go to Stories table > Right click the header > Congigure > Business Rules
+(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+    for (i = 1; i < 5; i++) {
+		
+		var type = i.toString();
+        var gr = new GlideRecord('rm_scrum_task');
+        gr.initialize();
+        gr.type = type;
+        gr.short_description = 'Analysis';
+        gr.parent = current.sys_id;
+        gr.insert();
+    }
+})(current, previous);
 
 
 
 
-//5:01:21 ณัฐฐณี
+
+//5:09:21 ณัฐฐณี
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
