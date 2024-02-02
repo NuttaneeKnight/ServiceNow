@@ -641,10 +641,31 @@ function onCondition() {
 - Go to the catalog task header(ex.number) right click > Configure > Business Rule > New
 - https://dev210032.service-now.com/now/nav/ui/classic/params/target/sys_script.do%3Fsys_id%3D8970132647400210afd7e481e36d43ba%26sysparm_view%3D%26sysparm_domain%3Dnull%26sysparm_domain_scope%3Dnull
 
+- Advanced:
+(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+	var gr = new GlideRecord('sc_task');
+	gr.addActiveQuery();
+	gr.addQuery('request_item', current.request_item);
+	gr.query();
+	if (gr.next()) {
+		var gri = new GlideRecord('sc_req_item');
+		gri.addQuery('sys_id', current.request_item);
+		gri.query();
+		if (gri.next()) {
+			gri.state = '3'; //the closed complete is 3 
+			gri.update();
+		}
+	}
+
+})(current, previous);
 
 
 
-//ณัฐฐณี 5:19:21 
+
+//ณัฐฐณี 5:21:21 
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
