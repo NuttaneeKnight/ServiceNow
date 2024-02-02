@@ -638,7 +638,12 @@ function onCondition() {
 - Scenarios: Close Request Item if Catalog Task is closed
 - Go to All > Service Catalog > Openn Records > Items
 - Has to wrie a business rule in a catalog task to make this happen
-- Go to the catalog task header(ex.number) right click > Configure > Business Rule 
+- Go to the catalog task header(ex.number) right click > Configure > Business Rule > New
+- https://dev210032.service-now.com/now/nav/ui/classic/params/target/sys_script.do%3Fsys_id%3D8970132647400210afd7e481e36d43ba%26sysparm_view%3D%26sysparm_domain%3Dnull%26sysparm_domain_scope%3Dnull
+
+
+
+
 //ณัฐฐณี 5:14:21 
 
 
