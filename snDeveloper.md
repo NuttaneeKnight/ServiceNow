@@ -654,7 +654,7 @@ function onCondition() {
 		var gri = new GlideRecord('sc_req_item');
 		gri.addQuery('sys_id', current.request_item);
 		gri.query();
-		if (gri.next()) {
+		if (!gri.next()) {
 			gri.state = '3'; //the closed complete is 3 
 			gri.update();
 		}
@@ -665,7 +665,7 @@ function onCondition() {
 
 
 
-//ณัฐฐณี 5:21:21 
+//ณัฐฐณี 5:24:21 
 
 
 Source(memberOf=CN=LHRIC-SD,OU=Groups,OU=LHRIC,OU=SWBOCES,OU=Common,DC=SWBOCES,DC=LHRIC,DC=local)
