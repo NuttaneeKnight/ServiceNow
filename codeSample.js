@@ -1121,3 +1121,110 @@ function onChange(control, oldValue, newValue, isLoading) {
 
  //Calculation of Event Start/ End Date based on Event Duration field
  global.AjaxProjectTaskUtil().getEndDatePerSchedule() 
+
+ Please update the Script include with below script and create another onChange() client script on duration field. Hope this helps.
+
+
+
+Script Include:
+
+
+var MyDateTimeAjax = Class.create();
+
+
+MyDateTimeAjax.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+
+nowDateTime: function () {
+
+
+var sdt = new GlideDateTime(this.getParameter('sysparm_start_date'));
+
+
+var edt = new GlideDateTime(this.getParameter('sysparm_end_date'));
+
+
+var datediff = gs.dateDiff(sdt.getDisplayValue(), edt.getDisplayValue(), false);
+
+
+return datediff.split(' ')[0];
+
+
+},
+
+
+
+calDate: function () {
+
+
+var sdt = new GlideDateTime(this.getParameter('sysparm_start_date'));
+
+
+sdt.addDaysUTC(this.getParameter('sysparm_duration'));
+
+
+return sdt.getDate();
+
+
+},
+
+
+type: 'MyDateTimeAjax'
+
+
+});
+
+
+
+//OnChange() client script on Duration field:
+
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+
+
+if (isLoading || newValue === '') {
+
+
+return;
+
+
+}
+
+
+//Type appropriate comment here, and begin script below
+
+
+if(g_form.getValue('u_date1') == ''){
+
+
+var ajax = new GlideAjax('MyDateTimeAjax');
+
+
+ajax.addParam('sysparm_name', 'calDate');
+
+
+ajax.addParam('sysparm_start_date', g_form.getValue('u_date'));
+
+
+ajax.addParam('sysparm_duration', newValue);
+
+
+ajax.getXML(ajaxResponse);
+
+
+}
+
+
+function ajaxResponse(serverResponse) {
+
+
+var answer = serverResponse.responseXML.documentElement.getAttribute("answer");
+
+
+g_form.setValue('u_date1', answer);
+
+
+}
+
+
+}
