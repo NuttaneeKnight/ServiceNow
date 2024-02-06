@@ -1085,4 +1085,36 @@ function onSubmit() {
 	}
 }
 
+//Client Script Date Validation no more than 30 days
 var currentUser = gs.getUser(); gs.info(currentUser.getFirstName()); // print the first name of the logged in uservar newUser = currentUser.getUserByID('62826bf03710200044e0bfc8bcbe5df1'); // fetch Abel Tuter user using sys_id from sys_user recordgs.info(newUser.getFirstName()); // print the first name of the Abel Tuter user
+
+function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue == '') {
+	   return;
+	}
+	 var finalDecommissionDate = newValue;  
+	 var dt = getDateFromFormat(finalDecommissionDate, g_user_date_format);
+	 var newdt = new Date(dt);
+	 var finalDecommissionDateFormatted = formatDate(newdt, 'yyyyMMdd');
+ 
+	 var decommissionDate = g_form.getValue("date_to_decommission_server");
+	 var dt2 = getDateFromFormat(decommissionDate, g_user_date_format);
+	 var newdt2 = new Date(dt2);
+	 var decommissionDateFormatted = formatDate(newdt2, 'yyyyMMdd');
+ 
+	 var rightNow = new Date();
+	 var rightNowDate = formatDate(rightNow, 'yyyyMMdd');
+ 
+	 var max = 30;
+	 var maxDate = new Date();
+	 maxDate.setDate(newdt2.getDate() + max);
+	 maxDateFormatted = formatDate(maxDate, 'yyyyMMdd');
+	 
+	 if (finalDecommissionDateFormatted < rightNowDate) {
+		 g_form.clearValue('date_of_final_server_decommission');
+		 g_form.showFieldMsg('date_of_final_server_decommission', 'The date must be after the current date', 'error', true);
+	 } else if (finalDecommissionDateFormatted > maxDateFormatted) {
+		 g_form.clearValue('date_of_final_server_decommission');
+		 g_form.showFieldMsg('date_of_final_server_decommission', 'The final decommission date cannot exceed 30 days from the decommission date', 'error', true);
+	 }
+ }
