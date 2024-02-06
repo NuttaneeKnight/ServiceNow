@@ -1228,3 +1228,21 @@ g_form.setValue('u_date1', answer);
 
 
 }
+
+var dc = new DurationCalculator();
+var startTime = new GlideDateTime();
+
+// Settings for calculations
+// Optional: Specify the schedule to use for the following calculations
+dc.setSchedule('08fcd0830a0a0b2600079f56b1adb9ae'); 
+// Optional: Specify a different timezone to use
+dc.setTimeZone("Los Angeles");
+// Optional: Set a start date and time, otherwise the current time is assumed
+dc.setStartDateTime("2020-04-10 08:00:00")
+// Calculate end time, from number of seconds required in the schedule
+dc.calcDuration(3*24*3600); // 3 days
+dc.calcRelativeDueDate(startTime, "3", "07:00:00");
+
+//ex
+var dc = new DurationCalculator();
+dc.calcRelativeDuration('08fcd0830a0a1b2600074f56b1ad7cb');
