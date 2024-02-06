@@ -1118,3 +1118,6 @@ function onChange(control, oldValue, newValue, isLoading) {
 		 g_form.showFieldMsg('date_of_final_server_decommission', 'The final decommission date cannot exceed 30 days from the decommission date', 'error', true);
 	 }
  }
+
+ //Calculation of Event Start/ End Date based on Event Duration field
+ global.AjaxProjectTaskUtil().getEndDatePerSchedule() 
