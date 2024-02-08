@@ -1122,7 +1122,7 @@ function onChange(control, oldValue, newValue, isLoading) {
  //Calculation of Event Start/ End Date based on Event Duration field
  global.AjaxProjectTaskUtil().getEndDatePerSchedule() 
 
- Please update the Script include with below script and create another onChange() client script on duration field. Hope this helps.
+ //Please update the Script include with below script and create another onChange() client script on duration field. Hope this helps.
 
 
 
