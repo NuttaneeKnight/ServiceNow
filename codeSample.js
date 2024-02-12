@@ -1317,3 +1317,7 @@ dc.calcRelativeDueDate(startTime, "3", "07:00:00");
 //ex
 var dc = new DurationCalculator();
 dc.calcRelativeDuration('08fcd0830a0a1b2600074f56b1ad7cb');
+
+var er = g_form.getValue('priority');
+var es = g_form.getOption('priority',er).text;
+  alert(es);
