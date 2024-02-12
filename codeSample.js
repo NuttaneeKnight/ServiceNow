@@ -1124,6 +1124,77 @@ function onChange(control, oldValue, newValue, isLoading) {
 
  //Please update the Script include with below script and create another onChange() client script on duration field. Hope this helps.
 
+//Draft 1 (before testing) of the onSubmit client script for Server Hosting to set the workflow:
+
+function onSubmit() {
+	var requestType = g_form.getValue('select_a_request_type');
+	var requestTypeDisplay = g_form.getDisplayValue('select_a_request_type');
+	
+	var sysops = "67cbcdf30febfd00874f6ab8b1050e89";//LHRIC - Systems and Operations Team
+	var manager = "cad3c6140f7af900874f6ab8b1050ebe"; // John DiChiara 
+
+	var decomDate = g_form.getValue('date_to_decommission_server');
+	var finalDecomDate = g_form.getValue('date_of_final_server_decommission');
+	var snapshotDate = g_form.getValue('date_time_snapshot_needed');
+	var snapshotRemovalDate = g_form.getValue('date_of_removal');
+
+	if (requestType == 'new_server') { // NEW SERVER
+		// TASK 1
+		g_form.setValue('wf_task_1_assigned_to', manager);
+		g_form.setValue('wf_task_1_short_description', 'Review ' + requestTypeDisplay + ' financial impact');
+		g_form.setValue('wf_task_1_description', 'Review financial impact & communicate with the district');
+		
+		// TASK 2
+		g_form.setValue('wf_task_2_assignment_group', sysops);
+		g_form.setValue('wf_task_2_short_description', 'Create New Server');
+		g_form.setValue('wf_task_2_description', 'Create a new server for the district');
+
+	} else if (requestType == 'change_server') { // CHANGE SERVER
+		// TASK 1
+		g_form.setValue('wf_task_1_assigned_to', manager);
+		g_form.setValue('wf_task_1_short_description', 'Review ' + requestTypeDisplay + ' financial impact');
+		g_form.setValue('wf_task_1_description', 'Review financial impact & communicate with the district');
+
+		// TASK 2
+		g_form.setValue('wf_task_2_assignment_group', sysops);
+		g_form.setValue('wf_task_2_short_description', 'Change Server');
+		g_form.setValue('wf_task_2_description', 'Change the server for the district');
+
+	} else if (requestType == 'remove_server') { // REMOVE SERVER
+		// TASK 1
+		g_form.setValue('wf_task_1_assigned_to', manager);
+		g_form.setValue('wf_task_1_short_description', 'Review ' + requestTypeDisplay + ' financial impact');
+		g_form.setValue('wf_task_1_description', 'Review financial impact & communicate with the district');
+
+		// TASK 2
+		g_form.setValue('wf_task_2_assignment_group', sysops);
+		g_form.setValue('wf_task_2_short_description', 'Remove Server on ' + decomDate);
+		g_form.setValue('wf_task_2_description', 'Remove server for the district.\n Decom Date: ' + decomDate);
+
+		// TASK 3
+		g_form.setValue('wf_task_3_assignment_group', sysops);
+		g_form.setValue('wf_task_3_short_description', 'Final Decom of Server on ' + finalDecomDate);
+		g_form.setValue('wf_task_3_description', 'Final Decom of server for the district.\n Final Decom Date: ' + finalDecomDate);
+
+	} else if (requestType == 'server_snapshot') { // SERVER SNAPSHOT
+		// TASK 1
+		g_form.setValue('wf_task_1_assignment_group', sysops);
+		g_form.setValue('wf_task_1_short_description', 'Server Snapshot needed on ' + snapshotDate);
+		g_form.setValue('wf_task_1_description', 'Take server snapshot on ' + snapshotDate);
+
+		// TASK 2
+		g_form.setValue('wf_task_2_assignment_group', sysops);
+		g_form.setValue('wf_task_2_short_description', 'Server Snapshot removal on ' + snapshotRemovalDate);
+		g_form.setValue('wf_task_2_description', 'Remove the server snapshot on ' + snapshotRemovalDate);
+
+	} else {
+		// TASK 1
+		g_form.setValue('wf_task_1_assigned_to', manager);
+		g_form.setValue('wf_task_1_short_description', 'Server Hosting Workflow error');
+		g_form.setValue('wf_task_1_description', 'Request Type is set to' + requestTypeDisplay + ". No workflow is set for this type.");
+	}
+}
+
 
 
 //Script Include:
