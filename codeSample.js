@@ -1321,3 +1321,5 @@ dc.calcRelativeDuration('08fcd0830a0a1b2600074f56b1ad7cb');
 var er = g_form.getValue('priority');
 var es = g_form.getOption('priority',er).text;
   alert(es);
+
+my_g_form.getField('new_or_decommission').choices[my_g_form.getField('new_or_decommission').choice].label
