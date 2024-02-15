@@ -1323,3 +1323,11 @@ var es = g_form.getOption('priority',er).text;
   alert(es);
 
 my_g_form.getField('new_or_decommission').choices[my_g_form.getField('new_or_decommission').choice].label
+
+// bkground script for change management
+var chg = new GlideRecord('change_request');
+chg.initialize();
+chg.type = 'standard';
+chg.std_change_producer_version = 'sys_id'; // Sys ID of the Standard Change Templates version
+chg.applyTemplate('template_name');
+chg.insert();
