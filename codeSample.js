@@ -1343,3 +1343,18 @@ if (current.get("b1c8d15147810200e90d87e8dee490f7")){
     if (templateID.next())
     gs.print(templateID.sys_id)
 }
+
+//updated workflow
+var stdChange = new GlideRecord("std_change_record_producer");
+stdChange.addActiveQuery();
+stdChange.addQuery('name','Change VLAN on a Cisco switchport')
+stdChange.query();
+if (stdChange.next()){
+    gs.info(stdChange.getDisplayValue());
+    var templateID = new GlideRecord('std_change_producer_version')
+    templateID.addEncodedQuery("std_change_producer="+stdChange.getUniqueValue())
+    templateID.addActiveQuery();
+    templateID.query();
+    if (templateID.next())
+    gs.print(templateID.sys_id)
+}
