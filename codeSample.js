@@ -1331,3 +1331,15 @@ chg.type = 'standard';
 chg.std_change_producer_version = 'sys_id'; // Sys ID of the Standard Change Templates version
 chg.applyTemplate('template_name');
 chg.insert();
+
+
+var current = new GlideRecord("std_change_record_producer");
+if (current.get("b1c8d15147810200e90d87e8dee490f7")){
+    gs.info(current.getDisplayValue());
+    var templateID = new GlideRecord('std_change_producer_version')
+    templateID.addEncodedQuery("std_change_producer="+current.getUniqueValue())
+    templateID.addActiveQuery();
+    templateID.query();
+    if (templateID.next())
+    gs.print(templateID.sys_id)
+}
